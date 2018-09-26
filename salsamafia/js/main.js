@@ -208,6 +208,15 @@
 		}
 	});
 
+	// wow activate 
+	$(function wowActivator () {
+		var wow = new WOW ({
+    		offset: 0
+    	});
+    	wow.init();
+	});
+
+
 // MAP
 	$(function initMap() {
 	    var coordinates = {lat: 49.228053, lng: 28.412252}, // Координаты центра карты 
