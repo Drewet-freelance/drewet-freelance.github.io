@@ -191,8 +191,9 @@
 		};
 	});
 
-	
-// gallery fancybox activator v2.1.5
+/*-----------------------------------------------	
+       gallery fancybox activator v2.1.5
+-------------------------------------------------*/
     $oldjQuery(function GalleryFancyboxActivator () {
     	var galleryFcb = $('.fancybox');
     	if(galleryFcb.length){
@@ -206,6 +207,19 @@
 			locked: false
 			}
 		}
+	});
+	$(document).ready(function() {
+		$('.callback').fancybox({
+			openEffect: 'elastic',
+			openSpeed: 150,
+			closeEffect: 'elastic',
+			closeSpeed: 150,
+			closeClick: true,
+			// width: 300,
+			helpers: {
+				overlay: null
+			} 
+		});	
 	});
 
 	// wow activate 
@@ -226,6 +240,30 @@
 		});
 	});
 
+/*-----------------------------------------------	
+       Mail
+-------------------------------------------------*/
+
+	$(document).ready(function() {
+		$("#form").submit(function() {
+			$.ajax({
+				type: "POST",
+				url: "mail.php",
+				data: $(this).serialize()
+			}).done(function() {
+				$(this).find("input").val("");
+				alert("Спасибо за регистрацию ! Скоро мы с вами свяжемся.");
+				$("#form").trigger("reset");
+			});
+			return false;
+		});
+		
+	});
+
+	// Mail activate 
+	// $('.example-form').sendMail({
+	// 	// Параметры...
+	// });
 
 // MAP
 	$(function initMap() {
