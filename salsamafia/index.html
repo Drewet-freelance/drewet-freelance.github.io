@@ -20,7 +20,9 @@
 	<!-- fancybox v2.1.5 -->
 	<link rel="stylesheet" type="text/css" media="screen" href="css/Fancybox_v2.1.5/jquery.fancybox.css" >
 	<!-- Animate CSS v3.7.0 -->
-	<link rel="stylesheet" href="css/animate.min.css">
+<!-- 	<link rel="stylesheet" href="css/animate.min.css">
+ -->	<!-- AOS CSS -->
+	<link rel="stylesheet" href="css/aos.css">
 	<!-- main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">	
@@ -229,15 +231,17 @@
 	<section id="about" class="about">
 		<div class="wrapper">
 			<div class="about-container">	
-				<div class="about-container__main fadeIn wow"
-				data-wow-delay="0.5s"
-				data-wow-duration="2.0s">
+				<div class="about-container__main"
+				data-aos="fade-in"
+				data-aos-delay="300"
+				data-aos-duration="1400"
+				    >
 					<h2>Школа <span>Salsa Mafia</span> - это:</h2>
 					<p>Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ...</p>
 				</div>
-				<div class="about-container__owner fadeIn wow"
-				data-wow-delay="0.0s"
-				data-wow-duration="2s">
+				<div class="about-container__owner"
+				data-aos="fade-in"
+				data-aos-duration="2000">
 					<img src="img/dimas_tanya_22.png" alt="Owner">
 				</div>
 			</div>
@@ -247,26 +251,31 @@
 	<section id="advantages" class="advantages">
 		<div class="wrapper">
 			<div class="advantages-container">
-				<div class="advantages-container__venzil fadeIn wow"
-				data-wow-duration="1.0s"
-				data-wow-delay="0.2s">
+				<div class="advantages-container__venzil"
+				data-aos="fade-in"
+				data-aos-duration="700">
 					<img src="img/venz_5.png" alt="">
 				</div>
-				<h2>Дружная семья <span>Salsa Mafia</span> .... предлагает ... текс вступительный...</h2>
+				<h2
+				data-aos="fade-in"
+				data-aos-duration="1000">
+					Дружная семья <span>Salsa Mafia</span> .... предлагает ... текс вступительный...
+				</h2>
 				<div class="advantages-container__details">
-					<div class="advantages-container__item">
+					<div class="advantages-container__item"
+					data-aos="fade-right"
+					data-aos-duration="1500">
 						<div class="advantages-container__img">
 							<a href="img/dance-bachata1.jpg" class="fancybox">
 								<img src="img/dance-bachata1.jpg" alt="advantages">
-							<!-- dance-bachata1.jpg 
-							fan.jpg
-							-->
 							</a>
 						</div>				
 						<h3>Индивидуальные и груповые занятия</h3>
 						<p>Бачата Сальса Кизомба Вы всегда можете посетить ...Вы всегда можете посетить ...Вы всегда можете посетить ...</p>
 					</div>
-					<div class="advantages-container__item">
+					<div class="advantages-container__item"
+					data-aos="fade-down"
+					data-aos-duration="1500">
 						<div class="advantages-container__img">
 							<a href="img/xuroki-balnykh-tancev.jpg" class="fancybox">
 								<img src="img/xuroki-balnykh-tancev.jpg" alt="advantages">
@@ -275,7 +284,9 @@
 						<h3>Постановка шоу-номеров</h3>
 						<p>Короткий текст ... Короткий текст ...Короткий текст ...</p>
 					</div>
-					<div class="advantages-container__item">
+					<div class="advantages-container__item"
+					data-aos="fade-left"
+					data-aos-duration="1500">
 						<div class="advantages-container__img">
 							<a href="img/30727076.jpg" class="fancybox">
 								<img src="img/30727076.jpg" alt="advantages">
@@ -284,7 +295,9 @@
 						<h3>Организация  мероприятий</h3>
 						<p>Мастер-классы, Open Air, зажигательные вечеринки кст... Текст...Текст... Текст...Текст... Текст...Текст...Текст...Текст...Текст... </p>
 					</div>
-					<div class="advantages-container__item">
+					<div class="advantages-container__item"
+					data-aos="fade-up-right"
+					data-aos-duration="1500">
 						<div class="advantages-container__img">
 							<a href="img/sm_flower_2.jpg" class="fancybox">
 								<img src="img/sm_flower_2.jpg" alt="advantages">
@@ -293,7 +306,9 @@
 						<h3>Лучшие преподаватели</h3>	
 						<p>Дружная команда професионалов обьедененных одной целью: с любовью, радостью и удовольствием делится своим професиональным опытом и знаниями</p>
 					</div>
-					<div class="advantages-container__item">
+					<div class="advantages-container__item"
+					data-aos="fade-up-left"
+					data-aos-duration="1500">
 						<div class="advantages-container__img">
 							<a href="img/group_2.jpg" class="fancybox">
 								<img src="img/group_2.jpg" alt="advantages">
@@ -309,7 +324,9 @@
 	<section id="directions" class="directions">
 		<div class="wrapper">
 			<div class="directions-wrap">
-				<div class="directions-wrap__venzil">
+				<div class="directions-wrap__venzil"
+				data-aos="fade-in"
+				data-aos-duration="700">
 					<img src="img/venz_5.png" alt="">
 				</div>
 				<h2>
@@ -317,35 +334,47 @@
 				</h2>
 				<div class="directions-wrap-content">	
 					<div class="content__item">
-						<div class="content__text">
+						<div class="content__text"
+						data-aos="zoom-out-right"
+						data-aos-duration="1500">
 							<div class="content__text--center">
 								<h3>Романтичная бачата</h3>
 								<p>Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ...</p>
 							</div>
 						</div>
-						<div class="content__img">
+						<div class="content__img"
+						data-aos="zoom-out-left"
+						data-aos-duration="1500">
 							<img src="img/directions/bachata.jpg" alt="bachata">
 						</div>
 					</div>
 					<div class="content__item">
-						<div class="content__text">
+						<div class="content__text"
+						data-aos="zoom-out-left"
+						data-aos-duration="1500">
 							<div class="content__text--center">
 								<h3>Энергичная сальса</h3>
 								<p>Сальса - энергичный и зажигательный танец с быстрым темпом и большим количеством вращений. Текст ... Текст ...Текст ... Текст ... Текст ...</p>
 							</div>
 						</div>
-						<div class="content__img">
+						<div class="content__img"
+						data-aos="zoom-out-right"
+						data-aos-duration="1500">
 							<img src="img/directions/salsa.jpg" alt="salsa">
 						</div>
 					</div>
 					<div class="content__item">
-						<div class="content__text">
+						<div class="content__text"
+						data-aos="zoom-out-right"
+						data-aos-duration="1500">
 							<div class="content__text--center">
 								<h3>Чувственная кизомба</h3>
 								<p>Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ...</p>
 							</div>
 						</div>
-						<div class="content__img">
+						<div class="content__img"
+						data-aos="zoom-out-left"
+						data-aos-duration="1500">
 							<img src="img/directions/kizomba.jpg" alt="kizomba">
 						</div>
 					</div>
@@ -356,29 +385,22 @@
 	<section id="question"	class="question">
 		<div class="wrapper">
 			<div class="question-wrap">
-				<div class="question-wrap__venzil">
+				<div class="question-wrap__venzil"
+				data-aos="fade-in"
+				data-aos-duration="700">
 					<img src="img/venz_5.png" alt="">
 				</div>
-				<h2>Часто задаваемые вопросы:</h2>
+				<h2
+				data-aos="fade-in"
+				data-aos-duration="500">
+					Часто задаваемые вопросы:
+				</h2>
 				<div class="question-wrap-content">
-	<!-- 				<div class="question-wrap-content__item">
-						<div class="question-wrap-content__img">
-							<span>1</span>
-						</div>
-						<div class="question-wrap-content__text">
-							<h3>
-								Что брать с собой на танцы?
-							</h3>
-							<p>
-								Одежда: для девушек — лосины, шорты, джинсы, майки, футболки; для парней — cвободные брюки, джинсы, футболки, рубашки навыпуск.<br> 
-								Обувь: для девушек — балетки, танцевальные туфли, чешки; для парней — кеды, легкие кроссовки или танцевальные туфли. 
-							</p>
-						</div>
-					</div> -->
-	
 					<div class="question-wrap-content__item">
 						<ol class="list">
-							<li>
+							<li
+							data-aos="fade-left"
+							data-aos-duration="1500">
 								<div>
 									<h3>
 										Что брать с собой на танцы?
@@ -389,7 +411,9 @@
 									</p>
 								</div>
 							</li>
-							<li>
+							<li
+							data-aos="fade-left"
+							data-aos-duration="1500">
 								<div>
 									<h3>
 										Есть ли возрастные ограничения?
@@ -400,7 +424,9 @@
 									</p>
 								</div>
 							</li>
-							<li>
+							<li
+							data-aos="fade-left"
+							data-aos-duration="1500">
 								<div>
 									<h3>
 										Можно ли приходить без партнера/партнерши?
@@ -412,7 +438,9 @@
 									</p>
 								</div>
 							</li>
-							<li>
+							<li
+							data-aos="fade-left"
+							data-aos-duration="1500">
 								<div>
 									<h3>
 										Есть ли у вас раздевалка?
@@ -422,7 +450,9 @@
 									</p>
 								</div>
 							</li>
-							<li>
+							<li
+							data-aos="fade-left"
+							data-aos-duration="1500">
 								<div>
 									<h3>
 										Можно ли пропускать уроки танцев?
@@ -435,14 +465,21 @@
 						</ol>
 					</div>
 				</div>	
-				<div class="question-wrap__venzil bottom">
+				<div class="question-wrap__venzil bottom"
+				data-aos="fade-in"
+				data-aos-duration="700">
 					<img src="img/venz_5.png" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="$map"></section>
-	<footer>
+	<section id="map"
+	data-aos="fade-in"
+	data-aos-duration="1000">
+	</section>
+	<footer
+	data-aos="fade-in"
+	data-aos-duration="1000">
 		<div class="wrapper">
 			<div class="footer-wrap-content">
 				<div class="logo">
@@ -555,9 +592,11 @@
 	<!-- fancybox v2.1.5 -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAHH9qpuqgn8qGSjk1XfpV70-0xl9GtrIg"></script><!-- map -->
 	<script type="text/javascript" src="js/Fancybox_v2.1.5/jquery.fancybox.pack.js"></script>
+	<!-- AOS JS -->
+	<script src="js/aos.js"></script>
 	<!-- WOW v1.1.3 -->
-	<script src="js/wow.min.js"></script>
-	<!-- MAIN JS -->
+<!-- 	<script src="js/wow.min.js"></script>
+ -->	<!-- MAIN JS -->
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

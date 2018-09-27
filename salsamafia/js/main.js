@@ -209,11 +209,21 @@
 	});
 
 	// wow activate 
-	$(function wowActivator () {
-		var wow = new WOW ({
-    		offset: 0
-    	});
-    	wow.init();
+	// $(function wowActivator () {
+	// 	var wow = new WOW ({
+ //    		offset: 0
+ //    	});
+ //    	wow.init();
+	// });
+
+	// AOS activate 
+	$(function AOSActivator () {
+		AOS.init({
+			// duration: 1200,
+			easing: 'ease-out-back',
+			once: true
+			// offset: 150
+		});
 	});
 
 
