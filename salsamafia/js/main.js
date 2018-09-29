@@ -117,7 +117,7 @@
 				startWithSlide:0,
 
 				fullScreenAlignForce:"on",
-				autoHeight:"off",
+				autoHeight:"off", //off
 				minHeight:"off",
 
 				shuffle:"off",
@@ -154,11 +154,11 @@
 				soloArrowRightHOffset:20,
 				soloArrowRightVOffset:0,
 
-				touchenabled:"on",
+				touchenabled:"off", //on
 				swipe_velocity:"0.7",
 				swipe_max_touches:"1",
 				swipe_min_touches:"1",
-				drag_block_vertical:"false",
+				drag_block_vertical:"true", //false
 
 				parallax:"mouse",
 				parallaxBgFreeze:"on",
@@ -177,7 +177,7 @@
 
 				fullWidth:"on",
 				forceFullWidth:"on",
-				fullScreen:"off",
+				fullScreen:"off", //off!
 				fullScreenOffsetContainer:"#banner",
 				fullScreenOffset:"0px",
 
@@ -190,6 +190,8 @@
 			});
 		};
 	});
+
+
 
 /*-----------------------------------------------	
        gallery fancybox activator v2.1.5
@@ -234,7 +236,7 @@
 	$(function AOSActivator () {
 		AOS.init({
 			// duration: 1200,
-			easing: 'ease-out-back',
+			easing: 'user-easing', //ease-out-back
 			once: true
 			// offset: 150
 		});
@@ -245,18 +247,24 @@
 	// 	// Параметры...
 	// });
 
-// MAP
-	$(function initMap() {
-	    var coordinates = {lat: 49.228053, lng: 28.412252}, // Координаты центра карты 
-	        markerImg = 'img/marker.png', //  Иконка для маркера  
-	   
-	    // создаем карту и настраеваем 
-	    map = new google.maps.Map(document.getElementById('map'), {  /*карта должна выводится в идентификатор map*/
-	        center: {lat: 49.226734, lng: 28.412362},//coordinates, (если нужно чтобы карта центрировалась по обекту)
-	        zoom: 14.2, // определяет первоначальный масштаб
-	        disableDefaultUI: false, // убирает элементы управления
-	        scrollwheel: false, // отключает масштабирование колесиком мыши (бывает полезно, если карта на всю ширину страницы и перебивает прокрутку вниз).	
-	    	styles: 
+
+})(jQuery);
+
+/*-----------------------------------------------	
+       Google Map
+-------------------------------------------------*/
+
+function initMap() {
+    var coordinates = {lat: 49.228053, lng: 28.412252}, // Координаты обьекта
+        markerImg = 'img/marker.png', //  Иконка для маркера  
+   
+    // создаем карту и настраеваем 
+    map = new google.maps.Map(document.getElementById('map'), {  /*карта должна выводится в идентификатор map*/
+        center: {lat: 49.226734, lng: 28.412362},//coordinates, (если нужно чтобы карта центрировалась по обекту)
+        zoom: 14.2, // определяет первоначальный масштаб
+        disableDefaultUI: false, // true убирает элементы управления
+        scrollwheel: false, // отключает масштабирование колесиком мыши (бывает полезно, если карта на всю ширину страницы и перебивает прокрутку вниз).
+    	styles: 
 				// Subtle Grayscale
 				[
 				    {
@@ -384,21 +392,24 @@
 				    }
 				]
 
-	    });
+    });
 
-	    // маркер
-	    marker = new google.maps.Marker({
-	        position: coordinates, // координаты маркера 
-	        map: map, //  ставим маркер в карту с id map
-	        animation: google.maps.Animation.DROP, // анимация маркера DROP / BOUNCE
-	        icon: markerImg,
-	    });
+    // маркер
+    marker = new google.maps.Marker({
+        position: coordinates, // координаты маркера 
+        map: map, //  ставим маркер в карту с id map
+        animation: google.maps.Animation.DROP, // анимация маркера DROP / BOUNCE
+        icon: markerImg,
+    });
 
+    // Отцентровка карты при ресайзе
+	google.maps.event.addDomListener(window, "resize", function() {
+		var center = map.getCenter();
+		google.maps.event.trigger(map, "resize");
+		map.setCenter(center);
 	});
 
-	// Запускаем карту при загрузки страницы
-	google.maps.event.addDomListener(window, 'load', initMap); 
+}
 
-
-
-})(jQuery);
+// Запускаем карту при загрузки страницы
+google.maps.event.addDomListener(window, 'load', initMap); 

@@ -2342,10 +2342,10 @@ zoom: 1;
 @font-face {
   font-family: 'revicons';
 /*  src: url('../fonts/revicons.eot');*/
-  src: url('../../fonts/revicons.eot') format('embedded-opentype'),
-       url('../../fonts/revicons.woff') format('woff'),
-       url('../../fonts/revicons.ttf') format('truetype'),
-       url('../../fonts/revicons.svg') format('svg');
+  src: url('../fonts/revicons.eot') format('embedded-opentype'),
+       url('../fonts/revicons.woff') format('woff'),
+       url('../fonts/revicons.ttf') format('truetype'),
+       url('../fonts/revicons.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
