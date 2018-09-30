@@ -247,6 +247,14 @@
 	// 	// Параметры...
 	// });
 
+	// (меню открытие) добавляем клас open для верхнего меню при расширении 910px и меньше
+	$('.toggle-menu').click(function(){
+		// добавить клас active
+		$(this).toggleClass('active'); 
+		// открыть меню, добавить клас open
+		$('.header-wrap__dropdownmenu').toggleClass('open');
+	});
+
 
 })(jQuery);
 

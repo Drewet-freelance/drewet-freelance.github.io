@@ -59,6 +59,42 @@
 	<header id="header">
 		<div class="wrapper header-wrap">
 			<div class="header-wrap-container">
+				<!-- кнопка меню для iPad расширения -->
+				<button class="toggle-menu">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+				<!-- меню для iPad расширени -->
+				<div class="header-wrap__dropdownmenu">
+					<nav class="header-wrap__dropdownmenu-container">
+						<ul class="dropdownmenu">
+							<li class="current scrollToLink">
+								<a href="index.html#banner">Главная</a>
+							</li>
+							<li class="current scrollToLink">
+								<a href="index.html#about">О нас</a>
+							</li>
+							<li class="scrollToLink">
+								<a href="index.html#positivesign">Услуги</a>
+							</li>
+							<li class="scrollToLink">
+								<a href="index.html#directions">Направления</a>
+							</li>			
+							<li class="scrollToLink">
+								<a href="#">Расписание</a>
+							</li>
+							<li class="scrollToLink">
+								<a href="#">Цены</a>
+							</li>
+							<li class="scrollToLink">
+								<a href="index.html#question">Вопросы и ответы</a>
+							</li>
+							<li class="scrollToLink">
+								<a href="index.html#map">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
 				<!-- .logo -->
 				<div class="header-wrap__logo">
 					<a href="#">
@@ -68,7 +104,7 @@
 				<!-- /.logo -->
 				<div class="header-wrap__menu-bar">
 					<!-- .mainmenu-container -->
-					<nav class="header-wrap__mainmenu-container">
+					<nav id="resize_mainmenu-container" class="header-wrap__mainmenu-container">
 						<ul class="mainmenu">
 							<li class="current scrollToLink">
 								<a href="index.html#banner">Главная</a>
@@ -97,7 +133,7 @@
 						</ul>
 					</nav>
 					<!-- /.mainmenu-container -->
-					<div class="header-wrap__company">
+					<div id="resize_main" class="header-wrap__company">
 						<h1>Salsa Mafia</h1>
 						<h2>(школа социальных латиноамериканских танцев)</h2>
 					</div>
@@ -222,7 +258,7 @@
 							data-start="2500"  
 							data-easing="easeOutBack">
 							<li>
-								<a data-fancybox-type="iframe" class="callback colored hvr-shutter-out-horizontal" href="mail.html"> 
+								<a data-fancybox-type="iframe" class=" callback colored hvr-shutter-out-horizontal" href="mail.html"> 
 								Записатся на пробное занятие</a>
 							</li>
 						</ul>
@@ -502,7 +538,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="map"
+	<section id="$map"
 	data-aos="fade-in"
 	data-aos-delay="300"
 	data-aos-duration="2500">
@@ -599,11 +635,8 @@
 		</div>
 		<div class="copyright">
 			<p class="copyright">Salsa Mafia &copy; 2018  |  All Rights Reserved  |  <a href="#">Created by Drewet</a></p>
-			
 		</div>
 	</footer>
-
-
 
 
 	
