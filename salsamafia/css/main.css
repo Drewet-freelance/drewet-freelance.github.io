@@ -304,11 +304,11 @@ header {
 }
 .header-wrap__dropdownmenu {
   position: absolute;
-  background: #222;
-  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0px 30px;
   width: 100%;
   top: 100%;
-  z-index: 99;
+  z-index: 99999;
   left: -10000px;
   visibility: hidden;
   opacity: 0;
@@ -325,13 +325,43 @@ header {
   height: 0px;
   border-style: solid;
   border-width: 0 7px 7px 7px;
-  border-color: transparent transparent #222 transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+  left: 27px;
 }
 .header-wrap__dropdownmenu.open {
   opacity: 1;
   margin-top: 0;
   visibility: visible;
   left: 0px;
+}
+.header-wrap__dropdownmenu ul {
+  display: block;
+}
+.header-wrap__dropdownmenu ul li {
+  list-style: none;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.header-wrap__dropdownmenu ul li:last-child {
+  border-bottom: none;
+}
+.header-wrap__dropdownmenu ul li a {
+  display: block;
+  color: #fff;
+  padding: 14px 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.header-wrap__dropdownmenu ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 15px white, 0 0 15px white, 0 0 20px white, 0 0 25px white, 0 0 20px white, 0 0 30px white;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .header-wrap__company h1 {
   text-align: center;
@@ -1090,8 +1120,9 @@ footer {
     border: none;
     padding: 0;
     background-color: transparent;
-    margin-right: 35px;
+    margin-right: 20px;
     font-size: 32px;
+    color: #fff;
   }
 
   .footer-wrap-content__social .social {
@@ -1115,19 +1146,29 @@ footer {
 }
 @media (max-width: 479px) {
   .header-wrap__logo {
-    width: 25px;
+    width: 50px;
+    padding-top: 0;
   }
   .header-wrap__company h1 {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 6px;
   }
   .header-wrap__company h2 {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 15px;
   }
 
+  header.header-fixed .header-wrap-container {
+    padding-top: 5px;
+  }
+  header.header-fixed .header-wrap__logo {
+    width: 50px;
+  }
   header.header-fixed #resize_main h1 {
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 6px;
+    margin-bottom: 0;
   }
 }
 
