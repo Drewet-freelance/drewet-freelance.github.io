@@ -133,6 +133,10 @@
   font-weight: normal;
   font-style: italic;
 }
+body {
+  background: #fff url(../img/brandi_1.jpg) center top repeat;
+}
+
 .wrapper {
   max-width: 1250px;
   width: 100%;
@@ -304,7 +308,7 @@ header {
 }
 .header-wrap__dropdownmenu {
   position: absolute;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   padding: 0px 30px;
   width: 100%;
   top: 100%;
@@ -325,8 +329,8 @@ header {
   height: 0px;
   border-style: solid;
   border-width: 0 7px 7px 7px;
-  border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
-  left: 27px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+  left: 37px;
 }
 .header-wrap__dropdownmenu.open {
   opacity: 1;
@@ -1118,9 +1122,9 @@ footer {
   .toggle-menu {
     display: block;
     border: none;
-    padding: 0;
+    padding: 0 10px;
     background-color: transparent;
-    margin-right: 20px;
+    margin-right: 5px;
     font-size: 32px;
     color: #fff;
   }
