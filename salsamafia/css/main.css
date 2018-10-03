@@ -133,15 +133,101 @@
   font-weight: normal;
   font-style: italic;
 }
-body {
-  background: #fff url(../img/brandi_1.jpg) center top repeat;
-}
-
 .wrapper {
   max-width: 1250px;
   width: 100%;
   padding: 0 40px;
   margin: 0 auto;
+}
+
+/** ====== background and box-shadow ====== */
+.banner-container {
+  -webkit-box-shadow: 0px 24px 22px -16px #000003;
+  box-shadow: 0px 24px 22px -16px #000003;
+}
+
+.bage_bg {
+  background: #fff url(../img/bage_bg.jpg) center top repeat;
+  -webkit-box-shadow: 0px 10px 40px #000003;
+          box-shadow: 0px 10px 40px #000003;
+}
+
+.red_bg {
+  background: #fff url(../img/red_bg.jpg) center top repeat;
+  -webkit-box-shadow: 0px 24px 22px -16px #000003;
+  box-shadow: 0px 24px 22px -16px #000003;
+}
+.red_bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px -24px 22px -16px #000003;
+  box-shadow: 0px -24px 22px -16px #000003;
+}
+
+.question.red_bg {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.map__venzil {
+  position: relative;
+  z-index: 99999;
+  -webkit-box-shadow: 0px 24px 22px -16px #000003;
+  box-shadow: 0px 24px 22px -16px #000003;
+}
+
+footer {
+  -webkit-box-shadow: 0px -24px 22px -16px #000003;
+  box-shadow: 0px -24px 22px -16px #000003;
+}
+
+.about__venzil {
+  padding: 60px 0 40px;
+}
+.about__venzil img {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+}
+
+.positivesign__venzil {
+  padding: 60px 0 40px;
+}
+.positivesign__venzil img {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+}
+
+.directions__venzil {
+  padding: 60px 0 40px;
+}
+.directions__venzil img {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+}
+
+.question__venzil {
+  padding: 60px 0 40px;
+}
+.question__venzil img {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+}
+
+.map__venzil {
+  padding: 60px 0 30px;
+}
+.map__venzil img {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
 }
 
 /** ====== Preloader styles ====== */
@@ -152,7 +238,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 999999999;
-  background-color: #ffffff;
+  background-color: #fff;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -372,7 +458,7 @@ header {
   font-family: "durango_western_erodedregular", sans-serif;
   font-size: 100px;
   letter-spacing: 22px;
-  color: white;
+  color: #fff;
   text-shadow: 0 1px 1px #bbb, 0 2px 0 #999, 0 3px 0 #888, 0 4px 0 #777, 0 5px 0 #666, 0 6px 0 #555, 0 7px 0 #444, 0 8px 0 #333, 0 9px 7px #302314;
   margin-bottom: -3px;
   -webkit-transition: all 0.3s ease-out;
@@ -415,6 +501,7 @@ header.header-fixed #resize_mainmenu-container > ul > li {
 header.header-fixed #resize_main h1 {
   font-size: 50px;
   letter-spacing: 12px;
+  color: #fff;
   padding-top: 10px;
   margin-bottom: 23px;
   -webkit-transition: all 0.3s ease-out;
@@ -477,7 +564,7 @@ header.header-fixed #resize_main h2 {
   text-align: center;
   font-family: "Neo Sans Pro";
   font-size: 50px;
-  color: white;
+  color: #fff;
   text-shadow: 0 0 5px white;
 }
 #banner ul.banner-button li {
@@ -574,7 +661,6 @@ header.header-fixed #resize_main h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 160px 0 150px;
 }
 .about-wrap__main {
   -webkit-box-flex: 1;
@@ -588,8 +674,9 @@ header.header-fixed #resize_main h2 {
 .about-wrap__main h2 {
   font-family: "Neo Sans Pro";
   font-weight: 700;
+  color: #14141d;
   font-size: 40px;
-  color: #000100;
+  text-shadow: 0 0 5px white;
 }
 .about-wrap__main h2 span {
   font-size: 45px;
@@ -598,7 +685,7 @@ header.header-fixed #resize_main h2 {
   font-family: "Neo Sans Pro";
   font-size: 16px;
   line-height: 28px;
-  color: #737373;
+  color: #fff;
   margin-top: 20px;
 }
 .about-wrap__img {
@@ -619,7 +706,7 @@ header.header-fixed #resize_main h2 {
 
 .positivesign-wrap {
   position: relative;
-  padding: 150px 0;
+  padding-bottom: 80px;
 }
 .positivesign-wrap__venzil {
   width: 40%;
@@ -638,7 +725,8 @@ header.header-fixed #resize_main h2 {
   font-family: "Neo Sans Pro";
   font-weight: 700;
   font-size: 33px;
-  color: #000100;
+  color: #14141d;
+  text-shadow: 0 0 5px white;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -649,6 +737,7 @@ header.header-fixed #resize_main h2 {
   font-family: "Neo Sans Pro";
   font-size: 20px;
   font-weight: 700;
+  color: #14141d;
   margin-top: 15px;
 }
 .positivesign-wrap p {
@@ -657,7 +746,7 @@ header.header-fixed #resize_main h2 {
   font-style: italic;
   font-size: 16px;
   line-height: 22px;
-  color: #737373;
+  color: #14141d;
   margin: 10px 0 15px;
 }
 .positivesign-wrap__details {
@@ -673,15 +762,15 @@ header.header-fixed #resize_main h2 {
   margin: 0 -10px;
 }
 .positivesign-wrap__item {
-  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 10px 0;
   width: 32%;
   margin-bottom: 30px;
   margin-right: 10px;
-  -webkit-box-shadow: 0 2px 7px 0 rgba(10, 10, 10, 0.05), 3px 27px 54px -34px rgba(0, 0, 0, 0.47);
-          box-shadow: 0 2px 7px 0 rgba(10, 10, 10, 0.05), 3px 27px 54px -34px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0 2px 7px 0 rgba(10, 10, 10, 0.6), 3px 27px 54px -34px rgba(0, 0, 0, 0.82);
+          box-shadow: 0 2px 7px 0 rgba(10, 10, 10, 0.6), 3px 27px 54px -34px rgba(0, 0, 0, 0.82);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #fff;
   border-radius: 5px;
 }
 .positivesign-wrap__item:nth-child(3), .positivesign-wrap__item:last-child {
@@ -713,7 +802,7 @@ header.header-fixed #resize_main h2 {
 /* === DIRECTIONS () ==== */
 .directions-wrap {
   position: relative;
-  padding: 150px 0;
+  padding-bottom: 80px;
 }
 .directions-wrap__venzil {
   width: 40%;
@@ -732,7 +821,8 @@ header.header-fixed #resize_main h2 {
   font-family: "Neo Sans Pro";
   font-weight: 700;
   font-size: 33px;
-  color: #000100;
+  color: #14141d;
+  text-shadow: 0 0 5px white;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -810,9 +900,13 @@ header.header-fixed #resize_main h2 {
 }
 
 /* === QUESTION () ==== */
+.question {
+  position: relative;
+}
+
 .question-wrap {
   position: relative;
-  padding: 150px 0 300px;
+  padding-bottom: 80px;
 }
 .question-wrap__venzil {
   min-width: 40%;
@@ -835,7 +929,8 @@ header.header-fixed #resize_main h2 {
   font-family: "Neo Sans Pro";
   font-weight: 700;
   font-size: 33px;
-  color: #000100;
+  color: #14141d;
+  text-shadow: 0 0 5px white;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -858,6 +953,7 @@ header.header-fixed #resize_main h2 {
   counter-reset: li;
   list-style: none;
   font: 22px "Neo Sans Pro";
+  color: #fff;
   padding: 0;
 }
 .list li {
@@ -912,14 +1008,29 @@ header.header-fixed #resize_main h2 {
 }
 
 /** ====== MAP ====== */
+.map {
+  background-color: #4b4b4b;
+}
+.map h2 {
+  font-family: "Neo Sans Pro";
+  font-weight: 700;
+  font-size: 33px;
+  color: #14141d;
+  text-shadow: 0 0 5px white, 0 0 5px white;
+  margin-top: 40px;
+  text-align: center;
+}
+
 #map {
   overflow: hidden;
   position: relative;
   height: 600px;
+  top: 1px;
 }
 
 /** ====== FOOTER ====== */
 footer {
+  position: relative;
   background-color: #4b4b4b;
 }
 
