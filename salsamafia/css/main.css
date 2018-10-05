@@ -133,6 +133,13 @@
   font-weight: normal;
   font-style: italic;
 }
+@font-face {
+  font-family: "langustine_regular";
+  src: url("../fonts/12145.woff2") format("woff2");
+  src: url("../fonts/12145.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .wrapper {
   max-width: 1250px;
   width: 100%;
@@ -187,7 +194,7 @@
 
 .map__venzil {
   position: relative;
-  z-index: 99999;
+  z-index: 99998;
   -webkit-box-shadow: 0px 24px 22px -16px #000003;
   box-shadow: 0px 24px 22px -16px #000003;
 }
@@ -288,11 +295,7 @@ footer {
   opacity: 0.96;
   width: 100%;
   height: 100%;
-  background: turquoise;
-  background: -webkit-gradient(left top, right top, color-stop(0%, turquoise), color-stop(50%, #ee0978), color-stop(100%, #ff6a00));
-  background: -webkit-gradient(linear, left top, right top, from(turquoise), color-stop(50%, #ee0978), to(#ff6a00));
-  background: linear-gradient(to right, turquoise 0%, #ee0978 50%, #ff6a00 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40e0d0', endColorstr='#ff6a00', GradientType=1 );
+  background-color: #4b4b4b;
 }
 
 /* Button
@@ -359,9 +362,9 @@ header {
 .header-wrap__menu-bar ul li {
   list-style: none;
   display: block;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.3px;
+  font-family: "Neo Sans Pro", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1px;
   line-height: 65px;
   text-transform: uppercase;
 }
@@ -545,15 +548,12 @@ header.header-fixed #resize_main h2 {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.75;
+  opacity: 0.65;
   width: 100%;
   height: 100%;
   z-index: 99;
-  background: turquoise;
-  background: -webkit-gradient(left top, right top, color-stop(0%, turquoise), color-stop(50%, #ee0978), color-stop(100%, #ff6a00));
-  background: -webkit-gradient(linear, left top, right top, from(turquoise), color-stop(50%, #ee0978), to(#ff6a00));
-  background: linear-gradient(to right, turquoise 0%, #ee0978 50%, #ff6a00 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40e0d0', endColorstr='#ff6a00', GradientType=1 );
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#e0eafc), to(#cfdef3)) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #e0eafc, #cfdef3) repeat scroll 0% 0%;
 }
 
 .tparrows.preview4:hover:after {
@@ -574,10 +574,18 @@ header.header-fixed #resize_main h2 {
 }
 #banner h1 {
   text-align: center;
-  font-family: "Neo Sans Pro";
-  font-size: 50px;
+  font-family: "langustine_regular", sans-serif;
+  font-size: 70px;
   color: #fff;
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white;
+}
+#banner .banner__heart {
+  max-width: 250px;
+  opacity: 0.5;
+}
+#banner .banner__heart img {
+  display: block;
+  width: 100%;
 }
 #banner ul.banner-button li {
   display: inline;
@@ -588,7 +596,7 @@ header.header-fixed #resize_main h2 {
   line-height: 70px;
   border-radius: 10px;
   font-size: 18px;
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-weight: 700;
   color: #fff;
   text-shadow: 0 0 1px white;
@@ -688,17 +696,19 @@ header.header-fixed #resize_main h2 {
   margin-right: 25px;
 }
 .about-wrap__main h2 {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-weight: 700;
   color: #14141d;
   font-size: 40px;
-  text-shadow: 0 0 5px white, 0 0 5px white;
+  text-shadow: 0 0 5px white;
 }
 .about-wrap__main h2 span {
   font-size: 45px;
+  color: red;
+  text-shadow: none;
 }
 .about-wrap__main p {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-size: 16px;
   line-height: 28px;
   color: #fff;
@@ -724,34 +734,6 @@ header.header-fixed #resize_main h2 {
   position: relative;
   padding-bottom: 80px;
 }
-.positivesign-wrap h2 {
-  font-family: "Neo Sans Pro";
-  font-weight: 700;
-  font-size: 33px;
-  color: #14141d;
-  text-shadow: 0 0 5px white;
-  margin-bottom: 50px;
-  text-align: center;
-}
-.positivesign-wrap h2 span {
-  font-size: 37px;
-}
-.positivesign-wrap h3 {
-  font-family: "Neo Sans Pro";
-  font-size: 20px;
-  font-weight: 700;
-  color: #14141d;
-  margin-top: 15px;
-}
-.positivesign-wrap p {
-  font-family: "Neo Sans Pro";
-  font-weight: 300;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 22px;
-  color: #14141d;
-  margin: 10px 0 15px;
-}
 .positivesign-wrap__details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,7 +748,6 @@ header.header-fixed #resize_main h2 {
 }
 .positivesign-wrap__item {
   background-color: #f7f7f7;
-  padding: 10px 10px 0;
   width: 32%;
   margin-bottom: 30px;
   margin-right: 10px;
@@ -775,6 +756,7 @@ header.header-fixed #resize_main h2 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 5px;
+  background-color: rgba(252, 255, 255, 0.9);
 }
 .positivesign-wrap__item:nth-child(3), .positivesign-wrap__item:last-child {
   margin-right: 0;
@@ -783,23 +765,46 @@ header.header-fixed #resize_main h2 {
   -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.07);
           box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.07);
 }
+.positivesign-wrap__text {
+  padding: 0 10px;
+}
 .positivesign-wrap__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 270px;
+  width: 100%;
+  overflow: hidden;
   max-height: 190px;
   margin: 0 auto;
 }
 .positivesign-wrap__img img {
   display: block;
   width: 100%;
+}
+.positivesign-wrap h2 {
+  font-family: "Neo Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+  color: #14141d;
+  text-shadow: 0 0 5px white, 0 0 2px white;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.positivesign-wrap h2 span {
+  font-size: 37px;
+}
+.positivesign-wrap h3 {
+  font-family: "Neo Sans Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #14141d;
+  margin-top: 15px;
+}
+.positivesign-wrap p {
+  font-family: "Neo Sans Pro", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 22px;
+  color: #14141d;
+  margin: 10px 0 15px;
 }
 
 /* === DIRECTIONS () ==== */
@@ -808,16 +813,16 @@ header.header-fixed #resize_main h2 {
   padding-bottom: 80px;
 }
 .directions-wrap h2 {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-weight: 700;
   font-size: 33px;
   color: #14141d;
-  text-shadow: 0 0 5px white, 0 0 5px white;
+  text-shadow: 0 0 5px white, 0 0 2px white;
   margin-bottom: 50px;
   text-align: center;
 }
 .directions-wrap h3 {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-top: 15px;
@@ -825,7 +830,7 @@ header.header-fixed #resize_main h2 {
   color: #fff;
 }
 .directions-wrap p {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 16px;
@@ -843,12 +848,10 @@ header.header-fixed #resize_main h2 {
 }
 .directions-wrap-content .content__item:nth-of-type(1) .content__text {
   margin-bottom: 0;
-  background-color: #fd6319;
+  background-color: #e56f99;
 }
 .directions-wrap-content .content__item:nth-of-type(2) .content__text {
-  background: #ab49de;
-  background: linear-gradient(135deg, #ab49de 0%, #4954de 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab49de', endColorstr='#4954de',GradientType=1 );
+  background-color: #e48900;
   margin-right: 0 !important;
   margin-left: 10px;
 }
@@ -899,11 +902,11 @@ header.header-fixed #resize_main h2 {
   padding-bottom: 80px;
 }
 .question-wrap h2 {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-weight: 700;
   font-size: 33px;
   color: #14141d;
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px white, 0 0 2px white;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -925,7 +928,7 @@ header.header-fixed #resize_main h2 {
 .list {
   counter-reset: li;
   list-style: none;
-  font: 22px "Neo Sans Pro";
+  font: 22px "Neo Sans Pro", sans-serif;
   color: #fff;
   padding: 0;
 }
@@ -960,18 +963,18 @@ header.header-fixed #resize_main h2 {
   border: 5px solid #fff;
   text-align: center;
   border-radius: 50%;
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   color: #fff;
   font-size: 32px;
 }
 .list div h3 {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
 }
 .list div p {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 16px;
@@ -985,11 +988,11 @@ header.header-fixed #resize_main h2 {
   background-color: #4b4b4b;
 }
 .map h2 {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   font-weight: 700;
   font-size: 33px;
   color: #14141d;
-  text-shadow: 0 0 5px white, 0 0 5px white;
+  text-shadow: 0 0 5px white, 0 0 2px white;
   margin-top: 40px;
   text-align: center;
 }
@@ -1024,7 +1027,7 @@ footer {
   width: 100%;
 }
 .footer-wrap-content h4 {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   line-height: 25px;
   text-transform: uppercase;
   color: #fff;
@@ -1037,7 +1040,7 @@ footer {
   list-style: none;
 }
 .footer-wrap-content__contact .contact-list__item {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
   padding-bottom: 7px;
   color: #fff;
   line-height: 25px;
@@ -1057,7 +1060,7 @@ footer {
   transition: all 0.3s linear;
 }
 .footer-wrap-content__menu {
-  font-family: "Neo Sans Pro";
+  font-family: "Neo Sans Pro", sans-serif;
 }
 .footer-wrap-content__menu .footermenu {
   list-style: none;
@@ -1259,5 +1262,4 @@ footer {
     margin-bottom: 0;
   }
 }
-
 /*# sourceMappingURL=main.css.map */
