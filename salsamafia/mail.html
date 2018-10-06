@@ -2,30 +2,37 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Форма AJAX</title>
+	<title>AJAX Form</title>
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<form id="form">
-		<input type="text" name="name" placeholder="Ваше имя" required /><br>
-		<input type="email" name="E-mail" placeholder="E-mail"><br>
-		<input type="text" name="phone" placeholder="Ваш телефон" required /><br />
-		<br>
-		<label>
-			<input type="checkbox" name="Бачата" value="Да"> Бачата
-		</label>
-		<br>
-		<label>
-			<input type="checkbox" name="Сальса" value="Да"> Сальса
-		</label>
-		<br>
-		<label>
-			<input type="checkbox" name="Кизомба" value="Да"> Кизомба
-		</label>
-		<br>
-		<textarea name="text"></textarea>
-		<br>
-		<button>Отправить</button>
-	</form>
+<body id="AJAX_form">
+	<div class="container">
+		<h2>Для участия в пробных занятиях укажите ваши контактные данные:</h2>
+		<form>
+			<input type="text" name="name" placeholder="Имя" required />
+			<input type="text" name="surname" placeholder="Фамилия" required />
+			<input type="email" name="E-mail" placeholder="E-mail">
+			<input type="text" name="phone" placeholder="Контактный телефон" required />
+			<p>Укажите интересующие Вас направления (вы можете выбрать несколько направлений для участия в пробных занятиях):</p>
+			<div class="check-list">
+				<div class="check-list__item">
+					<input type="checkbox" name="Бачата" value="Да" id="check-list1" >
+					<label for="check-list1" class="check-list__text">Бачата</label>
+				</div>
+				<div class="check-list__item">
+					<input type="checkbox" name="Сальса" value="Да" id="check-list2">
+					<label for="check-list2" class="check-list__text">Сальса</label>
+				</div>
+				<div class="check-list__item">
+					<input type="checkbox" name="Кизомба" value="Да" id="check-list3">
+					<label for="check-list3" class="check-list__text">Кизомба</label>
+				</div>
+			</div>
+			<textarea name="text" placeholder="Ваш коментарий"></textarea>
+			<button class="hvr-fade colored bordered">Отправить заявку</button>
+		</form>
+	</div>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="js/mail.js"></script>
 </body>

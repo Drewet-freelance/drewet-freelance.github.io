@@ -4,13 +4,14 @@ $recepient = "Drewet00@gmail.com";
 $sitename = "Salsa Mafia";
 
 $name = trim($_POST["name"]);
+$surname = trim($_POST["surname"]);
 $Email = trim($_POST["E-mail"]);
 $phone = trim($_POST["phone"]);
 $bachata = trim($_POST["Бачата"]);
 $salsa = trim($_POST["Сальса"]);
 $kizomba = trim($_POST["Кизомба"]);
 $text = trim($_POST["text"]);
-$message = "Имя: $name \nE-mail: $Email  \nТелефон: $phone \nБачата: $bachata \nСальса: $salsa \nКизомба: $kizomba \nТекст: $text";
+$message = "Имя и фамилия: $name $surname \nE-mail: $Email  \nТелефон: $phone \nБачата: $bachata \nСальса: $salsa \nКизомба: $kizomba \nТекст: $text";
 
 $pagetitle = "Новая заявка с сайта \"$sitename\"";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");

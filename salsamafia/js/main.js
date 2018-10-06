@@ -31,23 +31,21 @@
 
 
 	// SmoothMenuScroll (переключение между разделами через меню) 
-	$(function SmoothMenuScroll () {
-		var anchor = $('.scrollToLink');
-		if(anchor.length){
-			anchor.children('a').bind('click', function (event) {
-				var headerH = '95';
-				var target = $(this);
-				$('html, body').stop().animate({
-					scrollTop: $(target.attr('href')).offset().top - headerH + 'px'
-				}, 1200, 'easeInOutExpo');
-				anchor.removeClass('current');
-				target.parent().addClass('current');
-				event.preventDefault();
-			});
-		}
-	});
-
-
+	// $(function SmoothMenuScroll () {
+	// 	var anchor = $('.scrollToLink');
+	// 	if(anchor.length){
+	// 		anchor.children('a').bind('click', function (event) {
+	// 			var headerH = '95';
+	// 			var target = $(this);
+	// 			$('html, body').stop().animate({
+	// 				scrollTop: $(target.attr('href')).offset().top - headerH + 'px'
+	// 			}, 1200, 'easeInOutExpo');
+	// 			anchor.removeClass('current');
+	// 			target.parent().addClass('current');
+	// 			event.preventDefault();
+	// 		});
+	// 	}
+	// });
 
 	// adding active class to menu while scroll to section
 	function OnePageMenuScroll () {
@@ -421,3 +419,28 @@ function initMap() {
 
 // Запускаем карту при загрузки страницы
 google.maps.event.addDomListener(window, 'load', initMap); 
+
+// Плавная прокрутка страницы по якорям
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top 
+    }, 1200); 
+});
+
+
+	// 			var target = $(this);
+	// 			$('html, body').stop().animate({
+	// 				scrollTop: $(target.attr('href')).offset().top - headerH + 'px'
+	// 			}, 1200, 'easeInOutExpo');
+	// 			anchor.removeClass('current');
+	// 			target.parent().addClass('current');
+	// 			event.preventDefault();
+
+
+// $(function() {
+//   var t = e(this).attr("href");
+//   return e("html, body").animate({
+//     scrollTop: e(t).offset().top - 25
+//   }, 700), !1
+// });
