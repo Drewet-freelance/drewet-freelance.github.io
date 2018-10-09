@@ -1,9 +1,8 @@
 /*-----------------------------------------------	
-       Mail
+       Send Mail
 -------------------------------------------------*/
 
 $(document).ready(function() {
-
 	$("#form").submit(function() {
 		$.ajax({
 			type: "POST",
@@ -13,8 +12,9 @@ $(document).ready(function() {
 			$(this).find("input").val("");
 			alert("Спасибо за заявку ! Скоро мы с вами свяжемся.");
 			$("#form").trigger("reset");
+			parent.$.fancybox.close();
 		});
 		return false;
 	});
-	
 });
+

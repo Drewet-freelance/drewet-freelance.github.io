@@ -1,7 +1,9 @@
 (function ($oldjQuery) {
 	"use strict";
 	
-	// //Hide Loading Box (Preloader) & window load 
+/*-----------------------------------------------	
+       Hide Loading Box (Preloader) & window load 
+-------------------------------------------------*/
 	function handlePreloader() {
 		if($('.preloader').length){
 			$('.preloader').delay(2000).fadeOut(2000);
@@ -12,8 +14,9 @@
 	});
 
 
-
-	// sticky header (add Class when scroll down/up) & JS window scroll
+/*-----------------------------------------------	
+       Sticky Header (add class when scroll down/up) & JS window scroll 
+-------------------------------------------------*/
 	function stickyHeader () {
 		var headerScrollPos = $('header').next().offset().top;
 		if($(window).scrollTop() > headerScrollPos) {
@@ -25,10 +28,22 @@
 	}
 	$(window).on('scroll', function () {
 		stickyHeader();
-		OnePageMenuScroll();
+	// 	OnePageMenuScroll();
 	});
 
-
+/*-----------------------------------------------	
+       Smooth page scrolling
+-------------------------------------------------*/
+	$(document).on('click', 'a[href^="#"]', function (event) {
+	    event.preventDefault();
+	    $('html, body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top + "px"
+	    }, {
+	    duration: 1200,
+	    easing: "swing"
+	    }); 
+	    return false;
+	});
 
 	// SmoothMenuScroll (переключение между разделами через меню) 
 	// $(function SmoothMenuScroll () {
@@ -48,29 +63,29 @@
 	// });
 
 	// adding active class to menu while scroll to section
-	function OnePageMenuScroll () {
-	    var windscroll = $(window).scrollTop();
-	    if (windscroll >= 100) {
-	    	$('.mainmenu .scrollToLink').find('a').each(function (){
-	    		// grabing section id dynamically
-	    		var sections = $(this).attr('href');
-		        $(sections).each(function() {
-		        	// checking is scroll bar are in section
-		            if ($(this).offset().top <= windscroll + 100) {
-		            	// grabing the dynamic id of section
-		        		var Sectionid = $(sections).attr('id');
-		        		// removing current class from others
-		        		$('.mainmenu').find('li').removeClass('current');
-		        		// adding current class to related navigation
-		        		$('.mainmenu').find('a[href=#'+Sectionid+']').parent().addClass('current');
-		            }
-		        });
-	    	});
-	    } else {
-	        $('.mainmenu li.current').removeClass('current');
-	        $('.mainmenu li:first').addClass('current');
-	    }
-	}
+	// function OnePageMenuScroll () {
+	//     var windscroll = $(window).scrollTop();
+	//     if (windscroll >= 100) {
+	//     	$('.mainmenu .scrollToLink').find('a').each(function (){
+	//     		// grabing section id dynamically
+	//     		var sections = $(this).attr('href');
+	// 	        $(sections).each(function() {
+	// 	        	// checking is scroll bar are in section
+	// 	            if ($(this).offset().top <= windscroll + 100) {
+	// 	            	// grabing the dynamic id of section
+	// 	        		var Sectionid = $(sections).attr('id');
+	// 	        		// removing current class from others
+	// 	        		$('.mainmenu').find('li').removeClass('current');
+	// 	        		// adding current class to related navigation
+	// 	        		$('.mainmenu').find('a[href=#'+Sectionid+']').parent().addClass('current');
+	// 	            }
+	// 	        });
+	//     	});
+	//     } else {
+	//         $('.mainmenu li.current').removeClass('current');
+	//         $('.mainmenu li:first').addClass('current');
+	//     }
+	// }
 
 
 
@@ -101,10 +116,9 @@
 	//     }
 	// }
 
-
-
-	// == Slider_Revolution_v4.1 == //
-
+/*-----------------------------------------------	
+       Slider_Revolution_v4.1
+-------------------------------------------------*/
 	$(function revolutionSliderActiver () {
 		var banner = $('#banner .banner');
 		if (banner.length) {
@@ -189,10 +203,8 @@
 		};
 	});
 
-
-
 /*-----------------------------------------------	
-       gallery fancybox activator v2.1.5
+       Gallery Fancybox activator v2.1.5
 -------------------------------------------------*/
     $oldjQuery(function GalleryFancyboxActivator () {
     	var galleryFcb = $('.fancybox');
@@ -215,7 +227,7 @@
 			closeEffect: 'elastic',
 			closeSpeed: 150,
 			closeClick: true,
-			// width: 300,
+			//width: 300,
 			helpers: {
 				overlay: null
 			} 
@@ -230,7 +242,10 @@
  //    	wow.init();
 	// });
 
-	// AOS activate 
+
+/*-----------------------------------------------	
+        AOS activate
+-------------------------------------------------*/
 	$(function AOSActivator () {
 		AOS.init({
 			// duration: 1200,
@@ -245,21 +260,35 @@
 	// 	// Параметры...
 	// });
 
-	// (меню открытие) добавляем клас open для верхнего меню при расширении 910px и меньше
+/*-----------------------------------------------	
+       Menu add/remove class "active/open"
+-------------------------------------------------*/
 	$('.toggle-menu').click(function(){
 		// добавить клас active
 		$(this).toggleClass('active'); 
 		// открыть меню, добавить клас open
-		$('.header-wrap__dropdownmenu').toggleClass('open');
+		$('.header-wrap__dropdownmenu').toggleClass('open');	
+	});
+	$('.dropdown__link').click(function(){
+		// убрать клас open
+		$('.header-wrap__dropdownmenu').removeClass('open'); 
 	});
 
+
+	// $(function findParentBySelector(elm, selector) {
+	//     var all = document.querySelectorAll('.toggle-menu');
+	//     var cur = elm.parentNode;
+	//     while(cur && !collectionHas(all, cur)) {
+	//         cur = cur.parentNode;
+	//     }
+	//     return cur;
+	// });
 
 })(jQuery);
 
 /*-----------------------------------------------	
        Google Map
 -------------------------------------------------*/
-
 function initMap() {
     var coordinates = {lat: 49.228053, lng: 28.412252}, // Координаты обьекта
         markerImg = 'img/marker.png', //  Иконка для маркера  
@@ -420,27 +449,4 @@ function initMap() {
 // Запускаем карту при загрузки страницы
 google.maps.event.addDomListener(window, 'load', initMap); 
 
-// Плавная прокрутка страницы по якорям
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top 
-    }, 1200); 
-});
 
-
-	// 			var target = $(this);
-	// 			$('html, body').stop().animate({
-	// 				scrollTop: $(target.attr('href')).offset().top - headerH + 'px'
-	// 			}, 1200, 'easeInOutExpo');
-	// 			anchor.removeClass('current');
-	// 			target.parent().addClass('current');
-	// 			event.preventDefault();
-
-
-// $(function() {
-//   var t = e(this).attr("href");
-//   return e("html, body").animate({
-//     scrollTop: e(t).offset().top - 25
-//   }, 700), !1
-// });

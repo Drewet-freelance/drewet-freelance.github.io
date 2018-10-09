@@ -18,7 +18,10 @@
 	<!-- phone call btn -->
 	<link rel="stylesheet" type="text/css" href="css/phone.css">
 	<!-- fancybox v2.1.5 -->
-	<link rel="stylesheet" type="text/css" media="screen" href="css/Fancybox_v2.1.5/jquery.fancybox.css" >
+	<link rel="stylesheet" type="text/css" media="screen" href="css/jquery.fancybox_v2.1.5.css" >
+	<!-- fancybox v3.5.2 -->
+	<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/Fancybox_v3.5.2/jquery.fancybox.min.css"> -->
+
 	<!-- Animate CSS v3.7.0 -->
 <!-- 	<link rel="stylesheet" href="css/animate.min.css">
  -->	
@@ -38,17 +41,19 @@
 	
 	<!-- .phone call btn -->
 	<div class="phone-btn">
-		<a href="tel:+380#" id="popup__toggle">
-			<div class="circlephone" 
-				style="transform-origin: center;">
-			</div>
-			<div class="circle-fill" 
-				style="transform-origin: center;">
-			</div>
-			<div class="img-circle" 
-				style="transform-origin: center;">
-				<div class="img-circleblock" 
+		<a href="tel:+380#">
+			<div id="popup__toggle">
+				<div class="circlephone" 
 					style="transform-origin: center;">
+				</div>
+				<div class="circle-fill" 
+					style="transform-origin: center;">
+				</div>
+				<div class="img-circle" 
+					style="transform-origin: center;">
+					<div class="img-circleblock" 
+						style="transform-origin: center;">
+					</div>
 				</div>
 			</div>
 		</a>
@@ -68,28 +73,22 @@
 					<nav class="header-wrap__dropdownmenu-container">
 						<ul class="dropdownmenu">
 							<li class="current scrollToLink">
-								<a href="#banner">Главная</a>
+								<a href="#banner" class="dropdown__link">Главная</a>
 							</li>
 							<li class="current scrollToLink">
-								<a href="#about">О нас</a>
+								<a href="#about" class="dropdown__link">О нас</a>
 							</li>
 							<li class="scrollToLink">
-								<a href="#positivesign">Услуги</a>
+								<a href="#positivesign" class="dropdown__link">Услуги</a>
 							</li>
 							<li class="scrollToLink">
-								<a href="#directions">Направления</a>
+								<a href="#directions" class="dropdown__link">Направления</a>
 							</li>			
 							<li class="scrollToLink">
-								<a href="#">Расписание</a>
+								<a href="#question" class="dropdown__link">Вопросы и ответы</a>
 							</li>
 							<li class="scrollToLink">
-								<a href="#">Цены</a>
-							</li>
-							<li class="scrollToLink">
-								<a href="#question">Вопросы и ответы</a>
-							</li>
-							<li class="scrollToLink">
-								<a href="#footer">Контакты</a>
+								<a href="#footer" class="dropdown__link">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -118,12 +117,6 @@
 							<li class="scrollToLink">
 								<a href="#directions">Направления</a>
 							</li>			
-							<li class="scrollToLink">
-								<a href="#">Расписание</a>
-							</li>
-							<li class="scrollToLink">
-								<a href="#">Цены</a>
-							</li>
 							<li class="scrollToLink">
 								<a href="#question">Вопросы и ответы</a>
 							</li>
@@ -421,7 +414,7 @@
 				<div class="directions-wrap-content">	
 					<div class="content__item">
 						<div class="content__text"
-						data-aos="zoom-in-right"
+						data-aos="zoom-in"
 						data-aos-delay="300"
 						data-aos-duration="2000">
 							<div class="content__text--center">
@@ -430,7 +423,7 @@
 							</div>
 						</div>
 						<div class="content__img"
-						data-aos="zoom-in-left"
+						data-aos="zoom-in"
 						data-aos-delay="300"
 						data-aos-duration="2000">
 							<img src="img/directions/bachata.jpg" alt="bachata">
@@ -438,7 +431,7 @@
 					</div>
 					<div class="content__item">
 						<div class="content__text"
-						data-aos="zoom-in-left"
+						data-aos="zoom-in"
 						data-aos-delay="300"
 						data-aos-duration="2000">
 							<div class="content__text--center">
@@ -447,7 +440,7 @@
 							</div>
 						</div>
 						<div class="content__img"
-						data-aos="zoom-in-right"
+						data-aos="zoom-in"
 						data-aos-delay="300"
 						data-aos-duration="2000">
 							<img src="img/directions/salsa.jpg" alt="salsa">
@@ -455,7 +448,7 @@
 					</div>
 					<div class="content__item">
 						<div class="content__text"
-						data-aos="zoom-in-right"
+						data-aos="zoom-in"
 						data-aos-delay="300"
 						data-aos-duration="2000">
 							<div class="content__text--center">
@@ -464,7 +457,7 @@
 							</div>
 						</div>
 						<div class="content__img"
-						data-aos="zoom-in-left"
+						data-aos="zoom-in"
 						data-aos-delay="300"
 						data-aos-duration="2000">
 							<img src="img/directions/kizomba.jpg" alt="kizomba">
@@ -575,7 +568,7 @@
 				<img src="img/venz_7_white.png" alt="">
 			<h2>Наши координаты:</h2>
 		</div>	
-		<div id="map"
+		<div id="$map"
 			data-aos="fade-in"
 			data-aos-delay="300"
 			data-aos-duration="2500">	
@@ -633,12 +626,6 @@
 								<a href="#directions" class="footermenu__link">Направления</a>
 							</li>			
 							<li class="footermenu__item">
-								<a href="#" class="footermenu__link">Расписание</a>
-							</li>
-							<li class="footermenu__item">
-								<a href="#" class="footermenu__link">Цены</a>
-							</li>
-							<li class="footermenu__item">
 								<a href="#question" class="footermenu__link">Вопросы и ответы</a>
 							</li>
 							<li class="footermenu__item">
@@ -681,17 +668,20 @@
 	<!-- SCRIPT -->
 	<script type="text/javascript" src="js/jquery.min.js"></script> <!-- jQuery v1.11.3 -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		var $oldjQuery = $.noConflict(true);
-	</script>
+	</script> -->
 
 	<!-- Slider Revolution v4.1  -->
 	<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
 	<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
 	<!-- fancybox v2.1.5 -->
-	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAHH9qpuqgn8qGSjk1XfpV70-0xl9GtrIg"></script><!-- map -->
-	<script type="text/javascript" src="js/Fancybox_v2.1.5/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack_v2.1.5.js"></script>
+	<!-- fancybox v3.5.2 -->
+	<!-- <script type="text/javascript" src="js/Fancybox_v3.5.2/jquery.fancybox.min.js"></script> -->
+	<!-- map -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAHH9qpuqgn8qGSjk1XfpV70-0xl9GtrIg"></script>
 	<!-- AOS JS -->
 	<script src="js/aos.js"></script>
 	<!-- Mail -->
