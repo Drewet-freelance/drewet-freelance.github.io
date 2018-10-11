@@ -629,6 +629,11 @@ header.header-fixed #resize_main h2 {
   color: red;
   text-shadow: none;
 }
+@media screen and (max-width: 415px) {
+  .about-wrap__main h2 {
+    white-space: pre-line;
+  }
+}
 .about-wrap__main p {
   font-family: "Neo Sans Pro", sans-serif;
   font-size: 16px;
@@ -1352,7 +1357,7 @@ button.colored:hover {
     font-size: 38px;
   }
   .positivesign-wrap h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .positivesign-wrap p {
     font-size: 14px;
@@ -1495,14 +1500,18 @@ button.colored:hover {
   .directions-wrap-content .content__item {
     flex-wrap: wrap;
   }
+  .directions-wrap-content .content__item:nth-of-type(2) .content__text {
+    margin-left: 0;
+  }
   .directions-wrap-content .content__img, .directions-wrap-content .content__text {
     flex: 100%;
     margin-right: 0;
-    margin-left: 0;
+    border-radius: 20px;
   }
   .directions-wrap-content .content__text {
     position: static;
     order: 1;
+    margin-left: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
@@ -1637,6 +1646,14 @@ button.colored:hover {
     margin-bottom: 15px;
   }
 
+  .directions-wrap {
+    padding-bottom: 30px;
+  }
+  .directions-wrap h2 {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+
   #AJAX_form .container {
     width: auto;
     padding: 5px;
@@ -1659,13 +1676,6 @@ button.colored:hover {
   button {
     font-size: 15px;
     padding: 0 40px;
-  }
-}
-/*=========================415px=========================*/
- * // перенос появляется на расширении 414px (перенос слова Школа)   */
-@media screen and (max-width: 415px) {
-  .about-wrap__main h2 {
-    white-space: pre-line;
   }
 }
 
