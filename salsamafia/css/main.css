@@ -1,8 +1,9 @@
 @charset "UTF-8";
 /* 1. Вписать номер телефона для вызова */
-/* 2. Добавить ссылку на сайт в лого header and footer ??? */
-/* 3. Добавить ссылку на Facebook */
-/* 4. Добавить Email в mail.php */
+/* 2. Добавить Email в mail.php */
+/*3. Добавить в HTML ссылки на лого */
+/*4. Добавить в HTML когда была создана школа */
+/*5. Почистить шрифты */
 @font-face {
   font-family: "quickatregular";
   src: url("../fonts/quickat-script-webfont.woff2") format("woff2");
@@ -615,8 +616,8 @@ header.header-fixed #resize_main h2 {
 }
 .about-wrap__main {
   align-self: center;
-  flex: 50%;
-  padding-right: 25px;
+  flex: 47%;
+  padding-right: 5px;
 }
 .about-wrap__main h2 {
   font-family: "Neo Sans Pro", sans-serif;
@@ -644,7 +645,7 @@ header.header-fixed #resize_main h2 {
   text-align: justify;
 }
 .about-wrap__img {
-  flex: 50%;
+  flex: 53%;
   align-self: flex-end;
 }
 .about-wrap__img img {
@@ -1256,7 +1257,7 @@ button.colored:hover {
   }
 
   .about-wrap__main {
-    flex: 55%;
+    flex: 53%;
   }
   .about-wrap__main h2 {
     font-size: 37px;
@@ -1268,7 +1269,7 @@ button.colored:hover {
     line-height: 26px;
   }
   .about-wrap__img {
-    flex: 45%;
+    flex: 47%;
   }
 
   .positivesign-wrap {
@@ -1334,9 +1335,6 @@ button.colored:hover {
     margin-left: 15px;
   }
 
-  .about-wrap__main {
-    flex: 60%;
-  }
   .about-wrap__main h2 {
     font-size: 34px;
   }
@@ -1346,9 +1344,6 @@ button.colored:hover {
   .about-wrap__main p {
     font-size: 14px;
     line-height: 20px;
-  }
-  .about-wrap__img {
-    flex: 40%;
   }
 
   .positivesign-wrap {
@@ -1485,7 +1480,7 @@ button.colored:hover {
 
   .about-wrap__main {
     padding-right: 10px;
-    flex: 50%;
+    flex: 48%;
   }
   .about-wrap__main h2 {
     font-size: 30px;
@@ -1499,7 +1494,7 @@ button.colored:hover {
     margin: 15px 0 10px;
   }
   .about-wrap__img {
-    flex: 50%;
+    flex: 52%;
   }
 
   .positivesign-wrap h2 {
@@ -1572,7 +1567,7 @@ button.colored:hover {
   }
 
   #map {
-    height: 320px;
+    height: 450px;
   }
 
   .footer-wrap-content {
@@ -1718,7 +1713,7 @@ button.colored:hover {
     text-align: center;
   }
   .about-wrap__img img {
-    width: 70%;
+    width: 75%;
     margin: 15px auto 0;
   }
 
