@@ -1742,10 +1742,6 @@ button.colored:hover {
     margin-bottom: 20px;
   }
 
-  [data-aos=zoom-in-user] {
-    transform: scale(0) !important;
-  }
-
   .question-wrap h2 {
     font-size: 27px;
     margin-bottom: 20px;
