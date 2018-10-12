@@ -213,7 +213,8 @@ footer {
 [class*="__decor"] img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 455px;
+  width: 100%;
 }
 
 .map__decor {
@@ -640,6 +641,7 @@ header.header-fixed #resize_main h2 {
   line-height: 28px;
   color: #fff;
   margin-top: 20px;
+  text-align: justify;
 }
 .about-wrap__img {
   flex: 50%;
@@ -1400,6 +1402,9 @@ button.colored:hover {
     line-height: 20px;
   }
 
+  .footer-wrap-content {
+    padding-bottom: 15px;
+  }
   .footer-wrap-content .logo {
     width: 110px;
     margin-top: 40px;
@@ -1407,6 +1412,7 @@ button.colored:hover {
   .footer-wrap-content__social .social {
     flex-direction: column;
     align-items: center;
+    margin-top: 5px;
   }
   .footer-wrap-content__social .social__item:nth-child(2) {
     margin: 10px 0;
@@ -1473,8 +1479,8 @@ button.colored:hover {
   }
 
   #banner ul.banner-button li a {
-    font-size: 22px;
-    line-height: 80px;
+    font-size: 13px !important;
+    line-height: 35px !important;
   }
 
   .about-wrap__main {
@@ -1522,7 +1528,7 @@ button.colored:hover {
   .directions-wrap-content .content__img, .directions-wrap-content .content__text {
     flex: 100%;
     margin-right: 0;
-    border-radius: 5px;
+    border-radius: 20px;
   }
   .directions-wrap-content .content__text {
     position: static;
@@ -1545,8 +1551,8 @@ button.colored:hover {
     margin-left: 0;
   }
   .question-wrap .list div {
-    margin: 35px 0;
-    padding: 35px 25px 25px 25px;
+    margin: 45px 0;
+    padding: 45px 25px 25px 25px;
   }
   .question-wrap .list div:last-child {
     margin-bottom: 0;
@@ -1554,19 +1560,59 @@ button.colored:hover {
   .question-wrap .list div:before {
     left: 50%;
     transform: translate(-50%, 0);
-    top: 57px;
-    width: 150px;
-    height: 50px;
-    border: 2px solid #fff;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #d04241;
     font-size: 18px;
-    line-height: 50px;
+    line-height: 76px;
   }
   .question-wrap .list div h3 {
     text-align: center;
   }
 
+  #map {
+    height: 320px;
+  }
+
+  .footer-wrap-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0 10px;
+  }
+  .footer-wrap-content h4 {
+    border-bottom: none;
+    line-height: 0px;
+    margin-top: 20px;
+  }
+  .footer-wrap-content .logo {
+    margin-top: 33px;
+    width: 96px;
+  }
   .footer-wrap-content__menu {
     display: none;
+  }
+  .footer-wrap-content__contact {
+    margin-left: 30px;
+  }
+  .footer-wrap-content__contact .contact-list__item {
+    line-height: 20px;
+  }
+  .footer-wrap-content__social {
+    width: 100%;
+  }
+  .footer-wrap-content__social .social {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .footer-wrap-content__social .social__item:nth-child(2) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .copyright {
+    font-size: 11px;
   }
 
   .fancybox-inner {
@@ -1646,6 +1692,11 @@ button.colored:hover {
     letter-spacing: 4px;
   }
 
+  #banner ul.banner-button li a {
+    font-size: 12px !important;
+    line-height: 30px !important;
+  }
+
   [class*="__decor"] {
     padding: 40px 0 20px;
   }
@@ -1691,19 +1742,45 @@ button.colored:hover {
     margin-bottom: 20px;
   }
 
+  [data-aos=zoom-in-user] {
+    transform: scale(0) !important;
+  }
+
   .question-wrap h2 {
     font-size: 27px;
     margin-bottom: 20px;
   }
   .question-wrap .list div {
-    padding: 30px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
   }
   .question-wrap .list div:before {
-    top: 62px;
-    width: 120px;
-    height: 40px;
-    font-size: 16px;
-    line-height: 39px;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+    line-height: 76px;
+  }
+
+  .map h2 {
+    font-size: 27px;
+  }
+
+  .footer-wrap-content {
+    flex-direction: column;
+  }
+  .footer-wrap-content .logo {
+    margin: 0 auto;
+  }
+  .footer-wrap-content__contact {
+    align-self: center;
+    margin-left: 0;
+  }
+  .footer-wrap-content__contact .contact-list__item {
+    font-size: 13px;
+  }
+
+  .copyright {
+    font-size: 10px;
   }
 
   #AJAX_form .container {

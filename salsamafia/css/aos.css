@@ -3,5 +3,27 @@
 body[data-aos-easing="user-easing"] [data-aos] {
 	transition-timing-function: cubic-bezier(.175,.885,.32,1.085);
 }
+[data-aos=zoom-in-user]{transform: scale(.6)}
+[data-aos=zoom-in-user768px]{transform: scale(.6)}
 
+@media screen and (max-width: 767px) {
+	[data-aos=zoom-in-user]{
+		opacity: 1!important; 
+		-webkit-transition: none!important; 
+		-o-transition: none!important; 
+		transition: none!important; 
+		-webkit-transform: none!important; 
+		-ms-transform: none!important; 
+		transform: none!important;}
+}
+@media screen and (min-width: 767px) {
+	[data-aos=zoom-in-user768px]{
+		opacity: 1!important; 
+		-webkit-transition: none!important; 
+		-o-transition: none!important; 
+		transition: none!important; 
+		-webkit-transform: none!important; 
+		-ms-transform: none!important; 
+		transform: none!important;}
+}
 
