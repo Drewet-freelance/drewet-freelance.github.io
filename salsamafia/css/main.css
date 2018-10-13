@@ -172,7 +172,7 @@
 }
 
 .red_bg {
-  background: #fff url(../img/red_bg.jpg) center top repeat;
+  background: #fff url(../img/background/bg-red.jpg) center top repeat;
   -webkit-box-shadow: 0px 24px 22px -16px #000003;
   -moz-box-shadow: 0px 24px 22px -16px #000003;
   box-shadow: 0px 24px 22px -16px #000003;
@@ -1676,7 +1676,7 @@ button.colored:hover {
 
   .toggle-menu {
     padding: 0 5px;
-    font-size: 30px;
+    font-size: 28px;
   }
 
   header.header-fixed .header-wrap__logo {
