@@ -1659,7 +1659,7 @@ button.colored:hover {
 }
 @media screen and (max-width: 479px) {
   .header-wrap__logo {
-    width: 55px;
+    width: 65px;
     margin-top: 5px;
     margin-right: 0;
     padding-top: 0;
@@ -1680,11 +1680,14 @@ button.colored:hover {
   }
 
   header.header-fixed .header-wrap__logo {
-    width: 45px;
+    width: 50px;
   }
   header.header-fixed #resize_main h1 {
     font-size: 30px;
     letter-spacing: 4px;
+  }
+  header.header-fixed .toggle-menu {
+    line-height: 46px;
   }
 
   #banner ul.banner-button li a {
