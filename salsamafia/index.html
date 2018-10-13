@@ -2,29 +2,19 @@
 <head>
 	<meta charset="utf-8">
 	<title>Salsa Mafia</title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 	<!-- Responsive Meta Tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700" rel="stylesheet">
+	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
-
-
 	<!-- Font Awesome 4.7.0 -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- Slider Revolution v4.1  -->
 	<link rel="stylesheet" href="css/settings_srV4.1.css">
-	<!-- phone call btn -->
+	<!-- Phone call btn -->
 	<link rel="stylesheet" type="text/css" href="css/phone.css">
-	<!-- fancybox v2.1.5 -->
+	<!-- Fancybox v2.1.5 -->
 	<link rel="stylesheet" type="text/css" media="screen" href="css/jquery.fancybox_v2.1.5.css" >
-	<!-- fancybox v3.5.2 -->
-	<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/Fancybox_v3.5.2/jquery.fancybox.min.css"> -->
-
-	<!-- Animate CSS v3.7.0 -->
-<!-- 	<link rel="stylesheet" href="css/animate.min.css">
- -->	
  	<!-- AOS CSS -->
 	<link rel="stylesheet" href="css/aos.css">
 	<!-- Main stylesheet -->
@@ -32,673 +22,653 @@
 	<link rel="stylesheet" href="css/main.css">	
 </head>
 <body>
-	
-	<!-- .preloader -->
-	<div class="preloader">
-		<img src="img/logo-preloader.png" alt="logo preloader">
+<!-- .preloader -->
+<div class="preloader">
+	<img src="img/logo-preloader.png" alt="logo preloader">
+</div><!-- /.preloader -->
+<!-- .phone call btn for expansion below 767px-->
+<div class="phone-btn">
+	<a href="tel:+380#">
+		<div id="popup__toggle">
+			<div class="circlephone" 
+				style="transform-origin: center;">
+			</div>
+			<div class="circle-fill" 
+				style="transform-origin: center;">
+			</div>
+			<div class="img-circle" 
+				style="transform-origin: center;">
+				<div class="img-circleblock" 
+					style="transform-origin: center;">
+				</div>
+			</div>
+		</div>
+	</a>
+</div><!-- /.phone call btn -->
+<!--======================== HEADER MENU (block-1) ========================-->
+<header id="header">
+	<div class="wrapper header-wrap">
+		<div class="header-wrap-container">
+			<!-- menu btn for expansion below 991px -->
+			<button class="toggle-menu">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button><!-- /.menu btn -->
+			<!-- dropdown menu for expansion below 991px -->
+			<div class="header-wrap__dropdownmenu">
+				<nav class="header-wrap__dropdownmenu-container">
+					<ul class="dropdownmenu">
+						<li class="current scrollToLink">
+							<a href="#banner" class="dropdown__link">Главная</a>
+						</li>
+						<li class="current scrollToLink">
+							<a href="#about" class="dropdown__link">О нас</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#positivesign" class="dropdown__link">Услуги</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#directions" class="dropdown__link">Направления</a>
+						</li>			
+						<li class="scrollToLink">
+							<a href="#question" class="dropdown__link">Вопросы и ответы</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#footer" class="dropdown__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div><!-- /.dropdown menu -->
+			<!-- .logo -->
+			<div class="header-wrap__logo">
+				<a href="#">
+					<img src="img/logo-header.png" alt="logo header">
+				</a>
+			</div>
+			<!-- /.logo -->
+			<div class="header-wrap__menu-bar">
+				<!-- .main menu container -->
+				<nav id="resize_mainmenu-container" class="header-wrap__mainmenu-container">
+					<ul class="mainmenu">
+						<li class="current scrollToLink">
+							<a href="#banner">Главная</a>
+						</li>
+						<li class="current scrollToLink">
+							<a href="#about">О нас</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#positivesign">Услуги</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#directions">Направления</a>
+						</li>			
+						<li class="scrollToLink">
+							<a href="#question">Вопросы и ответы</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#footer">Контакты</a>
+						</li>
+					</ul>
+				</nav><!-- /.main menu container -->
+				<div id="resize_main" class="header-wrap__company">
+					<h1>Salsa Mafia</h1>
+					<h2>(школа социальных латиноамериканских танцев)</h2>
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- /.preloader -->
-	
-	<!-- .phone call btn -->
-	<div class="phone-btn">
-		<a href="tel:+380#">
-			<div id="popup__toggle">
-				<div class="circlephone" 
-					style="transform-origin: center;">
-				</div>
-				<div class="circle-fill" 
-					style="transform-origin: center;">
-				</div>
-				<div class="img-circle" 
-					style="transform-origin: center;">
-					<div class="img-circleblock" 
-						style="transform-origin: center;">
+</header>
+<!--======================== BANNER SLIDER (block-2) ========================-->
+<section id="banner">
+	<div class="banner-container">
+		<div class="banner">
+			<ul>
+				<li 
+					data-transition="fade" 
+					data-slotamount="7" 
+					class="slider-1 text-center gradient-overlay"
+					data-thumb="img/background/bg-1.jpg"
+					>
+					<img 
+						src="img/background/bg-1.jpg" 
+						data-bgposition="center center" 
+						data-kenburns="on" 
+						data-duration="20000" 
+						data-ease="Linear.easeNone" 
+						data-bgfit="100" 
+						data-bgfitend="130" 
+						data-bgpositionend="center center"
+						alt="slider image">
+					<div 
+						class="caption sfb tp-resizeme"
+						data-x="center" 
+						data-y="390" 
+						data-speed="700" 
+						data-start="3000"  
+						data-easing="easeOutBack">
+						<h1>Вливайся в нашу дружную семью !</h1>
 					</div>
-				</div>
-			</div>
-		</a>
+					<div class="banner__heart caption sfb tp-resizeme"
+					data-x="left" 
+					data-y="600"
+					data-speed="4000">
+						<img src="img/background/heart.png" alt="heart">
+					</div>						
+					<ul 
+						class="caption sfb tp-resizeme banner-button"
+						data-x="center" 
+						data-y="585" 
+						data-speed="700" 
+						data-start="4000"  
+						data-easing="easeOutBack">
+						<li>
+							<a data-fancybox-type="iframe" class="callback colored hvr-shutter-out-horizontal" href="mail.html"> 
+							Записатся на пробное занятие</a>
+						</li>
+					</ul>
+				</li>
+				<li 
+					data-transition="fade" 
+					data-slotamount="7" 
+					class="slider-2 text-center gradient-overlay" 
+					data-thumb="img/background/bg-2.jpg"
+					>
+					<img 
+						src="img/background/bg-2.jpg" 
+						data-bgposition="center center" 
+						data-kenburns="on" 
+						data-duration="20000" 
+						data-ease="Linear.easeNone" 
+						data-bgfit="100" 
+						data-bgfitend="130" 
+						data-bgpositionend="center center"
+						alt="slider image">
+					<div 
+						class="caption sfb tp-resizeme"
+						data-x="center" 
+						data-y="390" 
+						data-speed="700" 
+						data-start="1500"  
+						data-easing="easeOutBack">
+						<h1>Присоединяйся к нам !</h1>
+					</div>					
+					<div class="banner__heart caption sfb tp-resizeme"
+					data-x="320" 
+					data-y="420"
+					data-speed="4000">
+						<img src="img/background/heart.png" alt="heart">
+					</div>
+					<ul 
+						class="caption sfb tp-resizeme banner-button"
+						data-x="center" 
+						data-y="585" 
+						data-speed="700" 
+						data-start="2500"  
+						data-easing="easeOutBack">
+						<li>
+							<a data-fancybox-type="iframe" class="callback colored hvr-shutter-out-horizontal" href="mail.html"> 
+							Записатся на пробное занятие</a>
+						</li>
+					</ul>
+				</li>
+				<li 
+					data-transition="fade" 
+					data-slotamount="7" 
+					class="slider-3 text-center gradient-overlay" 
+					data-thumb="img/background/bg-3.jpg"
+					>
+					<img 
+						src="img/background/bg-3.jpg" 
+						data-bgposition="center center" 
+						data-kenburns="on" 
+						data-duration="20000" 
+						data-ease="Linear.easeNone" 
+						data-bgfit="100" 
+						data-bgfitend="130" 
+						data-bgpositionend="center center"
+						alt="slider image">
+					<div 
+						class="caption sfb tp-resizeme"
+						data-x="center" 
+						data-y="390" 
+						data-speed="700" 
+						data-start="1500"  
+						data-easing="easeOutBack">
+						<h1>Давай танцевать вместе !</h1>
+					</div>						
+					<div class="banner__heart caption sfb tp-resizeme"
+					data-x="900" 
+					data-y="220"
+					data-speed="4000">
+						<img src="img/background/heart.png" alt="heart">
+					</div>
+					<ul 
+						class="caption sfb tp-resizeme banner-button"
+						data-x="center" 
+						data-y="585" 
+						data-speed="700" 
+						data-start="2500"  
+						data-easing="easeOutBack">
+						<li>
+							<a data-fancybox-type="iframe" class=" callback colored hvr-shutter-out-horizontal" href="mail.html"> 
+							Записатся на пробное занятие</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
-	<!-- /.phone call btn -->
-
-	<!-- #header -->
-	<header id="header">
-		<div class="wrapper header-wrap">
-			<div class="header-wrap-container">
-				<!-- кнопка меню для iPad расширения -->
-				<button class="toggle-menu">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</button>
-				<!-- меню для iPad расширени -->
-				<div class="header-wrap__dropdownmenu">
-					<nav class="header-wrap__dropdownmenu-container">
-						<ul class="dropdownmenu">
-							<li class="current scrollToLink">
-								<a href="#banner" class="dropdown__link">Главная</a>
-							</li>
-							<li class="current scrollToLink">
-								<a href="#about" class="dropdown__link">О нас</a>
-							</li>
-							<li class="scrollToLink">
-								<a href="#positivesign" class="dropdown__link">Услуги</a>
-							</li>
-							<li class="scrollToLink">
-								<a href="#directions" class="dropdown__link">Направления</a>
-							</li>			
-							<li class="scrollToLink">
-								<a href="#question" class="dropdown__link">Вопросы и ответы</a>
-							</li>
-							<li class="scrollToLink">
-								<a href="#footer" class="dropdown__link">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-
-				<!-- .logo -->
-				<div class="header-wrap__logo">
-					<a href="#">
-						<img src="img/logo-header.png" alt="logo header">
-					</a>
-				</div>
-				<!-- /.logo -->
-				<div class="header-wrap__menu-bar">
-					<!-- .mainmenu-container -->
-					<nav id="resize_mainmenu-container" class="header-wrap__mainmenu-container">
-						<ul class="mainmenu">
-							<li class="current scrollToLink">
-								<a href="#banner">Главная</a>
-							</li>
-							<li class="current scrollToLink">
-								<a href="#about">О нас</a>
-							</li>
-							<li class="scrollToLink">
-								<a href="#positivesign">Услуги</a>
-							</li>
-							<li class="scrollToLink">
-								<a href="#directions">Направления</a>
-							</li>			
-							<li class="scrollToLink">
-								<a href="#question">Вопросы и ответы</a>
-							</li>
-							<li class="scrollToLink">
-								<a href="#footer">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-					<!-- /.mainmenu-container -->
-					<div id="resize_main" class="header-wrap__company">
-						<h1>Salsa Mafia</h1>
-						<h2>(школа социальных латиноамериканских танцев)</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- /#header -->
-
-
-	<!-- #banner -->
-	<section id="banner">
-		<div class="banner-container">
-			<div class="banner">
-				<ul>
-					<li 
-						data-transition="fade" 
-						data-slotamount="7" 
-						class="slider-1 text-center gradient-overlay"
-						data-thumb="img/background/bg-1.jpg"
-						>
-						<img 
-							src="img/background/bg-1.jpg" 
-							data-bgposition="center center" 
-							data-kenburns="on" 
-							data-duration="20000" 
-							data-ease="Linear.easeNone" 
-							data-bgfit="100" 
-							data-bgfitend="130" 
-							data-bgpositionend="center center"
-							alt="slider image">
-						<div 
-							class="caption sfb tp-resizeme"
-							data-x="center" 
-							data-y="390" 
-							data-speed="700" 
-							data-start="3000"  
-							data-easing="easeOutBack">
-							<h1>Вливайся в нашу дружную семью !</h1>
-						</div>
-						<div class="banner__heart caption sfb tp-resizeme"
-						data-x="left" 
-						data-y="600"
-						data-speed="4000">
-							<img src="img/background/heart.png" alt="heart">
-						</div>						
-						<ul 
-							class="caption sfb tp-resizeme banner-button"
-							data-x="center" 
-							data-y="585" 
-							data-speed="700" 
-							data-start="4000"  
-							data-easing="easeOutBack">
-							<li>
-								<a data-fancybox-type="iframe" class="callback colored hvr-shutter-out-horizontal" href="mail.html"> 
-								Записатся на пробное занятие</a>
-							</li>
-						</ul>
-					</li>
-					<li 
-						data-transition="fade" 
-						data-slotamount="7" 
-						class="slider-2 text-center gradient-overlay" 
-						data-thumb="img/background/bg-2.jpg"
-						>
-						<img 
-							src="img/background/bg-2.jpg" 
-							data-bgposition="center center" 
-							data-kenburns="on" 
-							data-duration="20000" 
-							data-ease="Linear.easeNone" 
-							data-bgfit="100" 
-							data-bgfitend="130" 
-							data-bgpositionend="center center"
-							alt="slider image">
-						<div 
-							class="caption sfb tp-resizeme"
-							data-x="center" 
-							data-y="390" 
-							data-speed="700" 
-							data-start="1500"  
-							data-easing="easeOutBack">
-							<h1>Присоединяйся к нам !</h1>
-						</div>					
-						<div class="banner__heart caption sfb tp-resizeme"
-						data-x="320" 
-						data-y="420"
-						data-speed="4000">
-							<img src="img/background/heart.png" alt="heart">
-						</div>
-						<ul 
-							class="caption sfb tp-resizeme banner-button"
-							data-x="center" 
-							data-y="585" 
-							data-speed="700" 
-							data-start="2500"  
-							data-easing="easeOutBack">
-							<li>
-								<a data-fancybox-type="iframe" class="callback colored hvr-shutter-out-horizontal" href="mail.html"> 
-								Записатся на пробное занятие</a>
-							</li>
-						</ul>
-					</li>
-					<li 
-						data-transition="fade" 
-						data-slotamount="7" 
-						class="slider-3 text-center gradient-overlay" 
-						data-thumb="img/background/bg-3.jpg"
-						>
-						<img 
-							src="img/background/bg-3.jpg" 
-							data-bgposition="center center" 
-							data-kenburns="on" 
-							data-duration="20000" 
-							data-ease="Linear.easeNone" 
-							data-bgfit="100" 
-							data-bgfitend="130" 
-							data-bgpositionend="center center"
-							alt="slider image">
-						<div 
-							class="caption sfb tp-resizeme"
-							data-x="center" 
-							data-y="390" 
-							data-speed="700" 
-							data-start="1500"  
-							data-easing="easeOutBack">
-							<h1>Давай танцевать вместе !</h1>
-						</div>						
-						<div class="banner__heart caption sfb tp-resizeme"
-						data-x="900" 
-						data-y="220"
-						data-speed="4000">
-							<img src="img/background/heart.png" alt="heart">
-						</div>
-						<ul 
-							class="caption sfb tp-resizeme banner-button"
-							data-x="center" 
-							data-y="585" 
-							data-speed="700" 
-							data-start="2500"  
-							data-easing="easeOutBack">
-							<li>
-								<a data-fancybox-type="iframe" class=" callback colored hvr-shutter-out-horizontal" href="mail.html"> 
-								Записатся на пробное занятие</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section> <!-- /#banner -->
-	
-	<section id="about" class="about softblack_bg">
-		<div class="about__decor"
-		data-aos="fade-in"
-		data-aos-delay="200"
-		data-aos-duration="2500">
-			<img src="img/decor.png" alt="decor">
-		</div>
-		<div class="wrapper">
-			<div class="about-wrap">	
-				<div class="about-wrap__main"
-				data-aos="fade-in"
-				data-aos-delay="600"
-				data-aos-duration="3000">
-					<h2>Школа
-						<span>Salsa Mafia</span> - это:
-					</h2>
-					<p>Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ...</p>
-				</div>
-				<div class="about-wrap__img"
-				data-aos="fade-in"
-				data-aos-delay="300"
-				data-aos-duration="2500">
-					<img src="img/owner.png" alt="owner">
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="positivesign" class="positivesign red_bg">
-		<div class="positivesign__decor"
-		data-aos="fade-in"
-		data-aos-delay="200"
-		data-aos-duration="2500">
-			<img src="img/decor.png" alt="decor">
-		</div>
-		<div class="wrapper">
-			<div class="positivesign-wrap">
-				<h2
-				data-aos="fade-in"
-				data-aos-delay="200"
-				data-aos-duration="2500">
-					Дружная семья <span>Salsa Mafia</span> .... предлагает ... текс вступительный...
+</section> 
+<!--======================== ABOUT (block-3) ========================-->	
+<section id="about" class="about softblack_bg">
+	<div class="about__decor"
+	data-aos="fade-in"
+	data-aos-delay="200"
+	data-aos-duration="2500">
+		<img src="img/decor.png" alt="decor">
+	</div>
+	<div class="wrapper">
+		<div class="about-wrap">	
+			<div class="about-wrap__main"
+			data-aos="fade-in"
+			data-aos-delay="600"
+			data-aos-duration="3000">
+				<h2>Школа
+					<span>Salsa Mafia</span> - это:
 				</h2>
-				<div class="positivesign-wrap__details">
-					<div class="positivesign-wrap__item"
-					data-aos="zoom-in"
-					data-aos-duration="2000">
-						<div class="positivesign-wrap__img">
-							<a href="img/lesson.jpg" class="fancybox">
-								<img src="img/lesson.jpg" alt="lesson">
-							</a>
-						</div>				
-						<div class="positivesign-wrap__text">	
-							<h3>Индивидуальные и груповые занятия</h3>
-							<p>Бачата Сальса Кизомба Вы всегда можете посетить ...Вы всегда можете посетить ...Вы всегда можете посетить ...</p>
-						</div>
-					</div>
-					<div class="positivesign-wrap__item"
-					data-aos="zoom-in"
-					data-aos-delay="450"
-					data-aos-duration="2000">
-						<div class="positivesign-wrap__img">
-							<a href="img/show.jpg" class="fancybox">
-								<img src="img/show.jpg" alt="show">
-							</a>
-						</div>
-						<div class="positivesign-wrap__text">	
-							<h3>Постановка шоу-номеров</h3>
-							<p>Короткий текст ... Короткий текст ...Короткий текст ...</p>
-						</div>
-					</div>
-					<div class="positivesign-wrap__item"
-					data-aos="zoom-in"
-					data-aos-delay="650"
-					data-aos-duration="2000">
-						<div class="positivesign-wrap__img">
-							<a href="img/activity.jpg" class="fancybox">
-								<img src="img/activity.jpg" alt="activity">
-							</a>
-						</div>
-						<div class="positivesign-wrap__text">	
-							<h3>Организация  мероприятий</h3>
-							<p>Мастер-классы, Open Air, зажигательные вечеринки кст... Текст...Текст... Текст...Текст... Текст...Текст...Текст...Текст...Текст... </p>
-						</div>
-					</div>
-					<div class="positivesign-wrap__item"
-					data-aos="zoom-in"
-					data-aos-delay="850"
-					data-aos-duration="2000">
-						<div class="positivesign-wrap__img">
-							<a href="img/teachers.jpg" class="fancybox">
-								<img src="img/teachers.jpg" alt="teachers">
-							</a>
-						</div>		
-						<div class="positivesign-wrap__text">	
-							<h3>Лучшие преподаватели</h3>
-							<p>Дружная команда професионалов обьедененных одной целью: с любовью, радостью и удовольствием делится своим професиональным опытом и знаниями</p>
-						</div>
-					</div>
-					<div class="positivesign-wrap__item"
-					data-aos="zoom-in"
-					data-aos-delay="1050"
-					data-aos-duration="2000">
-						<div class="positivesign-wrap__img">
-							<a href="img/team.jpg" class="fancybox">
-								<img src="img/team.jpg" alt="team">
-							</a>
-						</div>
-						<div class="positivesign-wrap__text">	
-							<h3>Дружная семья единомышленников</h3>
-							<p>Текст... Текст...Текст...Текст... Текст...Текст...Текст...Текст... Текст...</p>
-						</div>	
-					</div>
-				</div>
+				<p>Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ... Мы создали эту школу с целью вдохнуть жизнь ...</p>
 			</div>
-		</div>
-	</section>
-
-	<section id="directions" class="directions softblack_bg">
-		<div class="about__decor"
-		data-aos="fade-in"
-		data-aos-delay="200"
-		data-aos-duration="2500">
-			<img src="img/decor.png" alt="decor">
-		</div>
-		<div class="wrapper">
-			<div class="directions-wrap">
-				<h2
-				data-aos="fade-in"
-				data-aos-delay="200"
-				data-aos-duration="2500">
-					Танцуйте с удовольствием вместе с нами
-				</h2>
-				<div class="directions-wrap-content">	
-					<div class="content__item"
-					data-aos="zoom-in-user768px"
-					data-aos-delay="300"
-					data-aos-duration="2000">
-						<div class="content__text"
-						data-aos="zoom-in-user"
-						data-aos-delay="300"
-						data-aos-duration="2000">
-							<div class="content__text--center">
-								<h3>Романтичная бачата</h3>
-								<p>Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ...</p>
-							</div>
-						</div>
-						<div class="content__img"
-						data-aos="zoom-in-user"
-						data-aos-delay="300"
-						data-aos-duration="2000">
-							<img src="img/directions/bachata.jpg" alt="bachata">
-						</div>
-					</div>
-					<div class="content__item"
-					data-aos="zoom-in-user768px"
-					data-aos-delay="300"
-					data-aos-duration="2000">
-						<div class="content__text"
-						data-aos="zoom-in-user"
-						data-aos-delay="300"
-						data-aos-duration="2000">
-							<div class="content__text--center">
-								<h3>Энергичная сальса</h3>
-								<p>Сальса - энергичный и зажигательный танец с быстрым темпом и большим количеством вращений. Текст ... Текст ...Текст ... Текст ... Текст ...</p>
-							</div>
-						</div>
-						<div class="content__img"
-						data-aos="zoom-in-user"
-						data-aos-delay="300"
-						data-aos-duration="2000">
-							<img src="img/directions/salsa.jpg" alt="salsa">
-						</div>
-					</div>
-					<div class="content__item"
-					data-aos="zoom-in-user768px"
-					data-aos-delay="300"
-					data-aos-duration="2000">
-						<div class="content__text"
-						data-aos="zoom-in-user"
-						data-aos-delay="300"
-						data-aos-duration="2000">
-							<div class="content__text--center">
-								<h3>Чувственная кизомба</h3>
-								<p>Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ...</p>
-							</div>
-						</div>
-						<div class="content__img"
-						data-aos="zoom-in-user"
-						data-aos-delay="300"
-						data-aos-duration="2000">
-							<img src="img/directions/kizomba.jpg" alt="kizomba">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="question"	class="question red_bg">
-		<div class="about__decor"
-		data-aos="fade-in"
-		data-aos-delay="200"
-		data-aos-duration="2500">
-			<img src="img/decor.png" alt="decor">
-		</div>
-		<div class="wrapper">
-			<div class="question-wrap">
-				<h2
-				data-aos="fade-in"
-				data-aos-delay="200"
-				data-aos-duration="2500">
-					Часто задаваемые вопросы:
-				</h2>
-				<div class="question-wrap-content">
-					<div class="question-wrap-content__item">
-						<ol class="list">
-							<li
-							data-aos="zoom-in"
-							data-aos-delay="300"
-							data-aos-duration="2000">
-								<div>
-									<h3>
-										Что брать с собой на танцы?
-									</h3>
-									<p>
-										Одежда: для девушек — лосины, шорты, джинсы, майки, футболки; для парней — cвободные брюки, джинсы, футболки, рубашки навыпуск.<br> 
-										Обувь: для девушек — балетки, танцевальные туфли, чешки; для парней — кеды, легкие кроссовки или танцевальные туфли. 
-									</p>
-								</div>
-							</li>
-							<li
-							data-aos="zoom-in"
-							data-aos-delay="300"
-							data-aos-duration="2000">
-								<div>
-									<h3>
-										Есть ли возрастные ограничения?
-									</h3>
-									<p>
-										Ограничения отсутствуют. <br>
-										Самое главное — позитивный настрой и умение получать удовольствие от танцев!
-									</p>
-								</div>
-							</li>
-							<li
-							data-aos="zoom-in"
-							data-aos-delay="300"
-							data-aos-duration="2000">
-								<div>
-									<h3>
-										Можно ли приходить без партнера/партнерши?
-									</h3>
-									<p>
-										90% приходят к нам танцевать без партнеров.<br> 
-										Уроки танцев построены так, что пары постоянно меняются, и в любом случае вы будете танцевать в паре.<br>
-										Но если у вас есть партнер — приводите обязательно! Танцы придают остроту отношениям))
-									</p>
-								</div>
-							</li>
-							<li
-							data-aos="zoom-in"
-							data-aos-delay="300"
-							data-aos-duration="2000">
-								<div>
-									<h3>
-										Есть ли у вас раздевалка?
-									</h3>
-									<p>
-										Раздевалки есть: отдельные для девушек и для парней.
-									</p>
-								</div>
-							</li>
-							<li
-							data-aos="zoom-in"
-							data-aos-delay="300"
-							data-aos-duration="2000">
-								<div>
-									<h3>
-										Можно ли пропускать уроки танцев?
-									</h3>
-									<p>
-										Занятия можно пропускать, заранее предупредив нас. Абонементы можно заморозить на ___.
-									</p>
-								</div>
-							</li>
-						</ol>
-					</div>
-				</div>	
-			</div>
-		</div>
-	</section>
-	<section class="map">
-		<div class="map__decor"
-		data-aos="fade-in"
-		data-aos-delay="200"
-		data-aos-duration="2500">
-			<img src="img/decor.png" alt="decor">
-			<h2>Наши координаты:</h2>
-		</div>	
-		<div id="map"
+			<div class="about-wrap__img"
 			data-aos="fade-in"
 			data-aos-delay="300"
-			data-aos-duration="2500">	
-		</div>
-	</section>
-	<footer id="footer">
-		<div class="wrapper">
-			<div class="footer-wrap-content"
-			data-aos="fade-in"
-			data-aos-delay="300">
-				<div class="logo">
-					<img src="img/logo-footer.png" alt="logo footer">
-				</div>		
-				<div class="footer-wrap-content__contact">
-					<h4>Контакты</h4>
-					<ul class="contact-list">
-						<li class="contact-list__item">
-							<span class="contact-list__icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-							<span>г. Винница, проспект Юности, 14</span>
-						</li>
-						<li class="contact-list__item">
-							<span class="contact-list__icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-							<a href="tel:380933455736" class="contact-list__link">+380 93 345 5736</a>
-						</li>
-						<li class="contact-list__item">
-							<span class="contact-list__icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-							<a href="tel:380935502086" class="contact-list__link">+380 93 550 2086</a>	
-						</li>
-						<li class="contact-list__item">
-							<span class="contact-list__icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-							<a href="mailto:dimasalsamafi@gmail.com" class="contact-list__link">dimasalsamafi@gmail.com</a>
-						</li>
-						<li class="contact-list__item">
-							<span class="contact-list__icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-							<a href="https://www.m.me/salsamafiads" class="contact-list__link">
-							m.me/salsamafiads</a>
-						</li>
-					</ul>	
-				</div>
-				<!-- .footermenu-container -->
-				<div class="footer-wrap-content__menu">
-					<h4>Школа</h4>
-					<nav class="footermenu-container">
-						<ul class="footermenu">
-							<li class="footermenu__item">
-								<a href="#banner" class="footermenu__link">Главная</a>
-							</li>
-							<li class="footermenu__item">
-								<a href="#about" class="footermenu__link">О нас</a>
-							</li>
-							<li class="footermenu__item">
-								<a href="#positivesign" class="footermenu__link">Услуги</a>
-							</li>
-							<li class="footermenu__item">
-								<a href="#directions" class="footermenu__link">Направления</a>
-							</li>			
-							<li class="footermenu__item">
-								<a href="#question" class="footermenu__link">Вопросы и ответы</a>
-							</li>
-							<li class="footermenu__item">
-								<a href="#footer" class="footermenu__link">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<!-- /.footermenu-container -->
-				<div class="footer-wrap-content__social">
-					<h4>Подписывайся на нас</h4>
-					<ul class="social">
-						<li class="social__item">
-							<a href="https://www.facebook.com/salsamafiads" class="social__link">
-								<i class="fa fa-facebook" 	aria-hidden="true"></i>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="https://www.instagram.com/salsa_mafia" class="social__link">
-								<i class="fa fa-instagram"></i>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="https://www.youtube.com/channel/UCc4zQtQ71MijPJuqaXr0F4w" class="social__link">
-								<i class="fa fa-youtube" aria-hidden="true"></i>
-							</a>
-						</li>	
-					</ul>
-				</div>	
+			data-aos-duration="2500">
+				<img src="img/owner.png" alt="owner">
 			</div>
 		</div>
-		<div class="copyright">
-			<p class="copyright">Salsa Mafia &copy; ...-2018  |  All Rights Reserved  |  <a href="#">Created by Drewet</a></p>
+	</div>
+</section>
+<!--======================== POSITIVE SIGN (block-4) ========================-->
+<section id="positivesign" class="positivesign red_bg">
+	<div class="positivesign__decor"
+	data-aos="fade-in"
+	data-aos-delay="200"
+	data-aos-duration="2500">
+		<img src="img/decor.png" alt="decor">
+	</div>
+	<div class="wrapper">
+		<div class="positivesign-wrap">
+			<h2
+			data-aos="fade-in"
+			data-aos-delay="200"
+			data-aos-duration="2500">
+				Дружная семья <span>Salsa Mafia</span> .... предлагает ... текс вступительный...
+			</h2>
+			<div class="positivesign-wrap__details">
+				<div class="positivesign-wrap__item"
+				data-aos="zoom-in"
+				data-aos-duration="2000">
+					<div class="positivesign-wrap__img">
+						<a href="img/lesson.jpg" class="fancybox">
+							<img src="img/lesson.jpg" alt="lesson">
+						</a>
+					</div>				
+					<div class="positivesign-wrap__text">	
+						<h3>Индивидуальные и груповые занятия</h3>
+						<p>Бачата Сальса Кизомба Вы всегда можете посетить ...Вы всегда можете посетить ...Вы всегда можете посетить ...</p>
+					</div>
+				</div>
+				<div class="positivesign-wrap__item"
+				data-aos="zoom-in"
+				data-aos-delay="450"
+				data-aos-duration="2000">
+					<div class="positivesign-wrap__img">
+						<a href="img/show.jpg" class="fancybox">
+							<img src="img/show.jpg" alt="show">
+						</a>
+					</div>
+					<div class="positivesign-wrap__text">	
+						<h3>Постановка шоу-номеров</h3>
+						<p>Короткий текст ... Короткий текст ...Короткий текст ...</p>
+					</div>
+				</div>
+				<div class="positivesign-wrap__item"
+				data-aos="zoom-in"
+				data-aos-delay="650"
+				data-aos-duration="2000">
+					<div class="positivesign-wrap__img">
+						<a href="img/activity.jpg" class="fancybox">
+							<img src="img/activity.jpg" alt="activity">
+						</a>
+					</div>
+					<div class="positivesign-wrap__text">	
+						<h3>Организация  мероприятий</h3>
+						<p>Мастер-классы, Open Air, зажигательные вечеринки кст... Текст...Текст... Текст...Текст... Текст...Текст...Текст...Текст...Текст... </p>
+					</div>
+				</div>
+				<div class="positivesign-wrap__item"
+				data-aos="zoom-in"
+				data-aos-delay="850"
+				data-aos-duration="2000">
+					<div class="positivesign-wrap__img">
+						<a href="img/teachers.jpg" class="fancybox">
+							<img src="img/teachers.jpg" alt="teachers">
+						</a>
+					</div>		
+					<div class="positivesign-wrap__text">	
+						<h3>Лучшие преподаватели</h3>
+						<p>Дружная команда професионалов обьедененных одной целью: с любовью, радостью и удовольствием делится своим професиональным опытом и знаниями</p>
+					</div>
+				</div>
+				<div class="positivesign-wrap__item"
+				data-aos="zoom-in"
+				data-aos-delay="1050"
+				data-aos-duration="2000">
+					<div class="positivesign-wrap__img">
+						<a href="img/team.jpg" class="fancybox">
+							<img src="img/team.jpg" alt="team">
+						</a>
+					</div>
+					<div class="positivesign-wrap__text">	
+						<h3>Дружная семья единомышленников</h3>
+						<p>Текст... Текст...Текст...Текст... Текст...Текст...Текст...Текст... Текст...</p>
+					</div>	
+				</div>
+			</div>
 		</div>
-	</footer>
-
-
-	
-
-	<!-- SCRIPT -->
-	<script type="text/javascript" src="js/jquery.min.js"></script> <!-- jQuery v1.11.3 -->
-
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		var $oldjQuery = $.noConflict(true);
-	</script> -->
-
-	<!-- Slider Revolution v4.1  -->
-	<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
-	<!-- fancybox v2.1.5 -->
-	<script type="text/javascript" src="js/jquery.fancybox.pack_v2.1.5.js"></script>
-	<!-- fancybox v3.5.2 -->
-	<!-- <script type="text/javascript" src="js/Fancybox_v3.5.2/jquery.fancybox.min.js"></script> -->
-	<!-- map -->
-	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAHH9qpuqgn8qGSjk1XfpV70-0xl9GtrIg"></script>
-	<!-- AOS JS -->
-	<script src="js/aos.js"></script>
-	<!-- Mail -->
-<!-- 	<script src="js/jquery.sendmail.min.js"></script>
- -->	<!-- WOW v1.1.3 -->
-<!-- 	<script src="js/wow.min.js"></script>
- -->	<!-- MAIN JS -->
-	<script type="text/javascript" src="js/main.js"></script>
+	</div>
+</section>
+<!--======================== DIRECTIONS (block-5) ========================-->
+<section id="directions" class="directions softblack_bg">
+	<div class="about__decor"
+	data-aos="fade-in"
+	data-aos-delay="200"
+	data-aos-duration="2500">
+		<img src="img/decor.png" alt="decor">
+	</div>
+	<div class="wrapper">
+		<div class="directions-wrap">
+			<h2
+			data-aos="fade-in"
+			data-aos-delay="200"
+			data-aos-duration="2500">
+				Танцуйте с удовольствием вместе с нами
+			</h2>
+			<div class="directions-wrap-content">	
+				<div class="content__item"
+				data-aos="zoom-in-user768px"
+				data-aos-delay="300"
+				data-aos-duration="2000">
+					<div class="content__text"
+					data-aos="zoom-in-user"
+					data-aos-delay="300"
+					data-aos-duration="2000">
+						<div class="content__text--center">
+							<h3>Романтичная бачата</h3>
+							<p>Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ...</p>
+						</div>
+					</div>
+					<div class="content__img"
+					data-aos="zoom-in-user"
+					data-aos-delay="300"
+					data-aos-duration="2000">
+						<img src="img/directions/bachata.jpg" alt="bachata">
+					</div>
+				</div>
+				<div class="content__item"
+				data-aos="zoom-in-user768px"
+				data-aos-delay="300"
+				data-aos-duration="2000">
+					<div class="content__text"
+					data-aos="zoom-in-user"
+					data-aos-delay="300"
+					data-aos-duration="2000">
+						<div class="content__text--center">
+							<h3>Энергичная сальса</h3>
+							<p>Сальса - энергичный и зажигательный танец с быстрым темпом и большим количеством вращений. Текст ... Текст ...Текст ... Текст ... Текст ...</p>
+						</div>
+					</div>
+					<div class="content__img"
+					data-aos="zoom-in-user"
+					data-aos-delay="300"
+					data-aos-duration="2000">
+						<img src="img/directions/salsa.jpg" alt="salsa">
+					</div>
+				</div>
+				<div class="content__item"
+				data-aos="zoom-in-user768px"
+				data-aos-delay="300"
+				data-aos-duration="2000">
+					<div class="content__text"
+					data-aos="zoom-in-user"
+					data-aos-delay="300"
+					data-aos-duration="2000">
+						<div class="content__text--center">
+							<h3>Чувственная кизомба</h3>
+							<p>Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ... Текст ... Текст ...Текст ... Текст ... Текст ...</p>
+						</div>
+					</div>
+					<div class="content__img"
+					data-aos="zoom-in-user"
+					data-aos-delay="300"
+					data-aos-duration="2000">
+						<img src="img/directions/kizomba.jpg" alt="kizomba">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--======================== QESTIONS  (block-6) ========================-->
+<section id="question"	class="question red_bg">
+	<div class="about__decor"
+	data-aos="fade-in"
+	data-aos-delay="200"
+	data-aos-duration="2500">
+		<img src="img/decor.png" alt="decor">
+	</div>
+	<div class="wrapper">
+		<div class="question-wrap">
+			<h2
+			data-aos="fade-in"
+			data-aos-delay="200"
+			data-aos-duration="2500">
+				Часто задаваемые вопросы:
+			</h2>
+			<div class="question-wrap-content">
+				<div class="question-wrap-content__item">
+					<ol class="list">
+						<li
+						data-aos="zoom-in"
+						data-aos-delay="300"
+						data-aos-duration="2000">
+							<div>
+								<h3>
+									Что брать с собой на танцы?
+								</h3>
+								<p>
+									Одежда: для девушек — лосины, шорты, джинсы, майки, футболки; для парней — cвободные брюки, джинсы, футболки, рубашки навыпуск.<br> 
+									Обувь: для девушек — балетки, танцевальные туфли, чешки; для парней — кеды, легкие кроссовки или танцевальные туфли. 
+								</p>
+							</div>
+						</li>
+						<li
+						data-aos="zoom-in"
+						data-aos-delay="300"
+						data-aos-duration="2000">
+							<div>
+								<h3>
+									Есть ли возрастные ограничения?
+								</h3>
+								<p>
+									Ограничения отсутствуют. <br>
+									Самое главное — позитивный настрой и умение получать удовольствие от танцев!
+								</p>
+							</div>
+						</li>
+						<li
+						data-aos="zoom-in"
+						data-aos-delay="300"
+						data-aos-duration="2000">
+							<div>
+								<h3>
+									Можно ли приходить без партнера/партнерши?
+								</h3>
+								<p>
+									90% приходят к нам танцевать без партнеров.<br> 
+									Уроки танцев построены так, что пары постоянно меняются, и в любом случае вы будете танцевать в паре.<br>
+									Но если у вас есть партнер — приводите обязательно! Танцы придают остроту отношениям))
+								</p>
+							</div>
+						</li>
+						<li
+						data-aos="zoom-in"
+						data-aos-delay="300"
+						data-aos-duration="2000">
+							<div>
+								<h3>
+									Есть ли у вас раздевалка?
+								</h3>
+								<p>
+									Раздевалки есть: отдельные для девушек и для парней.
+								</p>
+							</div>
+						</li>
+						<li
+						data-aos="zoom-in"
+						data-aos-delay="300"
+						data-aos-duration="2000">
+							<div>
+								<h3>
+									Можно ли пропускать уроки танцев?
+								</h3>
+								<p>
+									Занятия можно пропускать, заранее предупредив нас. Абонементы можно заморозить на ___.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+<!--======================== MAP (block-7) ========================-->
+<section class="map">
+	<div class="map__decor"
+	data-aos="fade-in"
+	data-aos-delay="200"
+	data-aos-duration="2500">
+		<img src="img/decor.png" alt="decor">
+		<h2>Наши координаты:</h2>
+	</div>	
+	<div id="#map"
+		data-aos="fade-in"
+		data-aos-delay="300"
+		data-aos-duration="2500">	
+	</div>
+</section>
+<!--======================== FOOTER (block-8) ========================-->
+<footer id="footer">
+	<div class="wrapper">
+		<div class="footer-wrap-content"
+		data-aos="fade-in"
+		data-aos-delay="300">
+			<div class="logo">
+				<img src="img/logo-footer.png" alt="logo footer">
+			</div>
+			<!-- .company contacts container -->
+			<div class="footer-wrap-content__contact">
+				<h4>Контакты</h4>
+				<ul class="contact-list">
+					<li class="contact-list__item">
+						<span class="contact-list__icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+						<span>г. Винница, проспект Юности, 14</span>
+					</li>
+					<li class="contact-list__item">
+						<span class="contact-list__icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+						<a href="tel:380933455736" class="contact-list__link">+380 93 345 5736</a>
+					</li>
+					<li class="contact-list__item">
+						<span class="contact-list__icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+						<a href="tel:380935502086" class="contact-list__link">+380 93 550 2086</a>	
+					</li>
+					<li class="contact-list__item">
+						<span class="contact-list__icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+						<a href="mailto:dimasalsamafi@gmail.com" class="contact-list__link">dimasalsamafi@gmail.com</a>
+					</li>
+					<li class="contact-list__item">
+						<span class="contact-list__icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+						<a href="https://www.m.me/salsamafiads" class="contact-list__link">
+						m.me/salsamafiads</a>
+					</li>
+				</ul>	
+			</div><!-- /.company contacts container -->
+			<!-- .footer menu container -->
+			<div class="footer-wrap-content__menu">
+				<h4>Школа</h4>
+				<nav class="footermenu-container">
+					<ul class="footermenu">
+						<li class="footermenu__item">
+							<a href="#banner" class="footermenu__link">Главная</a>
+						</li>
+						<li class="footermenu__item">
+							<a href="#about" class="footermenu__link">О нас</a>
+						</li>
+						<li class="footermenu__item">
+							<a href="#positivesign" class="footermenu__link">Услуги</a>
+						</li>
+						<li class="footermenu__item">
+							<a href="#directions" class="footermenu__link">Направления</a>
+						</li>			
+						<li class="footermenu__item">
+							<a href="#question" class="footermenu__link">Вопросы и ответы</a>
+						</li>
+						<li class="footermenu__item">
+							<a href="#footer" class="footermenu__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div><!-- /.footer menu container -->
+			<!-- .links to social groups container -->
+			<div class="footer-wrap-content__social">
+				<h4>Подписывайся на нас</h4>
+				<ul class="social">
+					<li class="social__item">
+						<a href="https://www.facebook.com/salsamafiads" class="social__link">
+							<i class="fa fa-facebook" 	aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="https://www.instagram.com/salsa_mafia" class="social__link">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="https://www.youtube.com/channel/UCc4zQtQ71MijPJuqaXr0F4w" class="social__link">
+							<i class="fa fa-youtube" aria-hidden="true"></i>
+						</a>
+					</li>	
+				</ul>
+			</div><!-- /.links to social groups container -->	
+		</div>
+	</div>
+	<!-- .copyright -->
+	<div class="copyright">
+		<p class="copyright">Salsa Mafia &copy; ...-2018  |  All Rights Reserved  |  <a href="#">Created by Drewet</a></p>
+	</div><!-- .copyright -->
+</footer>
+<!--=============================================================================-->
+<!-- SCRIPT -->
+<script type="text/javascript" src="js/jquery.min.js"></script> <!-- jQuery v1.11.3 -->
+<!-- Slider Revolution v4.1  -->
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+<!-- Fancybox v2.1.5 -->
+<script type="text/javascript" src="js/jquery.fancybox.pack_v2.1.5.js"></script>
+<!-- Map init -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAHH9qpuqgn8qGSjk1XfpV70-0xl9GtrIg"></script>
+<!-- AOS -->
+<script src="js/aos.js"></script>
+<!-- MAIN JS -->
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
