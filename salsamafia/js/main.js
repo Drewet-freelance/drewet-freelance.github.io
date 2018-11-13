@@ -1,6 +1,5 @@
 (function ($oldjQuery) {
 	"use strict";
-	
 /*-----------------------------------------------	
        Hide Loading Box (Preloader) & window load 
 -------------------------------------------------*/
@@ -12,7 +11,6 @@
 	$(window).on('load', function () {
 		handlePreloader();
 	});
-
 
 /*-----------------------------------------------	
        Sticky Header (add class when scroll down/up) & JS window scroll 
@@ -44,77 +42,6 @@
 	    }); 
 	    return false;
 	});
-
-	// SmoothMenuScroll (переключение между разделами через меню) 
-	// $(function SmoothMenuScroll () {
-	// 	var anchor = $('.scrollToLink');
-	// 	if(anchor.length){
-	// 		anchor.children('a').bind('click', function (event) {
-	// 			var headerH = '95';
-	// 			var target = $(this);
-	// 			$('html, body').stop().animate({
-	// 				scrollTop: $(target.attr('href')).offset().top - headerH + 'px'
-	// 			}, 1200, 'easeInOutExpo');
-	// 			anchor.removeClass('current');
-	// 			target.parent().addClass('current');
-	// 			event.preventDefault();
-	// 		});
-	// 	}
-	// });
-
-	// adding active class to menu while scroll to section
-	// function OnePageMenuScroll () {
-	//     var windscroll = $(window).scrollTop();
-	//     if (windscroll >= 100) {
-	//     	$('.mainmenu .scrollToLink').find('a').each(function (){
-	//     		// grabing section id dynamically
-	//     		var sections = $(this).attr('href');
-	// 	        $(sections).each(function() {
-	// 	        	// checking is scroll bar are in section
-	// 	            if ($(this).offset().top <= windscroll + 100) {
-	// 	            	// grabing the dynamic id of section
-	// 	        		var Sectionid = $(sections).attr('id');
-	// 	        		// removing current class from others
-	// 	        		$('.mainmenu').find('li').removeClass('current');
-	// 	        		// adding current class to related navigation
-	// 	        		$('.mainmenu').find('a[href=#'+Sectionid+']').parent().addClass('current');
-	// 	            }
-	// 	        });
-	//     	});
-	//     } else {
-	//         $('.mainmenu li.current').removeClass('current');
-	//         $('.mainmenu li:first').addClass('current');
-	//     }
-	// }
-
-
-
-
-
-	// adding active class to menu while scroll to section
-	// function OnePageMenuScroll () {
-	//     var windscroll = $(window).scrollTop();
-	//     if (windscroll >= 100) {
-	//     	$('.mainmenu .scrollToLink').find('a').each(function (){
-	//     		// grabing section id dynamically
-	//     		var sections = $(this).attr('href');
-	// 	        $(sections).each(function() {
-	// 	        	// checking is scroll bar are in section
-	// 	            if ($(this).offset().top <= windscroll + 100) {
-	// 	            	// grabing the dynamic id of section
-	// 	        		var Sectionid = $(sections).attr('id');
-	// 	        		// removing current class from others
-	// 	        		$('.mainmenu').find('li').removeClass('current');
-	// 	        		// adding current class to related navigation
-	// 	        		$('.mainmenu').find('a[href=#'+Sectionid+']').parent().addClass('current');
-	// 	            }
-	// 	        });
-	//     	});
-	//     } else {
-	//         $('.mainmenu li.current').removeClass('current');
-	//         $('.mainmenu li:first').addClass('current');
-	//     }
-	// }
 
 /*-----------------------------------------------	
        Slider_Revolution_v4.1
@@ -234,31 +161,15 @@
 		});	
 	});
 
-	// wow activate 
-	// $(function wowActivator () {
-	// 	var wow = new WOW ({
- //    		offset: 0
- //    	});
- //    	wow.init();
-	// });
-
-
 /*-----------------------------------------------	
         AOS activate
 -------------------------------------------------*/
 	$(function AOSActivator () {
 		AOS.init({
-			// duration: 1200,
 			easing: 'user-easing', //ease-out-back
 			once: true
-			// offset: 150
 		});
 	});
-
-	// Mail activate 
-	// $('.example-form').sendMail({
-	// 	// Параметры...
-	// });
 
 /*-----------------------------------------------	
        Menu add/remove class "active/open"
@@ -274,16 +185,6 @@
 		$('.header-wrap__dropdownmenu').removeClass('open'); 
 	});
 
-
-	// $(function findParentBySelector(elm, selector) {
-	//     var all = document.querySelectorAll('.toggle-menu');
-	//     var cur = elm.parentNode;
-	//     while(cur && !collectionHas(all, cur)) {
-	//         cur = cur.parentNode;
-	//     }
-	//     return cur;
-	// });
-
 })(jQuery);
 
 /*-----------------------------------------------	
@@ -292,13 +193,12 @@
 function initMap() {
     var coordinates = {lat: 49.228053, lng: 28.412252}, // Координаты обьекта
         markerImg = 'img/marker.png', //  Иконка для маркера  
-   
-    // создаем карту и настраеваем 
-    map = new google.maps.Map(document.getElementById('map'), {  /*карта должна выводится в идентификатор map*/
-        center: {lat: 49.226734, lng: 28.412362},//coordinates, (если нужно чтобы карта центрировалась по обекту)
-        zoom: 14.2, // определяет первоначальный масштаб
-        disableDefaultUI: false, // true убирает элементы управления
-        scrollwheel: false, // отключает масштабирование колесиком мыши (бывает полезно, если карта на всю ширину страницы и перебивает прокрутку вниз).
+    // настройка карты 
+    map = new google.maps.Map(document.getElementById('map'), {  /*вывод карты в идентификатор map*/
+        center: {lat: 49.226734, lng: 28.412362}, //(центровка по обьекту //coordinates,)
+        zoom: 14.2, // первоначальный масштаб
+        disableDefaultUI: false, // true убираь элементы управления
+        scrollwheel: false, // отключить масштабирование колесом мыши
     	styles: 
 				// Subtle Grayscale
 				[
@@ -426,9 +326,7 @@ function initMap() {
 				        ]
 				    }
 				]
-
     });
-
     // маркер
     marker = new google.maps.Marker({
         position: coordinates, // координаты маркера 
@@ -436,17 +334,13 @@ function initMap() {
         animation: google.maps.Animation.DROP, // анимация маркера DROP / BOUNCE
         icon: markerImg,
     });
-
     // Отцентровка карты при ресайзе
 	google.maps.event.addDomListener(window, "resize", function() {
 		var center = map.getCenter();
 		google.maps.event.trigger(map, "resize");
 		map.setCenter(center);
 	});
-
 }
 
-// Запускаем карту при загрузки страницы
+// Запускаем карту при загрузке страницы
 google.maps.event.addDomListener(window, 'load', initMap); 
-
-
