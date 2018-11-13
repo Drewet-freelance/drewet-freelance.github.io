@@ -1157,6 +1157,7 @@ footer {
   color: #fff;
 }
 #AJAX_form form > input:focus, #AJAX_form form > textarea:focus {
+  outline: none;
   border: 1px solid red;
 }
 #AJAX_form form > input {
