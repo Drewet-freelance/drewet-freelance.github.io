@@ -138,12 +138,14 @@ header.header-fixed #resize_main h2 { display: none; -webkit-transition: all 0.3
 .positivesign-wrap__item:nth-child(3), .positivesign-wrap__item:last-child { margin-right: 0; }
 .positivesign-wrap__item:hover { -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.07); box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.07); }
 .positivesign-wrap__text { padding: 0 10px; }
+.positivesign-wrap__text h3 { font-family: "Neo Sans Pro", sans-serif; font-size: 20px; font-weight: 700; color: #14141d; margin-top: 15px; }
+.positivesign-wrap__text p { font-family: "Neo Sans Pro", sans-serif; font-weight: 300; font-style: italic; font-size: 16px; line-height: 22px; color: #14141d; text-indent: 2em; text-align: justify; }
+.positivesign-wrap__text p:nth-of-type(1) { margin-top: 10px; }
+.positivesign-wrap__text p:nth-of-type(2) { margin-bottom: 15px; }
 .positivesign-wrap__img { width: 100%; overflow: hidden; max-height: 190px; margin: 0 auto; }
 .positivesign-wrap__img img { display: block; width: 100%; }
 .positivesign-wrap h2 { font-family: "Neo Sans Pro", sans-serif; font-weight: 700; font-size: 33px; color: #14141d; text-shadow: 0 0 5px white, 0 0 2px white; margin-bottom: 50px; text-align: center; }
-.positivesign-wrap h2 span { font-size: 37px; }
-.positivesign-wrap h3 { font-family: "Neo Sans Pro", sans-serif; font-size: 20px; font-weight: 700; color: #14141d; margin-top: 15px; }
-.positivesign-wrap p { font-family: "Neo Sans Pro", sans-serif; font-weight: 300; font-style: italic; font-size: 16px; line-height: 22px; color: #14141d; margin: 10px 0 15px; }
+.positivesign-wrap h2 span { font-size: 37px; border: 5px solid red; border-radius: 20px; padding: 10px; color: red; text-shadow: none; }
 
 /* === DIRECTIONS (block-5) ==== */
 .directions-wrap { position: relative; padding-bottom: 80px; }
@@ -378,6 +380,7 @@ button.colored:hover { color: white; }
   .positivesign-wrap h2 { font-size: 27px; margin-bottom: 20px; }
   .positivesign-wrap h2 span { font-size: 29px; }
   .positivesign-wrap__item { padding-bottom: 10px; margin-bottom: 15px; }
+  .positivesign-wrap__text p:nth-of-type(2) { margin-bottom: 5px; }
   .directions-wrap { padding-bottom: 30px; }
   .directions-wrap h2 { font-size: 27px; margin-bottom: 20px; }
   .question-wrap h2 { font-size: 27px; margin-bottom: 20px; }
