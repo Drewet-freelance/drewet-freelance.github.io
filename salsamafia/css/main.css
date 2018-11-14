@@ -121,10 +121,11 @@ header.header-fixed #resize_main h2 { display: none; -webkit-transition: all 0.3
 
 .about-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .about-wrap__main { -ms-flex-item-align: center; align-self: center; -webkit-box-flex: 47%; -ms-flex: 47%; flex: 47%; padding-right: 5px; }
-.about-wrap__main h2 { font-family: "Neo Sans Pro", sans-serif; font-weight: 700; color: #14141d; font-size: 40px; text-shadow: 0 0 5px white; }
+.about-wrap__main h2 { font-family: "Neo Sans Pro", sans-serif; font-weight: 700; color: #14141d; font-size: 40px; text-shadow: 0 0 5px white; margin-top: 45px; margin-bottom: 30px; }
 .about-wrap__main h2 span { font-size: 45px; color: red; text-shadow: none; }
 @media screen and (max-width: 415px) { .about-wrap__main h2 { white-space: pre-line; } }
-.about-wrap__main p { font-family: "Neo Sans Pro", sans-serif; font-size: 16px; line-height: 28px; color: #fff; margin-top: 20px; text-align: justify; }
+.about-wrap__main p { font-family: "Neo Sans Pro", sans-serif; font-size: 15px; line-height: 22px; letter-spacing: 0.7px; text-indent: 3em; font-style: italic; color: rgba(255, 255, 255, 0.7); text-shadow: 0 0px 2px rgba(255, 255, 255, 0.7); text-align: justify; }
+.about-wrap__main p:last-child { padding-top: 5px; }
 .about-wrap__img { -webkit-box-flex: 53%; -ms-flex: 53%; flex: 53%; -ms-flex-item-align: end; align-self: flex-end; }
 .about-wrap__img img { display: block; max-width: 100%; }
 
@@ -395,4 +396,5 @@ button.colored:hover { color: white; }
   #AJAX_form .check-list__item label { font-size: 13px; }
   #AJAX_form textarea { margin-bottom: 10px; }
   #AJAX_form button { font-size: 15px; padding: 0 40px; } }
+
 /*# sourceMappingURL=main.css.map */
