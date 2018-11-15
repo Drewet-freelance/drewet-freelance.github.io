@@ -209,9 +209,13 @@ footer { position: relative; }
 .footer-wrap-content__social .social__link:hover { background: #fff; -webkit-box-shadow: 0 0 30px 3px #fff; box-shadow: 0 0 30px 3px #fff; }
 .footer-wrap-content__social .social__link:hover .fa { color: #f06060; }
 
-.copyright { position: relative; z-index: 1; color: #0d0d0d; font-weight: 600; font-size: 12px; line-height: 26px; text-align: center; }
+.copyright { position: relative; z-index: 1; color: #0d0d0d; font-weight: 600; font-size: 12px; letter-spacing: 0.3px; padding: 4px 0 4px; text-align: center; }
 .copyright:before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; }
 .copyright:after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.2); }
+.copyright a { padding: 3px 0; position: relative; text-decoration: none; }
+.copyright a:before { content: ""; position: absolute; width: 100%; height: 2px; bottom: 0px; left: 0; background: #fff; visibility: hidden; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s; }
+.copyright a:hover { color: #fff; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+.copyright a:hover:before { visibility: visible; -webkit-transform: scaleX(1); transform: scaleX(1); }
 
 /** ====== AJAX FORM (mail) ====== */
 #AJAX_form { background: ivory url(../img/background/bg-ajax.jpg) center top no-repeat; background-size: cover; }
@@ -313,6 +317,7 @@ button.colored:hover { color: white; }
   .footer-wrap-content .logo { width: 110px; margin-top: 40px; }
   .footer-wrap-content__social .social { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 5px; }
   .footer-wrap-content__social .social__item:nth-child(2) { margin: 10px 0; }
+  .copyright { padding: 3px 0 3px; }
   /** ================= > 776px ================= */ }
 @media screen and (max-width: 767px) { .wrapper { padding-left: 20px; padding-right: 20px; }
   #popup__toggle .circlephone { width: 100px; height: 100px; right: 8px; }
@@ -395,7 +400,7 @@ button.colored:hover { color: white; }
   .footer-wrap-content .logo { margin: 0 auto; }
   .footer-wrap-content__contact { -ms-flex-item-align: center; align-self: center; margin-left: 0; }
   .footer-wrap-content__contact .contact-list__item { font-size: 13px; }
-  .copyright { font-size: 10px; }
+  .copyright { font-size: 10px; letter-spacing: 0.1px; }
   #AJAX_form .container { width: auto; padding: 5px; }
   #AJAX_form h2 { font-size: 15px; }
   #AJAX_form p { line-height: 16px; }
