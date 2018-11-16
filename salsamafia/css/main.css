@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* 2. Добавить Email в mail.php */
 /*4. Добавить в HTML когда была создана школа */
 @font-face { font-family: "durango_western_erodedregular"; src: url("../fonts/durango_western_eroded_demo-webfont.woff2") format("woff2"); src: url("../fonts/durango_western_eroded_demo-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "Neo Sans Pro"; src: url("../fonts/NeoSansPro-Bold.eot"); src: local("Neo Sans Pro Bold"), local("NeoSansPro-Bold"); src: url("../fonts/NeoSansPro-Bold.eot?#iefix") format("embedded-opentype"); src: url("../fonts/NeoSansPro-Bold.woff") format("woff"); src: url("../fonts/NeoSansPro-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
@@ -407,5 +406,4 @@ button.colored:hover { color: white; }
   #AJAX_form .check-list__item label { font-size: 13px; }
   #AJAX_form textarea { margin-bottom: 10px; }
   #AJAX_form button { font-size: 15px; padding: 0 40px; } }
-
 /*# sourceMappingURL=main.css.map */
