@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*4. Добавить в HTML когда была создана школа */
 @font-face { font-family: "durango_western_erodedregular"; src: url("../fonts/durango_western_eroded_demo-webfont.woff2") format("woff2"); src: url("../fonts/durango_western_eroded_demo-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "Neo Sans Pro"; src: url("../fonts/NeoSansPro-Bold.eot"); src: local("Neo Sans Pro Bold"), local("NeoSansPro-Bold"); src: url("../fonts/NeoSansPro-Bold.eot?#iefix") format("embedded-opentype"); src: url("../fonts/NeoSansPro-Bold.woff") format("woff"); src: url("../fonts/NeoSansPro-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
 @font-face { font-family: "Neo Sans Pro"; src: url("../fonts/NeoSansPro-LightItalic.eot"); src: local("Neo Sans Pro Light Italic"), local("NeoSansPro-LightItalic"); src: url("../fonts/NeoSansPro-LightItalic.eot?#iefix") format("embedded-opentype"); src: url("../fonts/NeoSansPro-LightItalic.woff") format("woff"); src: url("../fonts/NeoSansPro-LightItalic.ttf") format("truetype"); font-weight: 300; font-style: italic; }
@@ -9,9 +8,6 @@
 .preloader { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 999999999; background-color: #fff; background-position: center center; background-repeat: no-repeat; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .preloader img { width: 15%; -webkit-animation: spin 2s infinite; animation: spin 2s infinite; }
 
-@-webkit-keyframes spin { to { -webkit-transform: rotateY(360deg); transform: rotateY(360deg); } }
-
-@keyframes spin { to { -webkit-transform: rotateY(360deg); transform: rotateY(360deg); } }
 /** ====== Gradient styles ====== */
 .gradient-overlay { position: relative; }
 .gradient-overlay:before { content: ""; position: absolute; top: 0; left: 0; opacity: 0.96; width: 100%; height: 100%; background-color: #4b4b4b; }
@@ -77,7 +73,7 @@ header { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; }
 header.header-fixed { position: fixed; top: 0; width: 100%; z-index: 99999; -webkit-box-shadow: 0 3px 5px rgba(81, 183, 227, 0.2); box-shadow: 0 3px 5px rgba(81, 183, 227, 0.2); -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
 header.header-fixed .header-wrap__logo { width: 104px; padding-top: 0; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
 header.header-fixed #resize_mainmenu-container > ul > li { line-height: 35px; margin-top: 10px; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
-header.header-fixed #resize_main h1 { font-size: 50px; letter-spacing: 12px; color: #fff; padding-top: 10px; margin-bottom: 23px; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+header.header-fixed #resize_main h1 { font-size: 50px; letter-spacing: 12px; color: #fff; padding-top: 13px; margin-bottom: 23px; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
 header.header-fixed #resize_main h2 { display: none; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
 
 /* ===BANNER SLIDER (block-2) (Slider_Revolution_v4.1) ==== */
@@ -135,11 +131,19 @@ header.header-fixed #resize_main h2 { display: none; -webkit-transition: all 0.3
 .positivesign-wrap__item { background-color: #f7f7f7; width: 32%; margin-bottom: 30px; margin-right: 10px; -webkit-box-shadow: 0 2px 7px 0 rgba(10, 10, 10, 0.6), 3px 27px 54px -34px rgba(0, 0, 0, 0.82); box-shadow: 0 2px 7px 0 rgba(10, 10, 10, 0.6), 3px 27px 54px -34px rgba(0, 0, 0, 0.82); -webkit-transition: 0.3s; transition: 0.3s; border-radius: 5px; background-color: rgba(252, 255, 255, 0.9); }
 .positivesign-wrap__item:nth-child(3), .positivesign-wrap__item:last-child { margin-right: 0; }
 .positivesign-wrap__item:hover { -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.07); box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.07); }
+.positivesign-wrap__item:nth-child(1) .positivesign-wrap__img { background-image: url(../img/lesson.jpg); }
+.positivesign-wrap__item:nth-child(2) .positivesign-wrap__img { background-image: url(../img/ladystyle.jpg); }
+.positivesign-wrap__item:nth-child(3) .positivesign-wrap__img { background-image: url(../img/latin_man_style.jpg); }
+.positivesign-wrap__item:nth-child(4) .positivesign-wrap__img { background-image: url(../img/children.jpg); }
+.positivesign-wrap__item:nth-child(5) .positivesign-wrap__img { background-image: url(../img/show.jpg); }
+.positivesign-wrap__item:nth-child(6) .positivesign-wrap__img { background-image: url(../img/activity.jpg); }
+.positivesign-wrap__item:nth-child(7) .positivesign-wrap__img { background-image: url(../img/teachers.jpg); }
+.positivesign-wrap__item:nth-child(8) .positivesign-wrap__img { background-image: url(../img/team.jpg); }
 .positivesign-wrap__text { padding: 0 10px 15px; }
 .positivesign-wrap__text h3 { font-family: "Neo Sans Pro", sans-serif; font-size: 20px; font-weight: 700; color: #14141d; margin-top: 15px; margin-bottom: 10px; }
 .positivesign-wrap__text p { font-family: "Neo Sans Pro", sans-serif; font-weight: 300; font-style: italic; font-size: 16px; line-height: 22px; color: #14141d; text-indent: 2em; text-align: justify; letter-spacing: 0.5px; }
-.positivesign-wrap__img { width: 100%; overflow: hidden; max-height: 200px; margin: 0 auto; }
-.positivesign-wrap__img img { display: block; width: 100%; }
+.positivesign-wrap__img { height: 200px; background-repeat: no-repeat; background-size: cover; background-position: 50% 0%; }
+.positivesign-wrap__img a { display: inline-block; width: 100%; height: 100%; }
 .positivesign-wrap h2 { font-family: "Neo Sans Pro", sans-serif; font-weight: 700; font-size: 33px; color: #14141d; text-shadow: 0 0 5px white, 0 0 2px white; margin-bottom: 50px; text-align: center; }
 .positivesign-wrap h2 span { font-size: 37px; border: 5px solid red; border-radius: 20px; padding: 10px; color: red; text-shadow: none; }
 
@@ -406,5 +410,8 @@ button.colored:hover { color: white; }
   #AJAX_form .check-list__item label { font-size: 13px; }
   #AJAX_form textarea { margin-bottom: 10px; }
   #AJAX_form button { font-size: 15px; padding: 0 40px; } }
+/** ================= keyframes ================= */
+@-webkit-keyframes spin { to { -webkit-transform: rotateY(360deg); transform: rotateY(360deg); } }
+@keyframes spin { to { -webkit-transform: rotateY(360deg); transform: rotateY(360deg); } }
 
 /*# sourceMappingURL=main.css.map */
