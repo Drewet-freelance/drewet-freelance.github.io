@@ -1,2087 +1,692 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="format-detection" content="telephone=no">
+	<!--адаптивная страница-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>Интернетмагазин</title>
 
-	<!-- Шрифты -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
-	
-	<!-- Стили icomoon -->
-	<link rel="stylesheet" href="css/icomoon.css">	
-	
-	<!-- Form Styler -->
-	<link rel="stylesheet" href="css/jquery.formstyler.css">	
-	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">	
-	
-	<!-- Jquery необходимый для ползунка цены -->
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<title>Одностраничник</title>	
 
-	<!-- Основные стили -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />		
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+	<!-- Подключение основных стилей -->	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- слайдер -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 </head>
 <body>
-		
-<div class="main-wrapper">
-	<header class="header">
-			<!-- кнопка для iPad расширения -->
-			<button class="toggle-menu">
-				<span class="icon icon-Menu"></span>
-			</button>
-			<!-- меню для iPad расширени -->
-			<div class="dropdown-content dropdown-content--menu">
-				
-				<div class="dropdown-content__item">
-					<h4 class="dropdown-content__title">Men</h4>
-					<ul class="dropdown-menu">
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Bags</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Caps & Hats</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Gifts</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Grooming</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Hoodies & Sweatshirts</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Jeans</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Jewellery</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Joggers</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Jumpers & Cardigans</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Leather Jackets</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Long Sleeve T-Shirts</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Loungewear</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Polo Shirts</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Sunglasses</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Swimwear</a>
-						</li>				
-					</ul>
-				</div>
-				<div class="dropdown-content__item">
-					<h4 class="dropdown-content__title">Women</h4>
-					<ul class="dropdown-menu">
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Shirts</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Shoes, Boots & Trainers</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Shorts</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Suits & Blazers</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Sunglasses</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Swimwear</a>
-						</li>	
-					</ul>
-					<h4 class="dropdown-content__title">Accessories</h4>
-					<ul class="dropdown-menu">
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Hair Accessories</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Sunglasses & Readers</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Socks & Tights</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Hats</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Scarves & Gloves</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
-						</li>	
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Rompers & Jumpsuits</a>
-						</li>	
-					</ul>
-				</div>
-				<div class="dropdown-content__item">
-					<h4 class="dropdown-content__title">Kids</h4>
-					<ul class="dropdown-menu">
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">New Arrivals</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Dresses</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Tops</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Rompers & Jumpsuits</a>
-						</li>
-					</ul>
-					<h4 class="dropdown-content__title"><span class="text-error">Sale -70%</span> <br>LookBook <br>Blog</h4>
-					<div class="hr"></div>
-					<ul class="dropdown-menu">
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Shipping</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Payment</a>
-						</li>
-						<li class="dropdown-menu__item">
-							<a href="#" class="dropdown-menu__link">Help?</a>
-						</li>
-					</ul>
 
-				</div>
-				<div class="dropdown-content__item"></div>
-				
+	<header>
+		<div class="wrapper">
+			<div class="header-wrap">
+				<div class="logo"><a href="#">Mini</a></div>
+				<nav class="navigation">
+					<button class="menu-toggle"><!-- создать кнопку гамбургер для малого расширения экрана --> 
+						<span></span>
+						<span></span>
+						<span></span>
+					</button> 
+					<ul class="menu">
+						<li class="menu__item">
+							<a href="#" class="menu__link"> About</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Team</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Services</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Works</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Blog</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-<!-- логотип -->
-			<div class="logo">
-				<a href="#">
-					<img src="img/logo.png" alt="" class="hidden-iphone">
-					<img src="img/mobile-logo.png" alt="" class="hidden-ipad">
-				</a>
-			</div>
-<!-- главное меню -->
-			<ul class="main-menu">
-				<li class="main-menu__item dropdown">
-					<a href="#" class="main-menu__link">Men <span class="icon-Right"></span></a>
-	<!-- внутреннее подменю -->
-					<div class="dropdown-content">
-						<ul class="dropdown-menu">
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Bags</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Caps & Hats</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Gifts</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Grooming</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Hoodies & Sweatshirts</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Jeans</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Jewellery</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Joggers</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Jumpers & Cardigans</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Leather Jackets</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Long Sleeve T-Shirts</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Loungewear</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Polo Shirts</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Sunglasses</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Swimwear</a>
-							</li>				
-						</ul>
-					</div>
-				</li>
-				<li class="main-menu__item dropdown">
-					<a href="#" class="main-menu__link">Women <span class="icon-Right"></span></a>
-	<!-- внутреннее подменю -->
-					<div class="dropdown-content">
-						<ul class="dropdown-menu">
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Shirts</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Shoes, Boots & Trainers</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Shorts</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Suits & Blazers</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Sunglasses</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Swimwear</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="main-menu__item dropdown">
-					<a href="#" class="main-menu__link">Kids <span class="icon-Right"></span></a>
-	<!-- внутреннее подменю -->
-					<div class="dropdown-content">
-						<ul class="dropdown-menu">
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">New Arrivals</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Dresses</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Tops</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Sweaters & Knits</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Rompers & Jumpsuits</a>
-							</li>	
-						</ul>
-					</div>
-				</li>
-				<li class="main-menu__item dropdown">
-					<a href="#" class="main-menu__link">Accessories <span class="icon-Right"></span></a>
-	<!-- внутреннее подменю -->
-					<div class="dropdown-content">
-						<ul class="dropdown-menu">
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Hair Accessories</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Sunglasses & Readers</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Socks & Tights</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Hats</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Scarves & Gloves</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Jackets & Coats</a>
-							</li>
-							<li class="dropdown-menu__item">
-								<a href="#" class="dropdown-menu__link">Rompers & Jumpsuits</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">Sale</a>
-				</li>
-				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">LookBook</a>
-				</li>
-				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">Blog</a>
-				</li>
-			</ul>
-<!-- строка поиска -->
-				<div class="search">
-					<form action="#">
-						<input type="text" class="form-control search__input" placeholder="Search" />
-						<input type="submit" value="&#xe922;" class="search__button"/>
-					</form>
-				</div>
-<!-- местоположение -->				
-				<div class="location">
-					<span class="icon-location-pin"></span>
-					<a href="" class="location__link">Uzbekistan / $</a>
-				</div>
-
-
-				<ul class="profile-menu">
-<!-- Basket -->
-					<li class="profile-menu__item dropdown dropdown--right dropdown--white">
-						<a href="#" class="profile-menu__link">
-							<span class="basket">
-								<span class="icon-bag"></span>
-								<span class="badge">3</span>
-							</span>
-							<span class="b-price">$165</span>
-						</a>
-	<!-- выпадающий список для корзинки-->
-						<div class="dropdown-content">
-							<div class="cart">
-								<ul class="cart-list">
-				<!-- Продукт 1 -->
-									<li class="cart-list__item">
-										<!-- иконка -->
-										<div class="cart-list__img">
-											<a href="#"><img src="img/jacket.png" alt=""></a>
-										</div>
-										<!-- информация-->
-										<div class="cart-list__info">
-											<h6 class="product__title"><a href="#">New Balance Men's Street Backpack</a></h6>
-											<div class="cart-list__details">
-												<span class="price">$485</span>
-												<span class="product__details">
-													<span>S</span>
-													<span>•</span>
-													<span>Black</span>
-													<span>•</span>
-													<span>1 pcs</span>
-												</span>
-											</div>
-										</div>
-										<!-- крестик -->
-										<div class="cart-list__delete">
-											<a href="#" class="js-remove-cart">
-												<span class="icon-remove"></span>
-											</a>
-										</div>
-									</li>
-				<!-- Продукт 2 -->									
-									<li class="cart-list__item">
-										<!-- иконка -->
-										<div class="cart-list__img">
-											<a href="#"><img src="img/shoe.png" alt=""></a>
-										</div>
-										<!-- информация-->
-										<div class="cart-list__info">
-											<h6 class="product__title"><a href="#">Lyle & Scott Men's Short Sleeve Camo Pocket</a></h6>
-											<div class="cart-list__details">
-												<span class="price price--danger">$85</span>
-												<span class="product__details">
-													<span>XXL</span>
-													<span>•</span>
-													<span>White</span>
-													<span>•</span>
-													<span>3 pcs</span>
-												</span>
-											</div>
-										</div>
-										<!-- крестик -->
-										<div class="cart-list__delete">
-											<a href="#" class="js-remove-cart">
-												<span class="icon-remove"></span>
-											</a>
-										</div>
-									</li>
-				<!-- Продукт 3 -->
-									<li class="cart-list__item">
-										<!-- иконка -->
-										<div class="cart-list__img">
-											<a href="#"><img src="img/coat.png" alt=""></a>
-										</div>
-										<!-- информация-->
-										<div class="cart-list__info">
-											<h6 class="product__title"><a href="#">Lyle & Scott Men's Short Sleeve Camo Pocket</a></h6>
-											<div class="cart-list__details">
-												<span class="price">$1285</span>
-												<span class="product__details">
-													<span>M</span>
-													<span>•</span>
-													<span>Orange</span>
-													<span>•</span>
-													<span>89 pcs</span>
-												</span>
-											</div>
-										</div>
-										<!-- крестик -->
-										<div class="cart-list__delete">
-											<a href="#" class="js-remove-cart">
-												<span class="icon-remove"></span>
-											</a>
-										</div>
-									</li>
-								</ul>
-								<div class="cart-footer">
-									<span class="total">Total</span>
-									<span class="price">$3 285</span>
-									<a href="#" class="btn">Check Out</a>
-								</div>
-							</div>
-						</div>					
-					</li>
-<!-- Log in -->
-					<li class="profile-menu__item dropdown dropdown--right dropdown--white">
-						<a href="#" class="profile-menu__link">
-							<span class="icon-user1"></span>
-						</a>
-	<!-- выпадающий список -->
-						<div class="dropdown-content">
-							<ul class="user-menu">
-								<li class="user-menu__item">
-									<a href="#" class="user-menu__link"><span class="icon-user"></span>Profile</a>
-								</li>
-								<li class="user-menu__item">
-									<a href="#" class="user-menu__link">
-									<span class="icon-heart"></span>Wishlist<span class="badge">2</span></a>
-								</li>
-								<li class="user-menu__item">
-									<a href="#" class="user-menu__link">
-									<span class="icon-basket"></span>Orders</a>
-								</li>
-								<li class="user-menu__item">
-									<a href="#" class="user-menu__link">
-									<span class="icon-gear"></span>
-									Settings</a>
-								</li>
-								<li class="user-menu__item">
-									<a href="#" class="user-menu__link">
-									<span class="icon-power"></span>
-									Log out</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-		
+		</div>
 	</header>
-
-	<main class="main">
-	<!-- бэкграунд -->
-		<section class="header-inner" style="background-image: url('img/header-inner.png');">
-			<ul class="bread-crambs">
-				<li class="bread-crambs__item">
-					<a href="#" class="bread-crambs__link">Home</a> /
-				</li>
-				<li class="bread-crambs__item">
-					<a href="#" class="bread-crambs__link">Men</a> /
-				</li>
-			</ul>
-			<span class="category">men</span>
-			<h1 class="header-inner__title">Polo Shirts</h1>
-		</section>
-
-	<!-- фильтры и сортировка -->
-		<!-- tab-wrap отвечает за скрипт поэтому он помещен внутрь (обеденяет фильтр и блок переключалок) -->
-		<div class="tab-wrap">
-			<div class="filter">
-				<div class="filter-sidebar">
-					<button class="toggle-filter">
-						<span class="icon-sliders"></span> 
-						<span class="sr-only">Filters</span> <!-- для iPad версии -->
-					</button>
-					<span class="filter__title">34 items found</span>
+	<section class="banner">
+		<div class="wrapper">
+			<div class="banner-slider">
+				<div>
+					<h1>Best Creative Studio 
+						<span class="lg">Design / Branding / WordPres</span>
+						<span class="sm">We Make Great Ideas Happen</span>
+					</h1>
+					<a href="#" class="btn">Learn More</a>
 				</div>
-				<div class="filter-content">
-					<span class="filter__title">Sort by</span>
-			<!-- кнопки сортировки -->		
-					<div class="sort">
-						<!-- input и label связываются (чтобы их связать нужно дать однаковые имена id и for) -->  
-						<input type="radio" id="sort1" name="sort">
-						<label for="sort1" class="sort__item">Price <span class="icon-data-transmission"></span></label>
-						<input type="radio" id="sort2" name="sort" checked="">
-						<label for="sort2" class="sort__item">Name <span class="icon-data-transmission"></span></label>
-						<input type="radio" id="sort3" name="sort">	
-						<label for="sort3" class="sort__item">Date <span class="icon-data-transmission"></span></label>
+				<div>
+					<h1>Best Creative Studio 2
+						<span class="lg">Design / Branding / WordPres</span>
+						<span class="sm">We Make Great Ideas Happen</span>
+					</h1>
+					<a href="#" class="btn">Learn More</a>
+				</div>
+				<div>
+					<h1>Best Creative Studio 3
+						<span class="lg">Design / Branding / WordPres</span>
+						<span class="sm">We Make Great Ideas Happen</span>
+					</h1>
+					<a href="#" class="btn">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about section">
+		<div class="wrapper">
+			<div class="heading">
+				<h2>About</h2>
+				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+			</div>
+			<div class="about-wrap">
+				<div class="about-wrap-content">
+					<div class="about-wrap-content__icon">
+						<span class="icon-bulb"></span>
 					</div>
-
-			<!-- иконки отображения (справа от окна) -->
-					<ul class="filter-list tabs"> <!-- tabs добавлен для скрипта -->
-						<!-- #tab_1 -#tab_3 якоря -->
-						<li class="filter-list__item">
-							<a href="#tab_1" class="filter-list__link"><span class="icon-List"></span></a>
-						</li>
-						<li class="filter-list__item active"> <!-- active добавлен для того чтобы переключать цвет активного элемента -->
-							<a href="#tab_2" class="filter-list__link"><span class="icon-List_2"></span></a>
-						</li>
-						<li class="filter-list__item">
-							<a href="#tab_3" class="filter-list__link"><span class="icon-list"></span></a>
-						</li>
-					</ul>
+					<div class="about-wrap-content__text">
+						<h6>Our Story</h6>
+						<p class="about-text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+						<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+					</div>
+				</div>
+				<div class="about-wrap-img">
+					<img src="img/about-wrap-img.png" alt="">
+					<span class="about-wrap-img-icon">
+						<span class="icon-Shape-1"></span>
+					</span>
 				</div>
 			</div>
 
-			<div class="box-main">
-				<aside class="sidebar">
-					<div class="accordion">
-						<!-- чтобы часть акордиона была открыта добавляем клас open -->
-						<div class="accordion__head open">
-							<h5 class="accordion__title">Category</h5>
-							<span class="icon-dd"></span>
+			<div class="hr"></div>
+
+			<div class="box-skills">
+				<div class="box-skills__item box-skills__item--img">
+					<img src="img/website.png" alt="">
+				</div>
+				<div class="box-skills__item box-skills__item--content">
+					<div class="about-wrap-content">
+						<div class="about-wrap-content__icon">
+							<span class="icon-params"></span>
 						</div>
-						<div class="accordion__body">
-							<!-- чтобы стилизировать элементы используется плагин Form Styler (http://dimox.name/jquery-form-styler/) -->
-							<ul class="check-list">
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list1">
-									<label for="check-list1" class="check-list__text">Bags</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list2">
-									<label for="check-list2" class="check-list__text">Belts</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list3">
-									<label for="check-list3" class="check-list__text">Hats, Scarves & Gloves</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list4">
-									<label for="check-list4" class="check-list__text">Sunglasses</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list5">
-									<label for="check-list5" class="check-list__text">Watches</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list6">
-									<label for="check-list6" class="check-list__text">Wallets</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list7">
-									<label for="check-list7" class="check-list__text">Boat Shoes</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list8">
-									<label for="check-list8" class="check-list__text">Boots</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list9">
-									<label for="check-list9" class="check-list__text">Deserts & Chukkas</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list10">
-									<label for="check-list10" class="check-list__text">Espadrilles & Sandals</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list11">
-									<label for="check-list11" class="check-list__text">Flip Flops</label>
-								</li>
-							</ul>
-						</div>
-						<div class="accordion__head">
-							<h5 class="accordion__title">Brand</h5>
-							<span class="icon-dd"></span>
-						</div>
-						<!-- чтобы блок был закрыт нужно указать style="display: none;" --> 
-						<div class="accordion__body" style="display: none;">
-							<!-- чтобы стилизировать элементы используется плагин Form Styler (http://dimox.name/jquery-form-styler/) -->
-							<ul class="check-list">
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list1">
-									<label for="check-list1" class="check-list__text">Bags</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list2">
-									<label for="check-list2" class="check-list__text">Belts</label>
-								</li>
-							</ul>
-						</div>
-						<div class="accordion__head">
-							<h5 class="accordion__title">Size</h5>
-							<span class="icon-dd"></span>
-						</div>
-						<!-- чтобы блок был закрыт нужно указать style="display: none;" --> 
-						<div class="accordion__body" style="display: none;">
-							<!-- чтобы стилизировать элементы используется плагин Form Styler (http://dimox.name/jquery-form-styler/) -->
-							<ul class="check-list check-list--column">
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list1">
-									<label for="check-list1" class="check-list__text">S</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list2">
-									<label for="check-list2" class="check-list__text">XL</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list3">
-									<label for="check-list3" class="check-list__text">M</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list4">
-									<label for="check-list4" class="check-list__text">XXL</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list5">
-									<label for="check-list5" class="check-list__text">L</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list6">
-									<label for="check-list6" class="check-list__text">XXXL</label>
-								</li>								
-							</ul>
-						</div>
-						<div class="accordion__head">
-							<h5 class="accordion__title">Price</h5>
-							<span class="icon-dd"></span>
-						</div>
-						<!-- чтобы блок был закрыт нужно указать style="display: none;" --> 
-						<div class="accordion__body" style="display: none;">
-							<!-- ползунок цены плагин jquery Slider https://jqueryui.com/slider/#range -->
-							<div id="slider-range"></div>
-							<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-							<!-- чтобы цена размещалась по сторонам бокса нужно скопировать input и сменить id .. также нужно модифицыровать код в custom.js-->
-							<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
-						</div>
-						<div class="accordion__head">
-							<h5 class="accordion__title">Color</h5>
-							<span class="icon-dd"></span>
-						</div>
-						<!-- чтобы блок был закрыт нужно указать style="display: none;" --> 
-						<div class="accordion__body" style="display: none;">
-							<!-- чтобы стилизировать элементы используется плагин Form Styler (http://dimox.name/jquery-form-styler/) -->
-							<ul class="check-list check-list--column">
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list1">
-									<label for="check-list1" class="check-list__text">Beige</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list2">
-									<label for="check-list2" class="check-list__text">Multi</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list3">
-									<label for="check-list3" class="check-list__text">Black</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list4">
-									<label for="check-list4" class="check-list__text">Navy</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list5">
-									<label for="check-list5" class="check-list__text">Blue</label>
-								</li>
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list6">
-									<label for="check-list6" class="check-list__text">Orange</label>
-								</li>	
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list7">
-									<label for="check-list7" class="check-list__text">Brown</label>
-								</li>	
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list8">
-									<label for="check-list8" class="check-list__text">Pink</label>
-								</li>	
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list9">
-									<label for="check-list9" class="check-list__text">Copper</label>
-								</li>	
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list10">
-									<label for="check-list10" class="check-list__text">Purple</label>
-								</li>	
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list11">
-									<label for="check-list11" class="check-list__text">Green</label>
-								</li>	
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list12">
-									<label for="check-list12" class="check-list__text">Red</label>
-								</li>	
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list13">
-									<label for="check-list13" class="check-list__text">Graye</label>
-								</li>	
-								<li class="check-list__item">
-									<input type="checkbox" class="styler" id="check-list14">
-									<label for="check-list14" class="check-list__text">Tan</label>
-								</li>	
-							</ul>
+						<div class="about-wrap-content__text">
+							<h6>Our Skills</h6>
+							<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
 						</div>
 					</div>
-				</aside>
-				<div class="content">
-				<!-- блок переключалок -->
-					<div class="box-tab-cont">
-						<!-- #tab_1 -#tab_3 якоря используются в filter-list__link-->
-	<!-- якорь_1 -->
-						<div class="tab-cont hide" id="tab_1">
-							<div class="box-product">
-								<!-- якоря 1 внесен клас product--horizontal -->
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись hit в footer -->
-									<div class="product__footer hit">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-								<div class="product product--horizontal">
-									<div class="product__img">
-										<img src="img/1.png" alt="">
-									</div>
-									<div class="product__content">
-										<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-										<span class="product__category">Blazers</span>
-									</div>	
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="price">$55</span>
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="discount">60</span>
-									</div>
-									<div class="product__card">
-										<select class="styler">
-											<option value="">size</option>
-											<option value="">S</option>
-											<option value="">L</option>
-											<option value="">M</option>
-										</select>
-										<a href="#" class="btn">Add to cart</a>
-										<br>
-										<a href="#" class="favorite">
-											<span class="icon icon-heart-plus"></span>
-											Add to wishlist
-										</a>
-									</div>
-								</div>
-							</div>						
-						</div>
-	<!-- якорь_2 -->
-						<div class="tab-cont" id="tab_2">
-							<div class="box-product">
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="price">$55</span>
-										<span class="discount">60</span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись hit в footer --> 
-									<div class="product__footer hit">
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-										<span class="price">$85</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="price">$55</span>
-										<span class="discount">60</span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись new в footer --> 
-									<div class="product__footer new">
-										<span class="pbadge"><img src="img/new.png" alt=""></span>
-										<span class="price">$85</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="price">$55</span>
-										<span class="discount">60</span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись hit в footer --> 
-									<div class="product__footer hit">
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-										<span class="price">$85</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="price">$55</span>
-										<span class="discount">60</span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись new в footer --> 
-									<div class="product__footer new">
-										<span class="pbadge"><img src="img/new.png" alt=""></span>
-										<span class="price">$85</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="price">$55</span>
-										<span class="discount">60</span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись hit в footer --> 
-									<div class="product__footer hit">
-										<span class="pbadge"><img src="img/hit.png" alt=""></span>
-										<span class="price">$85</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись sale в footer -->
-									<div class="product__footer sale">
-										<span class="pbadge"><img src="img/sale.png" alt=""></span>
-										<span class="price">$55</span>
-										<span class="discount">60</span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<!-- внесена запись new в footer --> 
-									<div class="product__footer new">
-										<span class="pbadge"><img src="img/new.png" alt=""></span>
-										<span class="price">$85</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
-								<div class="product">
-									<h6 class="product__title"><a href="#">Lacoste Men's Pocket Polo Shirt - Sahara</a></h6>
-									<div class="product__img">
-										<img src="img/product-img.png" alt="">
-										<div class="product__card">
-											<select class="styler">
-												<option value="">size</option>
-												<option value="">S</option>
-												<option value="">L</option>
-												<option value="">M</option>
-											</select>
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="favorite">
-												<span class="icon icon-heart-plus"></span>
-												Add to wishlist
-											</a>
-										</div>
-									</div>
-									<div class="product__footer">
-										<span class="pbadge"></span>
-										<span class="price">$75</span>
-										<span class="discount"></span>
-									</div>
-								</div>
+					<div class="box-bars">
+						<div class="bars">
+							<div class="bars__title">Design <span>/</span> <span class="procent">88%</span></div>
+							<div class="bars-line">
+								<div style="width: 88%;"></div> <!-- будет обрабатываться програмно-->
 							</div>
 						</div>
-	<!-- якорь_3 -->					
-						<div class="tab-cont hide" id="tab_3">
-							333
+						<div class="bars"> 
+							<div class="bars__title">Development <span>/</span> <span class="procent">76%</span></div>
+							<div class="bars-line">
+								<div style="width: 76%;"></div> <!-- будет обрабатываться програмно-->
+							</div>
 						</div>
-					</div>
-	<!-- панель загрузки следующих страниц -->
-					<div class="pagination">
-						<span class="pagination__item">2 page of 23</span>
-						<!-- добавлен клас load для выравнивания -->
-						<span class="pagination__item load">
-							<span class="icon  icon-reload"></span>
-							Load more
-						</span>
-						<span class="pagination__item">30 items</span>
+						<div class="bars"> 
+							<div class="bars__title">WordPress <span>/</span> <span class="procent">81%</span></div>
+							<div class="bars-line">
+								<div style="width: 81%;"></div> <!-- будет обрабатываться програмно-->
+							</div>
+						</div>
+						<div class="bars"> 
+							<div class="bars__title">Drupal <span>/</span> <span class="procent">71%</span></div>
+							<div class="bars-line">
+								<div style="width: 71%;"></div> <!-- будет обрабатываться програмно-->
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</main>		
-	
-	<footer>
+	</section> 
+	<section class="section-bg quote-bg">
+		<div class="wrapper">
+			<div class="quote">
+				<blockquote class="quote__text">
+					Simplicity is about subtracting the obvious and adding the meaningful
+				</blockquote>
+				<span class="quote__author">John Maeda</span>
+			</div>
+		</div>
+	</section>
+	<section class="box-team section">
+		<div class="wrapper">
+			<div class="heading">
+				<h2>Team</h2>
+				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+			</div>
+			<div class="team-list">
+				<div class="team-list__item">
+					<div class="team-list__img"><span class="icon-user"></span></div>
+					<h4>john Doe</h4>
+					<span class="team-list__job">Founder</span>
+					<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+					<div class="social">
+						<a href="#" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				
+				<div class="team-list__item">
+					<div class="team-list__img"><span class="icon-user"></span></div>
+					<h4>Jesmine Doe</h4>
+					<span class="team-list__job">Designer</span>
+					<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Morbi accumsan ipsum velit. am nec tellus a odio tincidunt auctor a ornare odio.</p>
+					<div class="social">
+						<a href="#" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="team-list__item">
+					<div class="team-list__img"><span class="icon-user"></span></div>
+					<h4>Martin Doe</h4>
+					<span class="team-list__job">Developer</span>
+					<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+					<div class="social">
+						<a href="#" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="team-list__item">
+					<div class="team-list__img"><span class="icon-user"></span></div>
+					<h4>Anthony Doe</h4>
+					<span class="team-list__job">Photographer</span>
+					<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+					<div class="social">
+						<a href="#" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="#" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				</div>
+			</div>
 
+		</div>
+	</section>
+	<section class="section-bg">
+		<div class="wrapper">
+			<div class="facts-list">
+				<div class="facts-list__item">
+					<div class="facts-list__icon"><span class="icon-cup"></span></div>	
+					<h5><span>6K+</span>Coffees</h5>
+				</div>
+				<div class="facts-list__item">
+					<div class="facts-list__icon"><span class="icon-stack"></span></div>	
+					<h5><span>743</span>Projects</h5>
+				</div>
+				<div class="facts-list__item">
+					<div class="facts-list__icon"><span class="icon-user"></span></div>	
+					<h5><span>435</span>Clients</h5>
+				</div>
+				<div class="facts-list__item">
+					<div class="facts-list__icon"><span class="icon-like"></span></div>	
+					<h5><span>225</span>Awards</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="service section">
+		<div class="wrapper">
+			<div class="heading">
+				<h2>Service</h2>
+				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+			</div>
+			<div class="service-list">
+				<div class="service-list__item">
+					<div class="service-list__icon"><span class="icon-star"></span></div>
+					<h6>Designing</h6>
+					<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+				</div>
+				<div class="service-list__item">
+					<div class="service-list__icon"><span class="icon-lab"></span></div>
+					<h6>Developing</h6>
+					<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+				</div>
+				<div class="service-list__item">
+					<div class="service-list__icon"><span class="icon-world"></span></div>
+					<h6>Branding</h6>
+					<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+				</div>
+			</div>
+			<div class="hr"></div>
+			<div class="box-pricing">
+				<div class="service-list__item">
+					<div class="service-list__icon"><span class="icon-banknote"></span></div>
+					<h6>Designing</h6>
+					<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+				</div>
+				<div class="pricing">
+					<div class="pricing__item">
+						<div class="pricing-header">
+							<span class="pricing-header__title">Basic <span>$35</span></span>
+						</div>
+						<ul class="pricing-list">
+							<li>First Description</li>
+							<li>Second Description</li>
+							<li>Third Description</li>
+							<li>Fourth Description</li>
+						</ul>
+						<div class="pricing-footer">
+							<a href="#" class="btn btn--warning">Purchase</a>
+						</div>
+					</div>
+
+					<div class="pricing__item active">
+						<div class="pricing-header">
+							<span class="pricing-header__title">Gold <span>$99</span></span>
+						</div>
+						<ul class="pricing-list">
+							<li>First Description</li>
+							<li>Second Description</li>
+							<li>Third Description</li>
+							<li>Fourth Description</li>
+						</ul>
+						<div class="pricing-footer">
+							<a href="#" class="btn btn--warning">Purchase</a>
+						</div>
+					</div>
+
+					<div class="pricing__item">
+						<div class="pricing-header">
+							<span class="pricing-header__title">Silver <span>$65</span></span>
+						</div>
+						<ul class="pricing-list">
+							<li>First Description</li>
+							<li>Second Description</li>
+							<li>Third Description</li>
+							<li>Fourth Description</li>
+						</ul>
+						<div class="pricing-footer">
+							<a href="#" class="btn btn--warning">Purchase</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-bg">
+		<div class="wrapper">
+			<div class="testimonial-slider">
+				<div>
+					<div class="testimonial">
+						<span class="quote__author">Maria Jones</span>
+						<p class="testimonial_text">“Proin gravida nibh vel velit auctor liquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</p>
+						<div class="testimonial__avatar"><img src="img/lady.png" alt=""></div>
+					</div>
+				</div>
+				<div>
+					<div class="testimonial">
+						<span class="quote__author">Maria Jones</span>
+						<p class="testimonial_text">“Proin gravida nibh vel velit auctor liquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</p>
+						<div class="testimonial__avatar"><img src="img/lady.png" alt=""></div>
+					</div>
+				</div>
+				<div>
+					<div class="testimonial">
+						<span class="quote__author">Maria Jones</span>
+						<p class="testimonial_text">“Proin gravida nibh vel velit auctor liquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</p>
+						<div class="testimonial__avatar"><img src="img/lady.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio section">
+		<div class="wrapper">
+			<div class="heading">
+				<h2>portfolio</h2>
+				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+			</div>
+			<div class="box-portfolio-slider">
+				<div class="portfolio-slider">
+					<div><a href="#"><img src="img/rectangle-136.png" alt=""></a></div>
+					<div><a href="#">1<img src="img/rectangle-136.png" alt=""></a></div>
+					<div><a href="#">2<img src="img/rectangle-136.png" alt=""></a></div>
+				</div>
+				<div class="portfolio-slider__buttons"></div>
+				<div class="portfolio-slider__footer">
+					<div class="portfolio-list__title">Digital ArtWork</div>
+					<div class="portfolio-list__category">Graphic Design</div>
+				</div>
+			</div>
+			<div class="hr"></div>
+			<div class="tab-wrap">
+				<ul class="nav-tab-list tabs">
+					<li class="nav-tab-list__item active">
+						<a href="#tab_1" class="nav-tab-list__link">All Work</a>
+					</li>
+					<li class="nav-tab-list__item">
+						<a href="#tab_2" class="nav-tab-list__link">Graphics</a>
+					</li>
+					<li class="nav-tab-list__item">
+						<a href="#tab_3" class="nav-tab-list__link">WebDesign</a>
+					</li>
+					<li class="nav-tab-list__item">
+						<a href="#tab_4" class="nav-tab-list__link">Branding</a>
+					</li>
+					<li class="nav-tab-list__item">
+						<a href="#tab_5" class="nav-tab-list__link">Video</a>
+					</li>
+					<li class="nav-tab-list__item">
+						<a href="#tab_6" class="nav-tab-list__link">Photography</a>
+					</li>
+				</ul>
+				<div class="box-tab-cont">
+					<div class="tab-cont" id="tab_1">
+						<div class="portfolio-list">
+							<div class="portfolio-list__item">
+								<a href="#" class="portfolio-list__link"></a>
+								<div class="portfolio-list__img">
+									<img src="img/portfolio-list-img.png" alt="">
+									<a href="#" class="portfolio-list__preview"></a>
+								</div>
+								<div class="portfolio-list__footer">
+									<div class="portfolio-list__title">project Title Here</div>
+									<div class="portfolio-list__category">Graphics</div>
+								</div>
+							</div>
+							<div class="portfolio-list__item">
+								<a href="#" class="portfolio-list__link"></a>
+								<div class="portfolio-list__img">
+									<img src="img/portfolio-list-img.png" alt="">
+									<a href="#" class="portfolio-list__preview"></a>
+								</div>
+								<div class="portfolio-list__footer">
+									<div class="portfolio-list__title">project Title Here</div>
+									<div class="portfolio-list__category">Graphics</div>
+								</div>
+							</div>
+							<div class="portfolio-list__item">
+								<a href="#" class="portfolio-list__link"></a>
+								<div class="portfolio-list__img">
+									<img src="img/portfolio-list-img.png" alt="">
+									<a href="#" class="portfolio-list__preview"></a>
+								</div>
+								<div class="portfolio-list__footer">
+									<div class="portfolio-list__title">project Title Here</div>
+									<div class="portfolio-list__category">Graphics</div>
+								</div>
+							</div>
+							<div class="portfolio-list__item">
+								<a href="#" class="portfolio-list__link"></a>
+								<div class="portfolio-list__img">
+									<img src="img/portfolio-list-img.png" alt="">
+									<a href="#" class="portfolio-list__preview"></a>
+								</div>
+								<div class="portfolio-list__footer">
+									<div class="portfolio-list__title">project Title Here</div>
+									<div class="portfolio-list__category">Graphics</div>
+								</div>
+							</div>
+							<div class="portfolio-list__item">
+								<a href="#" class="portfolio-list__link"></a>
+								<div class="portfolio-list__img">
+									<img src="img/portfolio-list-img.png" alt="">
+									<a href="#" class="portfolio-list__preview"></a>
+								</div>
+								<div class="portfolio-list__footer">
+									<div class="portfolio-list__title">project Title Here</div>
+									<div class="portfolio-list__category">Graphics</div>
+								</div>
+							</div>
+							<div class="portfolio-list__item">
+								<a href="#" class="portfolio-list__link"></a>
+								<div class="portfolio-list__img">
+									<img src="img/portfolio-list-img.png" alt="">
+									<a href="#" class="portfolio-list__preview"></a>
+								</div>
+								<div class="portfolio-list__footer">
+									<div class="portfolio-list__title">project Title Here</div>
+									<div class="portfolio-list__category">Graphics</div>
+								</div>
+							</div>
+							<div class="portfolio-list__item">
+								<a href="#" class="portfolio-list__link"></a>
+								<div class="portfolio-list__img">
+									<img src="img/portfolio-list-img.png" alt="">
+									<a href="#" class="portfolio-list__preview"></a>
+								</div>
+								<div class="portfolio-list__footer">
+									<div class="portfolio-list__title">project Title Here</div>
+									<div class="portfolio-list__category">Graphics</div>
+								</div>
+							</div>
+							<div class="portfolio-list__item">
+								<a href="#" class="portfolio-list__link"></a>
+								<div class="portfolio-list__img">
+									<img src="img/portfolio-list-img.png" alt="">
+									<a href="#" class="portfolio-list__preview"></a>
+								</div>
+								<div class="portfolio-list__footer">
+									<div class="portfolio-list__title">project Title Here</div>
+									<div class="portfolio-list__category">Graphics</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+					<div class="tab-cont hide" id="tab_2">.2..</div>
+					<div class="tab-cont hide" id="tab_3">.3..</div>
+					<div class="tab-cont hide" id="tab_4">.4..</div>
+					<div class="tab-cont hide" id="tab_5">.5..</div>
+					<div class="tab-cont hide" id="tab_6">.6..</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-bg tweet">
+		<div class="wrapper">
+			<div class="tweet-wrap">
+				<div class="tweet-wrap__icon"><img src="img/twitter.png" alt=""></div>
+				<p class="tweet-wrap__text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,<br> nec sagittis sem nibh id elit. Duis sed odio sit amet nibh <a href="ow.ly/ttlwd">ow.ly/ttlwd</a></p>
+				<span class="tweet-wrap__time">3 hours ago</span>
+			</div>
+		</div>
+	</section>
+	<section class="section blog">
+		<div class="wrapper">
+			<div class="heading">
+				<h2>Blog</h2>
+				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+			</div>
+			<div class="blog-list">
+				
+				<div class="blog-list__item">
+					<div class="blog-list__img">
+						<a href="#" class="blog-list__link"></a>
+						<img src="img/blog-img.png" alt="">
+						<div class="blog-list__header">
+							<span class="blog-list__icon"><span class="icon-slideshow"></span></span>
+							<h6 class="blog-list__title">Awesome Blog Post Title Goes Here</h6>
+						</div>
+					</div>
+					<div class="blog-list__footer">
+						<div class="blog-list__date">
+							<span>21 Feb ‘14</span>
+							<span>John Doe</span>
+							<span>24 Comments</span>
+						</div>
+						<div class="blog-list__info">
+							<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+							<a href="#" class="btn btn--warning">Read On</a>
+						</div>
+					</div>
+				</div>
+				<div class="blog-list__item">
+					<div class="blog-list__img">
+						<a href="#" class="blog-list__link"></a>
+						<img src="img/blog-img.png" alt="">
+						<div class="blog-list__header">
+							<span class="blog-list__icon"><span class="icon-slideshow2"></span></span>
+							<h6 class="blog-list__title">Awesome Blog Post Title Goes Here</h6>
+						</div>
+					</div>
+					<div class="blog-list__footer">
+						<div class="blog-list__date">
+							<span>21 Feb ‘14</span>
+							<span>John Doe</span>
+							<span>24 Comments</span>
+						</div>
+						<div class="blog-list__info">
+							<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+							<a href="#" class="btn btn--warning">Read On</a>
+						</div>
+					</div>
+				</div>
+				<div class="blog-list__item">
+					<div class="blog-list__img">
+						<a href="#" class="blog-list__link"></a>
+						<img src="img/blog-img.png" alt="">
+						<div class="blog-list__header">
+							<span class="blog-list__icon"><span class="icon-film"></span></span>
+							<h6 class="blog-list__title">Awesome Blog Post Title Goes Here</h6>
+						</div>
+					</div>
+					<div class="blog-list__footer">
+						<div class="blog-list__date">
+							<span>21 Feb ‘14</span>
+							<span>John Doe</span>
+							<span>24 Comments</span>
+						</div>
+						<div class="blog-list__info">
+							<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+							<a href="#" class="btn btn--warning">Read On</a>
+						</div>
+					</div>
+				</div>
+				<div class="blog-list__item">
+					<div class="blog-list__img">
+						<a href="#" class="blog-list__link"></a>
+						<img src="img/blog-img.png" alt="">
+						<div class="blog-list__header">
+							<span class="blog-list__icon"><span class="icon-handset"></span></span>
+							<h6 class="blog-list__title">Awesome Blog Post Title Goes Here</h6>
+						</div>
+					</div>
+					<div class="blog-list__footer">
+						<div class="blog-list__date">
+							<span>21 Feb ‘14</span>
+							<span>John Doe</span>
+							<span>24 Comments</span>
+						</div>
+						<div class="blog-list__info">
+							<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+							<a href="#" class="btn btn--warning">Read On</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="section-bg clients">
+		<div class="wrapper">
+			<h2>Our Clients</h2>
+			<ul class="clients-list">
+				<li class="clients-list__item"><a href=""><img src="img/clients-logo1.png" alt=""></a></li>
+				<li class="clients-list__item"><a href=""><img src="img/clients-logo2.png" alt=""></a></li>
+				<li class="clients-list__item"><a href=""><img src="img/clients-logo3.png" alt=""></a></li>
+				<li class="clients-list__item"><a href=""><img src="img/clients-logo4.png" alt=""></a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="section contact">
+		<div class="wrapper">
+			<div class="heading">
+				<h2>Contact</h2>
+				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+			</div>
+		<div class="contact-wrap">
+			<div class="contact-wrap__left">
+				<h6>Drop Us A Message</h6>
+				<div class="contact-form">
+					<form action="#">
+						<div class="form-field">
+							<input type="text" class="form-control" placeholder="Mike">
+							<span class="form-field__icon"><span class="icon-user2"></span></span>
+						</div>
+						<div class="form-field">
+							<input type="email" class="form-control" placeholder="Email">
+							<span class="form-field__icon"><span class="icon-mail"></span></span>
+						</div>
+						<div class="form-field">
+							<textarea class="form-control" placeholder="Message"></textarea>
+							<span class="form-field__icon"><span class="icon-pen"></span></span>
+						</div>
+						<input type="submit" value="submit" class="btn btn--warning btn--sm">
+					</form>
+				</div>
+			</div>
+			<div class="contact-wrap__right">
+				<h6>Contact Info</h6>
+				<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat</p>
+				<ul class="contact-list">
+					<li class="contact-list__item">
+						<span class="contact-list__icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+						<span>13/2 Elizabeth St, Melbourne VIC 3000, Australia</span>
+					</li>
+					<li class="contact-list__item">
+						<span class="contact-list__icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+						<a href="tel:6131468728">+61 3146 8728</a>, <a href="tel:6109876543">+61 0987 6543</a>
+					</li>
+					<li class="contact-list__item">
+						<span class="contact-list__icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+						<a href="mailto:support@envato.net">support@envato.net</a>
+					</li>
+				</ul>		
+			</div>
+		</div>
+		</div>
+	</section>
+	<section id="map">
+		<!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7a608e4b8dd0b93e0b9e7e93434e8b076682e93f46da96c01159d1feb63ca582&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe> -->
+	</section>
+	<footer class="footer">
+		<div class="wrapper footer-flex">
+			<p class="copyright">&copy; MINI 2014, All Right Reserves  |  Designed By bigpsfan & Metrothemes</p>
+			<div class="social">
+				<a href="#" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#" class="social__link"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+				<a href="#" class="social__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				<a href="#" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#" class="social__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				<a href="#" class="social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			</div>
+		</div>
 	</footer>
-	
-</div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- Jquery необходимый для ползунка цены -->
-<script src="js/jquery.formstyler.min.js"></script> 
-<script src="js/custom.js"></script>
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script> <!-- слайдер --> 
+<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBQgZlRWDRIZ5hhBuHAVFklKcRoBKmXy6Q"></script>
+ <!-- google maps (скрипт должен быть выше custom.js)-->
+<script type="text/javascript" src="js/custom.js"></script>
 
 </body>
 </html>
