@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Мой проект</title>
+	<title>Мой первый проект</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body> 
-	<header>
+	<header id="main">
 		<div class="container">
 			<div class="heading">
 				<h1>НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ <br>ВАШ БИЗНЕС.</h1>
@@ -46,19 +46,19 @@
 				<nav>
 					<ul class="menu">
 						<li>
-							<a href="#">Главная</a>
+							<a href="#main">Главная</a>
 						</li>
 						<li>
-							<a href="#">О нас</a>
+							<a href="#studio">О нас</a>
 						</li>
 						<li>
-							<a href="#">Услуги</a>
+							<a href="#develop">Услуги</a>
 						</li>
 						<li>
-							<a href="#">Наши работы</a>
+							<a href="#projects">Наши работы</a>
 						</li>
 						<li>
-							<a href="#">Контакты</a>
+							<a href="#contacts">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -66,7 +66,7 @@
 		</div>
 		<div class="border"></div>
 	</section> 
-	<section class="studio">
+	<section id="studio" class="studio">
 		<div class="container"> 
 			<div class="studio_about">
 				<h2>Студия</h2>
@@ -105,7 +105,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="develop">
+	<section id="develop" class="develop">
 		<div class="container relative develop_height">
 				<div class="develop_img"></div>
 				<h2>Разработка</h2>
@@ -152,7 +152,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="projects">
+	<section id="projects" class="projects">
 				<div class="projects_bg_top">
 					<div class="projects_head relative">
 						<h2>последние проекты</h2>
@@ -221,7 +221,7 @@
 				</div>
 			</div>	
 	</section> 
-	<footer>
+	<footer id="contacts">
 		<div class="container">
 			<div class="communications">
 				<div class="info">
@@ -247,4 +247,9 @@
 	</footer>
 	<section class="bg_end"></section> 
 </body>
+<!--=============================================-->
+<!-- SCRIPT -->
+<script src="js/jquery.min.js"></script> <!-- jQuery v1.11.3 -->
+<!-- MAIN JS -->
+<script src="js/main.js"></script>
 </html>
