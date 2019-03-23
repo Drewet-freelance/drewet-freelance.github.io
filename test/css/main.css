@@ -794,6 +794,11 @@ input[type='submit']:hover {
     width: 284px;
     margin-right: 7px;
   }
+
+  .goods-item__img img,
+  .goods-item__text {
+    width: calc(100vw - 40px);
+  }
 }
 @media screen and (max-width: 629px) {
   .header-contacts {
@@ -857,11 +862,6 @@ input[type='submit']:hover {
     margin-bottom: 18px;
   }
 
-  .goods-item__img img,
-  .goods-item__text {
-    width: 440px;
-  }
-
   .goods-item__img img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -891,11 +891,15 @@ input[type='submit']:hover {
     text-transform: uppercase;
     text-align: center;
     margin-top: 3px;
+  }
+  .picture-link__more {
+    display: inline-block;
+    border-bottom: 1px dashed #006c86;
     color: #006c86;
     -webkit-transition: all ease 0.2s;
     transition: all ease 0.2s;
   }
-  .picture-link:hover {
+  .picture-link__more:hover {
     color: #5f5f5f;
   }
 
@@ -926,11 +930,6 @@ input[type='submit']:hover {
   .form-left__post-item .form-left__post-item-group label,
   .form-left__post-item .form-left__post-item-group input {
     width: 100%;
-  }
-
-  .goods-item__img img,
-  .goods-item__text {
-    width: calc(100vw - 40px);
   }
 
   .googs-item:nth-child(2) {
