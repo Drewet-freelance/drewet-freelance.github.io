@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Тестовое задание</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Тестовое задание.">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- /* === LANGUAGE (block-1) ==== */ -->
+	<section class="language">
+		<div class="wrapper">
+			<div class="language-container">
+				<ul class="language-wrap">
+					<li class="language-wrap__item">
+						<a href="#" class="language-wrap__item-link">Eng</a>
+					</li>
+					<li class="language-wrap__item">
+						<a href="#" class="language-wrap__item-link">Aze</a>
+					</li>
+					<li class="language-wrap__item">
+						<a href="#" class="language-wrap__item-link">Рус</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+<!-- /* === HEADER (block-2) ==== */ -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-container">
+				<div class="header-logo">
+					<div class="header-logo__wrap">
+						<a href="#" class="header-logo__link">Logo</a>
+					</div>
+				</div>
+				<div class="header-contacts">
+					<div class="header-contacts__item">
+						<a href="#" class="header-contacts__item-link">Lorem ipsum dolor sit</a>
+						<a href="#" class="header-contacts__item-link">Lorem ipsum</a>
+					</div>
+					<div class="header-contacts__item">
+						<a href="#" class="header-contacts__item-link">Lorem ipsum dolor</a>
+						<a href="#" class="header-contacts__item-link">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+					</div>
+					<div class="header-contacts__item">
+						<a href="#" class="header-contacts__item-link">Lorem ipsum dolor</a>
+						<a href="#" class="header-contacts__item-link">Lorem ipsum dolor sit</a>
+					</div>							
+				</div>
+			</div>
+		</div>
+	</header>
+<!-- /* === MAIN MENU (block-3) ==== */ -->
+	<section class="menu">
+		<div class="wrapper">
+			<div class="menu-container">
+				<nav class="menu-main">
+					<ul>
+						<li class="scrollToLink">
+							<a href="#">ПУНКТ МЕНЮ</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#">Длинный пункт меню</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#">очень Длинный пункт меню</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#">еще пункт</a>
+						</li>
+						<li class="scrollToLink">
+							<a href="#">п. меню</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- menu btn for expansion below 991px -->
+				<div class="menu-container__mobile">
+					<button class="toggle-menu">
+						<span class="toggle-menu__btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+						<span class="toggle-menu__name">Меню</span>
+					</button><!-- /.menu btn -->
+					<!-- dropdown menu for expansion below 991px -->
+					<nav class="menu-mobile">
+						<ul>
+							<li class="scrollToLink">
+								<a href="#">ПУНКТ МЕНЮ</a>
+							</li>
+							<li class="scrollToLink">
+								<a href="#">Длинный пункт меню</a>
+							</li>
+							<li class="scrollToLink">
+								<a href="#">очень Длинный пункт меню</a>
+							</li>
+							<li class="scrollToLink">
+								<a href="#">еще пункт</a>
+							</li>
+							<li class="scrollToLink">
+								<a href="#">п. меню</a>
+							</li>
+						</ul>
+					</nav>
+				</div><!-- /.dropdown menu -->
+			</div>
+		</div>
+	</section>
+<!-- /* === CONTACT FORM (block-4) ==== */ -->
+	<section class="form">
+		<div class="wrapper">
+			<div class="form-container">
+				<div class="form-left">
+					<div class="form-left__name">
+						F<span>orm</span>
+					</div>
+					<form action="mail.php" method="POST" class="form-left__post">	
+						<div class="form-left__post-item">
+							<label>
+								<span>L<span>abel</span> #1</span>
+								<input type="text" name="name1" required="required" placeholder="" value="" class="form-left__post-item-label#1">
+							</label>
+						</div>
+						<div class="form-left__post-item">
+							<div class="form-left__post-item-group">
+								<label>
+									<span>L<span>abel</span> #2</span>
+									<input type="text" name="name2" required="required" placeholder="" value="" class="form-left__post-item-label#1">
+								</label>
+							</div>
+							<div class="form-left__post-item-group">
+								<label>
+									<span>L<span>abel</span> #3</span>
+									<input type="text" name="name3" required="required" placeholder="" value="" class="form-left__post-item-label#3">
+								</label>
+							</div>
+						</div>
+						<div class="form-left__post-item">
+							<div class="form-left__post-item-group">
+								<label>
+									<span>L<span>abel</span> #2</span>
+									<input type="text" name="name4" required="required" placeholder="" value="" class="form-left__post-item-label#2">
+								</label>
+							</div>
+							<div class="form-left__post-item-group">
+								<label>
+									<span>L<span>abel</span> #3</span>
+									<input type="text" name="name5" required="required" placeholder="" value="" class="form-left__post-item-label#3">
+								</label>
+							</div>
+						</div>
+						<div class="form-left__post-item-btn">
+							<input type="submit" name="submit" value="submit" class="form-left__post-item-submit">
+						</div>
+					</form>
+				</div>
+				<div class="form-right">
+					<div class="form-right__more">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+						<p>Ut enim ad minim veniam, quis nos- trud exercitation</p>
+						<input type="submit" name="submit" value="more" class="form-left__post-item-submit">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- /* === GOODS (block-5) ==== */ -->	
+	<section class="goods">
+		<div class="wrapper">
+			<div class="goods-container">
+				<div class="googs-item">
+					<div class="goods-item__img">
+						<img src="img/goods.jpg" alt="goods">
+					</div>
+					<div class="goods-item__text">
+						<h4>Lorem ipsum dolor sit</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+					</div>
+				</div>
+				<div class="googs-item">
+					<div class="goods-item__img">
+						<img src="img/goods.png" alt="goods">
+					</div>
+					<div class="goods-item__text">
+						<h4>Lorem ipsumt</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur elit, sed do</p>
+					</div>
+				</div>
+				<div class="googs-item">
+					<div class="goods-item__img">
+						<img src="img/goods.png" alt="goods">
+					</div>
+					<div class="goods-item__text">
+						<h4>Lorem ipsum dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor Lorem</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</section>
+<!-- /* === PICTURE (block-6) ==== */ -->	
+	<section class="picture">
+		<div class="wrapper">
+			<div class="picture-container">
+				<div class="picture-img visible">
+					<a href="img/goods.jpg">
+						<img src="img/goods.jpg" alt="picture">
+					</a>
+				</div>
+				<div class="picture-img visible">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>		
+				<div class="picture-img visible">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>	
+				<div class="picture-img visible">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>	
+				<div class="picture-img">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>	
+				<div class="picture-img">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>	
+				<div class="picture-img">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>	
+				<div class="picture-img">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>	
+				<div class="picture-img">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>	
+				<div class="picture-img">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>	
+				<div class="picture-img">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>	
+				<div class="picture-img">
+					<a href="img/goods.jpg">
+						<img src="img/picture.png" alt="picture">
+					</a>
+				</div>				
+			</div>
+			<a href="#" class="picture-link">more</a>
+		</div>
+	</section>
+<!-- /* === BLOCKS (block-6) ==== */ -->
+	<div class="section blocks">
+		<div class="wrapper">
+			<div class="blocks-container">
+				<div class="blocks-item"><a href="#" class="blocks-item__link"></a></div>
+				<div class="blocks-item"><a href="#" class="blocks-item__link"></a></div>
+				<div class="blocks-item"><a href="#" class="blocks-item__link"></a></div>
+				<div class="blocks-item"><a href="#" class="blocks-item__link"></a></div>
+				<div class="blocks-item"><a href="#" class="blocks-item__link"></a></div>
+				<div class="blocks-item"><a href="#" class="blocks-item__link"></a></div>
+				<div class="blocks-item"><a href="#" class="blocks-item__link"></a></div>
+				<div class="blocks-item"><a href="#" class="blocks-item__link"></a></div>
+				<div class="blocks-item"><a href="#" class="blocks-item__link"></a></div>
+			</div>
+		</div>
+	</div>
+<!--=============================================-->
+<!-- SCRIPT -->
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
