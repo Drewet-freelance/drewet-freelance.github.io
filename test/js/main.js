@@ -12,10 +12,10 @@ $('.block-clear').click(function() {
     $('input:checked').prop('checked', false);
 });
 /*-----------------------------------------------	
-       Open aside
+       Open sidebar
 -------------------------------------------------*/
-$('.toggle-btn_aside, .search-min_btn').click(function(a){
-    $('.aside, .toggle-btn').toggleClass('active');
+$('.toggle-btn_sidebar, .search-min_btn').click(function(a){
+    $('.sidebar, .toggle-btn').toggleClass('active');
     if ($('.head-min').hasClass('active')) {
         $('.head-min').removeClass("active").delay();
       } else {
