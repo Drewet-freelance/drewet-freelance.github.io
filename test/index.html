@@ -9,231 +9,233 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="header-nav">
-            <ul>
-                <li><a href="#" class="header-nav_link">О проекте</a></li>
-                <li><a href="#" class="header-nav_link">Блог</a></li>
-                <li><a href="#" class="header-nav_link">Партнеры</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- /* === ASIDE ==== */ -->
-    <aside class="aside ">
+    <div id="wrapper" class="wrapper">
+        <header class="header">
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#" class="header-nav_link">О проекте</a></li>
+                    <li><a href="#" class="header-nav_link">Блог</a></li>
+                    <li><a href="#" class="header-nav_link">Партнеры</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="toggle-btn">
             <button class="toggle-btn_aside">
                 <img src="img/toggle-btn.png" alt="toggle-btn">
             </button>
         </div>
-        <!-- /* === ASIDE (head) ==== */ -->
-        <div class="head">
-            <div class="logo">
-                <a href="#"><img src="img/logo.png" alt="logo"></a>
-            </div>
-            <div class="search">   
-                <form action="#" method="post" id="search-form" class="search-form">
-                    <input type="text" value="" placeholder="Найти на сайте..." />	
-                </form>
-                <button class="search-btn">
-                    <img src="img/search.png" alt="search">
-                </button> 
-            </div>  
-        </div>
-        <!-- /* === (head-min) ==== */ -->
-        <div class="head-min active">
-            <div class="logo-min">
-                <a href="#"><img src="img/logo-min.png" alt="logo"></a>
-            </div>
-            <div class="search-min">
-                <button class="search-btn search-min_btn">
-                    <img src="img/search.png" alt="search">
-                </button> 
-            </div>
-        </div> 
-
-        <!-- /* === ASIDE (filter) ==== */ -->
-        <div class="filter">
-            <!-- /* === ASIDE (block-1) ==== */ -->
-            <div class="block">
-                <div class="block-head">
-                    <span class="block-name">Фильтр</span>
-                    <button class="block-clear">Очистить фильтр</button>
+        <!-- /* === ASIDE ==== */ -->
+        <aside id="aside" class="aside ">
+            <!-- /* === ASIDE (head) ==== */ -->
+            <div class="head">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
                 </div>
-            </div><!--.block-->
-            <!-- /* === ASIDE (block-2) ==== */ -->
-            <div class="block">
-                <span class="block-title">Район</span>
-                <div class="block-container">
-                    <div class="box">
-                        <div class="box-radio">
-                            <input checked type="radio" name="area" id="area1">
-                            <label for="area1">
-                                <span class="box-radio_item">Суворовский</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="area" id="area2">
-                            <label for="area2">
-                                <span class="box-radio_item">Киевский</span>
-                            </label>
-                        </div><!--.box-radio-->               
-                    </div><!--.box-->   
-                    <div class="box">   
-                        <div class="box-radio">
-                            <input type="radio" name="area" id="area3">
-                            <label for="area3">
-                                <span class="box-radio_item">Малиновский</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="area" id="area4">
-                            <label for="area4">
-                                <span class="box-radio_item">Приморский</span>
-                            </label>
-                        </div><!--.box-radio--> 
-                    </div><!--.box-->                 
-                </div><!--.block-container-->   
-            </div><!--.block--> 
-            <!-- /* === ASIDE (block-3) ==== */ --> 
-            <div class="block">
-                <span class="block-title">Строительная компания</span>
-                <div class="block-container">
-                    <div class="box">
-                        <div class="box-radio">
-                            <input checked type="radio" name="company" id="company1">
-                            <label for="company1">
-                                <span class="box-radio_item">Парк Совиньон</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="company" id="company2">
-                            <label for="company2">
-                                <span class="box-radio_item">Будова</span>
-                            </label>
-                        </div><!--.box-radio--> 
-                        <div class="box-radio">
-                            <input type="radio" name="company" id="company3">
-                            <label for="company3">
-                                <span class="box-radio_item">Демострой</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="company" id="company4">
-                            <label for="company4">
-                                <span class="box-radio_item">Демострой</span>
-                            </label>
-                        </div><!--.box-radio--> 
-                    </div><!--.box-->   
-                    <div class="box">   
-                        <div class="box-radio">
-                            <input type="radio" name="company" id="company5">
-                            <label for="company5">
-                                <span class="box-radio_item">Кадорр</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="company" id="company6">
-                            <label for="company6">
-                                <span class="box-radio_item">Авалон</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="company" id="company7">
-                            <label for="company7">
-                                <span class="box-radio_item">Скай Парк</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="company" id="company8">
-                            <label for="company8">
-                                <span class="box-radio_item">Скай Парк</span>
-                            </label>
-                        </div><!--.box-radio-->
-                    </div><!--.box-->                 
-                </div><!--.block-container--> 
-            </div><!--.block--> 
-            <!-- /* === ASIDE (block-4) ==== */ --> 
-            <div class="block">
-                <span class="block-title">Готовность объекта</span>
-                <div class="block-container">
-                    <div class="box">
-                        <div class="box-radio">
-                            <input checked type="radio" name="readiness" id="readiness1">
-                            <label for="readiness1">
-                                <span class="box-radio_item">Сбор документов</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="readiness" id="readiness2">
-                            <label for="readiness2">
-                                <span class="box-radio_item">Котлован</span>
-                            </label>
-                        </div><!--.box-radio--> 
-                        <div class="box-radio">
-                            <input type="radio" name="readiness" id="readiness3">
-                            <label for="readiness3">
-                                <span class="box-radio_item">Цоколь</span>
-                            </label>
-                        </div><!--.box-radio--> 
-                    </div><!--.box-->   
-                    <div class="box">   
-                        <div class="box-radio">
-                            <input type="radio" name="readiness" id="readiness4">
-                            <label for="readiness4">
-                                <span class="box-radio_item">Первые этажи </span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="readiness" id="readiness5">
-                            <label for="readiness5">
-                                <span class="box-radio_item">Последние этажи</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="box-radio">
-                            <input type="radio" name="readiness" id="readiness6">
-                            <label for="readiness6">
-                                <span class="box-radio_item">Объект сдан</span>
-                            </label>
-                        </div><!--.box-radio-->
-                    </div><!--.box-->                 
-                </div><!--.block-container--> 
-            </div><!--.block--> 
-            <!-- /* === ASIDE (block-5) ==== */ --> 
-            <div class="block">
-                <span class="block-title">Этажность</span>
-                <div class="block-container">
-                    <div class="row">
-                        <div class="row-radio">
-                            <input type="radio" name="floors" id="floors1">
-                            <label for="floors1">
-                                <span class="row-radio_item">1-5</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="row-radio">
-                            <input type="radio" name="floors" id="floors2">
-                            <label for="floors2">
-                                <span class="row-radio_item">5-10</span>
-                            </label>
-                        </div><!--.box-radio--> 
-                        <div class="row-radio">
-                            <input type="radio" name="floors" id="floors3">
-                            <label for="floors3">
-                                <span class="row-radio_item">10-20</span>
-                            </label>
-                        </div><!--.box-radio-->
-                        <div class="row-radio">
-                            <input checked type="radio" name="floors" id="floors4">
-                            <label for="floors4">
-                                <span class="row-radio_item">20-40</span>
-                            </label>
-                        </div><!--.row-radio-->
-                    </div><!--.row-->   
-                </div><!--.block-container--> 
-            </div><!--.block-->            
-        </div>
-    </aside><!--.aside-->
-    <!-- /* === MAP ==== */ -->
-    <section id="map" class="map"></section>
+                <div class="search">   
+                    <form action="#" method="post" id="search-form" class="search-form">
+                        <input type="text" value="" placeholder="Найти на сайте..." />	
+                    </form>
+                    <button class="search-btn">
+                        <img src="img/search.png" alt="search">
+                    </button> 
+                </div>  
+            </div>
+            <!-- /* === (head-min) ==== */ -->
+            <div class="head-min active">
+                <div class="logo-min">
+                    <a href="#"><img src="img/logo-min.png" alt="logo"></a>
+                </div>
+                <div class="search-min">
+                    <button class="search-btn search-min_btn">
+                        <img src="img/search.png" alt="search">
+                    </button> 
+                </div>
+            </div> 
+
+            <!-- /* === ASIDE (filter) ==== */ -->
+            <div class="filter">
+                <!-- /* === ASIDE (block-1) ==== */ -->
+                <div class="block">
+                    <div class="block-head">
+                        <span class="block-name">Фильтр</span>
+                        <button class="block-clear">Очистить фильтр</button>
+                    </div>
+                </div><!--.block-->
+                <!-- /* === ASIDE (block-2) ==== */ -->
+                <div class="block">
+                    <span class="block-title">Район</span>
+                    <div class="block-container">
+                        <div class="box">
+                            <div class="box-radio">
+                                <input checked type="radio" name="area" id="area1">
+                                <label for="area1">
+                                    <span class="box-radio_item">Суворовский</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="area" id="area2">
+                                <label for="area2">
+                                    <span class="box-radio_item">Киевский</span>
+                                </label>
+                            </div><!--.box-radio-->               
+                        </div><!--.box-->   
+                        <div class="box">   
+                            <div class="box-radio">
+                                <input type="radio" name="area" id="area3">
+                                <label for="area3">
+                                    <span class="box-radio_item">Малиновский</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="area" id="area4">
+                                <label for="area4">
+                                    <span class="box-radio_item">Приморский</span>
+                                </label>
+                            </div><!--.box-radio--> 
+                        </div><!--.box-->                 
+                    </div><!--.block-container-->   
+                </div><!--.block--> 
+                <!-- /* === ASIDE (block-3) ==== */ --> 
+                <div class="block">
+                    <span class="block-title">Строительная компания</span>
+                    <div class="block-container">
+                        <div class="box">
+                            <div class="box-radio">
+                                <input checked type="radio" name="company" id="company1">
+                                <label for="company1">
+                                    <span class="box-radio_item">Парк Совиньон</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="company" id="company2">
+                                <label for="company2">
+                                    <span class="box-radio_item">Будова</span>
+                                </label>
+                            </div><!--.box-radio--> 
+                            <div class="box-radio">
+                                <input type="radio" name="company" id="company3">
+                                <label for="company3">
+                                    <span class="box-radio_item">Демострой</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="company" id="company4">
+                                <label for="company4">
+                                    <span class="box-radio_item">Демострой</span>
+                                </label>
+                            </div><!--.box-radio--> 
+                        </div><!--.box-->   
+                        <div class="box">   
+                            <div class="box-radio">
+                                <input type="radio" name="company" id="company5">
+                                <label for="company5">
+                                    <span class="box-radio_item">Кадорр</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="company" id="company6">
+                                <label for="company6">
+                                    <span class="box-radio_item">Авалон</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="company" id="company7">
+                                <label for="company7">
+                                    <span class="box-radio_item">Скай Парк</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="company" id="company8">
+                                <label for="company8">
+                                    <span class="box-radio_item">Скай Парк</span>
+                                </label>
+                            </div><!--.box-radio-->
+                        </div><!--.box-->                 
+                    </div><!--.block-container--> 
+                </div><!--.block--> 
+                <!-- /* === ASIDE (block-4) ==== */ --> 
+                <div class="block">
+                    <span class="block-title">Готовность объекта</span>
+                    <div class="block-container">
+                        <div class="box">
+                            <div class="box-radio">
+                                <input checked type="radio" name="readiness" id="readiness1">
+                                <label for="readiness1">
+                                    <span class="box-radio_item">Сбор документов</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="readiness" id="readiness2">
+                                <label for="readiness2">
+                                    <span class="box-radio_item">Котлован</span>
+                                </label>
+                            </div><!--.box-radio--> 
+                            <div class="box-radio">
+                                <input type="radio" name="readiness" id="readiness3">
+                                <label for="readiness3">
+                                    <span class="box-radio_item">Цоколь</span>
+                                </label>
+                            </div><!--.box-radio--> 
+                        </div><!--.box-->   
+                        <div class="box">   
+                            <div class="box-radio">
+                                <input type="radio" name="readiness" id="readiness4">
+                                <label for="readiness4">
+                                    <span class="box-radio_item">Первые этажи </span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="readiness" id="readiness5">
+                                <label for="readiness5">
+                                    <span class="box-radio_item">Последние этажи</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="box-radio">
+                                <input type="radio" name="readiness" id="readiness6">
+                                <label for="readiness6">
+                                    <span class="box-radio_item">Объект сдан</span>
+                                </label>
+                            </div><!--.box-radio-->
+                        </div><!--.box-->                 
+                    </div><!--.block-container--> 
+                </div><!--.block--> 
+                <!-- /* === ASIDE (block-5) ==== */ --> 
+                <div class="block">
+                    <span class="block-title">Этажность</span>
+                    <div class="block-container">
+                        <div class="row">
+                            <div class="row-radio">
+                                <input type="radio" name="floors" id="floors1">
+                                <label for="floors1">
+                                    <span class="row-radio_item">1-5</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="row-radio">
+                                <input type="radio" name="floors" id="floors2">
+                                <label for="floors2">
+                                    <span class="row-radio_item">5-10</span>
+                                </label>
+                            </div><!--.box-radio--> 
+                            <div class="row-radio">
+                                <input type="radio" name="floors" id="floors3">
+                                <label for="floors3">
+                                    <span class="row-radio_item">10-20</span>
+                                </label>
+                            </div><!--.box-radio-->
+                            <div class="row-radio">
+                                <input checked type="radio" name="floors" id="floors4">
+                                <label for="floors4">
+                                    <span class="row-radio_item">20-40</span>
+                                </label>
+                            </div><!--.row-radio-->
+                        </div><!--.row-->   
+                    </div><!--.block-container--> 
+                </div><!--.block-->            
+            </div>
+        </aside><!--.aside-->
+        <!-- /* === MAP ==== */ -->
+        <section id="map" class="map"></section>
+    </div><!--.wrapper-->
 
 <script src="js/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBXyCT5df5Zs4wYHVFPoTk6-8scF5Cdbe8"></script> 

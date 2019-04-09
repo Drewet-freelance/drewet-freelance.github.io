@@ -15,7 +15,7 @@ $('.block-clear').click(function() {
        Open aside
 -------------------------------------------------*/
 $('.toggle-btn_aside, .search-min_btn').click(function(a){
-    $('.aside').toggleClass('active');
+    $('.aside, .toggle-btn').toggleClass('active');
     if ($('.head-min').hasClass('active')) {
         $('.head-min').removeClass("active").delay();
       } else {
