@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Test</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery-ui.css"> <!--Datepicker-->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- /* === HEADER (block-1) ==== */ -->	
+	<header class="header">
+		<div class="wrapper">
+			<div class="top-nav">
+				<div class="logo">
+					<a href="#"><img src="img/logo.png" alt="Laurelhurst Dentistry"></a>
+				</div>
+				<nav class="top-nav_block">
+					<ul class="top-nav_menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Dental Care</a></li>
+						<li><a href="#">Our Practice</a></li>
+						<li><a href="#">Appointments</a></li>
+						<li><a href="#">Contact</a></li>						                        
+					</ul>
+					<button class="btn top-nav_btn">
+						make an appointment
+					</button>	
+				</nav>  
+			</div><!-- /.top-nav --> 			
+		</div>
+	</header>
+<!-- /* === MAIN (block-2) ==== */ -->
+	<section class="main">
+		<div class="wrapper main-bg">
+			<div class="main-block">
+				<h1>Quality dental care</h1>
+				<span class="main-block_text">to the Portland community for over 20 years</span>
+				<button class="btn main-block_btn">
+					make an appointment
+				</button>
+			</div>
+		</div>
+	</section>
+<!-- /* === FEEDBACK (block-3) ==== */ -->
+	<section class="feedback">
+		<div class="wrapper feedback-wrap">
+			<div class="feedback-form">
+				<span class="feedback-form_title">
+					Request an Appointment Today
+				</span>
+				<form action="">
+					<div class="feedback-input_smalls">
+						<input type="text" placeholder="Name">
+						<input type="text" placeholder="Phone Number">
+						<input type="text" placeholder="Email Address">
+						<input type="text" id="datepicker" placeholder="Preffered Appointment Date">
+					</div>
+					<textarea name="" placeholder="Message" class="feedback-form_textarea"></textarea>
+					<input type="submit" value="Send" class="btn feedback_btn">
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- /* === ABOUT (block-4) ==== */ -->
+	<section class="about">
+		<div class="wrapper about-wrap">
+			<div class="about-img">
+				<img src="img/about.png" alt="about">
+			</div>
+			<div class="about-block">
+				<h2>Laurelhurst Dentistry</h2>
+				<h3>Dentist In Portland OR</h3>
+				<p>Welcome to Laurelhurst Dentistry, where we have been providing quality dental care to the Portland community for over 20 years. We believe getting to know our patients is at the heart of providing the best dental experience possible. We have created a warm, welcoming environment where your comfort and dental health are our top priorities. At Laurelhurst Dentistry, we focus on prevention and providing the highest quality, state-of-the-art dental care. We believe communication is key, and we will listen and work with you to develop a practical and successful dental plan to meet your needs.</p>
+				<button class="btn about-block_btn">READ ABOUT THE PRACTICE</button>
+			</div>
+		</div>
+	</section>
+	<!-- /* === ADVANTAGES (block-5) ==== */ -->
+	<section class="advantages">
+		<div class="wrapper advantages-wrap">
+			<div class="advantages-block">
+				<h2>Our Advantages</h2>
+				<h3>High-Quality Dental Care</h3>
+				<p>We can’t wait to welcome you to Laurelhurst Dentistry and help you find your healthy smile! Laurelhurst Dentistry is conveniently located in east Portland. We are easily accessible to the SE, NE, Eastside, and downtown Portland communities.</p>
+				<p>The knowledgeable and friendly dentists and staff at Laurelhurst Dentistry can help you achieve your personal goals for dental health. Our comprehensive dental services and procedures are the best around.</p>
+				<button class="btn advantages-block_btn">ALL OUR ADVANTAGES</button>
+			</div>				
+			<div class="advantages-img">
+				<img src="img/advantages.png" alt="advantages">
+			</div>
+		</div>
+	</section>
+	<!-- /* === TEAM (block-6) ==== */ -->
+	<section class="team">
+		<div class="wrapper team-wrap">
+			<ul class="team-block">
+				<li>
+					<img src="img/team1.png" alt="Dr. Sheila Bennett">
+					<span>Dr. Sheila<br>Bennett</span>
+				</li>
+				<li>
+					<img src="img/team2.png" alt="Dr. Sheila Bennett">
+					<span>Dr. Will<br>Marra</span>
+				</li>
+				<li>
+					<img src="img/team3.png" alt="Dr. Sheila Bennett">
+					<span>Dr. Lenore<br>Supnet</span>
+				</li>
+				<li>
+					<img src="img/team4.png" alt="Dr. Sheila Bennett">
+					<span>Dr. Bao<br>Pham</span>
+				</li>
+			</ul>
+			<div class="team-text">
+				<h2>Our Team</h2>
+				<p>All of our dentists at Laurelhurst Dentistry are professionally trained and meet the requirements of the Academy of General Dentistry, Oregon Dental Association, and American Dental Association</p>
+			</div>
+		</div>
+	</section>
+	<!-- /* === MAP (block-7) ==== */ -->
+	<section class="location">
+		<div id="map" class="map"></div>
+		<div class="wrapper location-wrap">	
+			<div class="location-block">
+				<div class="location-block_address">
+					<h4>Address:</h4>
+					<span>2520 E Burnside Street<br>Portland, OR 97214</span>
+				</div>
+				<div class="location-block_phone">
+					<h4>Phone: </h4>
+					<a href="tel:503-233-3622">(503) 233-3622</a>
+				</div>
+				<div class="location-block_hours">
+					<h4>Hours: </h4>
+					<span>Mon-Thurs: 7am to 5pm, </span>
+					<span>Fri: 7am to 4pm,</span>
+					<span>Sat: 7:30am to 2pm</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* === APPOINTMENT (block-8) ==== */ -->
+	<section class="appointment">
+		<div class="wrapper appointment-bg">
+			<div class="appointment-block">	
+				<span>Make an Appointment<br>for Your Smile!</span>
+				<div class="appointment-block_phone">
+					<a href="tel:503-233-3622"><i class="icon-call"></i>(503) 233-3622</a>
+				</div>
+				<button class="btn appointment-btn">MAKE AN APPOINTMENT</button>
+			</div>
+		</div>
+	</section>
+	<!-- /* === FOOTER (block-9) ==== */ -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-block footer-block-line">
+				<div class="footer-block_logo">
+					<a href="#"><img src="img/logo.png" alt="Laurelhurst Dentistry"></a>
+				</div>
+				<ul class="footer-block_item">
+					<li>
+						<h5>About Us</h5>	
+					</li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Appointments</a></li>
+					<li><a href="#">Location</a></li>
+					<li><a href="#">Meet The Doctors</a></li>
+				</ul>
+				<ul class="footer-block_item">
+					<li>
+						<h5>Dental Clinic</h5>	
+					</li>
+					<li><a href="#">Our Practice</a></li>
+					<li><a href="#">Cosmetic Dentistry</a></li>
+					<li><a href="#">Preventative Dental Care</a></li>
+					<li><a href="#">Restorative Dental Care</a></li>
+					<li><a href="#">Invisalign</a></li>
+				</ul>
+				<ul class="footer-block_item">
+					<li>
+						<h5>contacts</h5>	
+					</li>
+					<li>
+						<i class="icon-location"></i>
+						2520 E Burnside Street<br>
+						Portland, OR 97214
+					</li>
+					<li class="footer-block_phone">
+						<a href="tel:503-233-3622">
+							<i class="icon-call"></i>
+							(503) 233-3622
+						</a>
+					</li>
+					<li>
+						<i class="icon-clock"></i>
+						Mon-Thurs: 7am to 5pm,<br> 
+						Fri: 7am to 4pm,<br> 
+						Sat: 7:30am to 2pm
+					</li>
+				</ul>								
+			</div>
+			<div class="footer-block">
+				<div class="footer_copyright">
+					<span>© 2018 Laurelhurst Dentistry</span>
+					<a href="#">Privacy Policy</a>
+				</div>
+				<ul class="footer_social">
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin-1"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+<script src="js/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBXyCT5df5Zs4wYHVFPoTk6-8scF5Cdbe8"></script> 
+<script src="js/jquery-ui.js"></script>	
+<script src="js/main.js"></script>
+
+<script src="pixelscreen.js"></script>
+
+</body>
+</html>
