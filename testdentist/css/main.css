@@ -253,7 +253,7 @@ p {
 
 .wrapper {
   width: 100%;
-  min-width: 1440px;
+  max-width: 1440px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -814,6 +814,8 @@ p {
   background: #2c3931;
   padding-top: 51px;
   padding-bottom: 37px;
+  /*=================	@media =================*/
+  /*=================	====== =================*/
 }
 
 .footer .wrapper:after {
