@@ -17,6 +17,19 @@ $(document).ready(function () {
     });
 });
 /*-----------------------------------------------	
+       Menu mobile
+-------------------------------------------------*/  
+$(".toggle-menu").click(function(e) {
+    $('.menu-mobile').slideToggle(400);
+    e.stopPropagation();
+});
+$('.dropdown__link').click(function(){
+    $('.menu-mobile').hide();
+});
+$(document).click(function() {
+    $('.menu-mobile').hide();
+});
+/*-----------------------------------------------	
        Google Map 
 -------------------------------------------------*/
 function initMap() {
@@ -24,7 +37,7 @@ function initMap() {
         markerImg = 'img/placeholder.png', //  Иконка для маркера  
     // настройка карты 
     map = new google.maps.Map(document.getElementById('map'), {  /*вывод карты в идентификатор map*/
-        center: {lat: 45.522584, lng: -122.636019}, //(центровка по обьекту //coordinates,)
+        center: {lat: 45.522584, lng: -122.640079}, //(центровка по обьекту //coordinates,)
         zoom: 16.5, // первоначальный масштаб
         disableDefaultUI: true, // true убираь элементы управления
         scrollwheel: false, // отключить масштабирование колесом мыши
