@@ -51,14 +51,14 @@
 				<span class="feedback-form_title">
 					Request an Appointment Today
 				</span>
-				<form action="">
+				<form action="mail.php" method="POST">
 					<div class="feedback-input_smalls">
-						<input type="text" placeholder="Name">
-						<input type="text" placeholder="Phone Number">
-						<input type="text" placeholder="Email Address">
+						<input type="text" placeholder="Name" name="name">
+						<input type="text" placeholder="Phone Number" name="phone">
+						<input type="text" placeholder="Email Address" name="address">
 						<input type="text" id="datepicker" placeholder="Preffered Appointment Date">
 					</div>
-					<textarea name="" placeholder="Message" class="feedback-form_textarea"></textarea>
+					<textarea placeholder="Message" name="message" class="feedback-form_textarea"></textarea>
 					<input type="submit" value="Send" class="btn feedback_btn">
 				</form>
 			</div>
