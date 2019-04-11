@@ -84,10 +84,10 @@
 					<div class="feedback-input_smalls">
 						<input type="text" placeholder="Name" name="name">
 						<input type="text" placeholder="Phone Number" name="phone">
-						<input type="text" placeholder="Email Address" name="address">
+						<input type="text" autocomplete="off" placeholder="Email Address" name="address">
 						<input type="text" autocomplete="off" id="datepicker" placeholder="Preffered Appointment Date">
 					</div>
-					<textarea placeholder="Message" name="message" class="feedback-form_textarea"></textarea>
+					<textarea rows="1" placeholder="Message" name="message" class="feedback-form_textarea"></textarea>
 					<input type="submit" value="Send" class="btn feedback_btn">
 				</form>
 			</div>
@@ -254,14 +254,14 @@
 			<span class="modal__title">
 				make an appointment
 			</span>
-			<form action="mail.php" method="POST">
+			<form action="mail.php" method="POST" id="modal__form">
 				<div class="modal__input">
 					<input type="text" placeholder="Name" name="name">
 					<input type="text" placeholder="Phone Number" name="phone">
-					<input type="text" placeholder="Email Address" name="address">
+					<input type="text" autocomplete="off" placeholder="Email Address" name="address">
 					<input type="text" autocomplete="off" id="datepicker2" placeholder="Preffered Appointment Date">
 				</div>
-				<textarea placeholder="Message" name="message" class="modal__textarea"></textarea>
+				<textarea rows="5" placeholder="Message" name="message" class="modal__textarea"></textarea>
 				<input type="submit" value="Send" class="btn modal__btn">
 			</form>
 			<a class="modal-close" data-modal="#modal1" href="#">&#10005;</a>

@@ -19,7 +19,7 @@ $(document).ready(function () {
         Menu mobile
     -------------------------------------------------*/  
     $(".toggle-menu").click(function(e) {
-        $('.menu-mobile').slideToggle(400);
+        $('.menu-mobile').slideToggle(300);
         e.stopPropagation();
     });
     $('.dropdown__link').click(function(){
@@ -60,6 +60,8 @@ $(document).ready(function () {
         e.stopImmediatePropagation;
         var $this = $(this),
             modal = $($this).data("modal");
+        $(modal).trigger("reset");
+			document.getElementById("modal__form").reset();
         $(modal).removeClass("open");
         setTimeout(function() {
             $(modal).parents(".overlay").removeClass("open");
