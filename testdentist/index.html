@@ -27,7 +27,7 @@
 						<li><a href="#">Appointments</a></li>
 						<li><a href="#">Contact</a></li>						                        
 					</ul>
-					<button class="btn top-nav_btn">
+					<button class="btn top-nav_btn open-modal" data-modal="#modal1">
 						make an appointment
 					</button>	
 				</nav>  
@@ -67,7 +67,7 @@
 			<div class="main-block">
 				<h1>Quality dental care</h1>
 				<span class="main-block_text">to the Portland community for over 20 years</span>
-				<button class="btn main-block_btn">
+				<button class="btn main-block_btn open-modal" data-modal="#modal1">
 					make an appointment
 				</button>
 			</div>
@@ -85,7 +85,7 @@
 						<input type="text" placeholder="Name" name="name">
 						<input type="text" placeholder="Phone Number" name="phone">
 						<input type="text" placeholder="Email Address" name="address">
-						<!-- <input type="text" id="datepicker" placeholder="Preffered Appointment Date"> -->
+						<input type="text" autocomplete="off" id="datepicker" placeholder="Preffered Appointment Date">
 					</div>
 					<textarea placeholder="Message" name="message" class="feedback-form_textarea"></textarea>
 					<input type="submit" value="Send" class="btn feedback_btn">
@@ -181,7 +181,7 @@
 				<div class="appointment-block_phone">
 					<a href="tel:503-233-3622"><i class="icon-call"></i>(503) 233-3622</a>
 				</div>
-				<button class="btn appointment-btn">MAKE AN APPOINTMENT</button>
+				<button class="btn appointment-btn open-modal" data-modal="#modal1">MAKE AN APPOINTMENT</button>
 			</div>
 		</div>
 	</section>
@@ -248,6 +248,25 @@
 			</div>
 		</div>
 	</footer>
+	<!--  === MODAL ====  -->
+	<div class="modal" id="modal1">
+		<div class="content">
+			<span class="modal__title">
+				make an appointment
+			</span>
+			<form action="mail.php" method="POST">
+				<div class="modal__input">
+					<input type="text" placeholder="Name" name="name">
+					<input type="text" placeholder="Phone Number" name="phone">
+					<input type="text" placeholder="Email Address" name="address">
+					<input type="text" autocomplete="off" id="datepicker2" placeholder="Preffered Appointment Date">
+				</div>
+				<textarea placeholder="Message" name="message" class="modal__textarea"></textarea>
+				<input type="submit" value="Send" class="btn modal__btn">
+			</form>
+			<a class="modal-close" data-modal="#modal1" href="#">&#10005;</a>
+		</div>
+	</div>
 <script src="js/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBXyCT5df5Zs4wYHVFPoTk6-8scF5Cdbe8"></script> 
 <script src="js/jquery-ui.js"></script>	

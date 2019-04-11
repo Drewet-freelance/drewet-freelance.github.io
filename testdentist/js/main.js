@@ -1,33 +1,70 @@
-/*-----------------------------------------------	
-       Initial datapicker
--------------------------------------------------*/
-$(function(){
-	$('#datepicker').datepicker(); /*инициализация datepicker календаря*/
-});
-/*-----------------------------------------------	
-       Hide placeholder
--------------------------------------------------*/
 $(document).ready(function () {
+    /*-----------------------------------------------	
+        Initial datapicker
+    -------------------------------------------------*/
+    $(function(){
+        $('#datepicker, #datepicker2').datepicker(); /*инициализация datepicker календаря*/
+    });
+    /*-----------------------------------------------	
+        Hide placeholder
+    -------------------------------------------------*/
     $('input,textarea').focus(function(){
-      $(this).data('placeholder',$(this).attr('placeholder'))
-      $(this).attr('placeholder','');
+        $(this).data('placeholder',$(this).attr('placeholder'))
+        $(this).attr('placeholder','');
     });
     $('input,textarea').blur(function(){
-      $(this).attr('placeholder',$(this).data('placeholder'));
+        $(this).attr('placeholder',$(this).data('placeholder'));
     });
-});
-/*-----------------------------------------------	
-       Menu mobile
--------------------------------------------------*/  
-$(".toggle-menu").click(function(e) {
-    $('.menu-mobile').slideToggle(400);
-    e.stopPropagation();
-});
-$('.dropdown__link').click(function(){
-    $('.menu-mobile').hide();
-});
-$(document).click(function() {
-    $('.menu-mobile').hide();
+    /*-----------------------------------------------	
+        Menu mobile
+    -------------------------------------------------*/  
+    $(".toggle-menu").click(function(e) {
+        $('.menu-mobile').slideToggle(400);
+        e.stopPropagation();
+    });
+    $('.dropdown__link').click(function(){
+        $('.menu-mobile').hide();
+    });
+    $(document).click(function() {
+        $('.menu-mobile').hide();
+    });
+    /*-----------------------------------------------	
+        POP-UP (modal)
+    -------------------------------------------------*/	
+    $(".modal").each(function() {
+        $(this).wrap('<div class="overlay"></div>')
+    });
+    $(".open-modal").on('click', function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation;
+        var $this = $(this),
+            modal = $($this).data("modal");
+        $(modal).parents(".overlay").addClass("open");
+        setTimeout(function() {
+            $(modal).addClass("open");
+        }, 350);
+        $(document).on('click', function(e) {
+            var target = $(e.target);
+            if ($(target).hasClass("overlay")) {
+                $(target).find(".modal").each(function() {
+                    $(this).removeClass("open");
+                });
+                setTimeout(function() {
+                    $(target).removeClass("open");
+                }, 350);
+            }
+        });
+    });
+    $(".modal-close").on('click', function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation;
+        var $this = $(this),
+            modal = $($this).data("modal");
+        $(modal).removeClass("open");
+        setTimeout(function() {
+            $(modal).parents(".overlay").removeClass("open");
+        }, 350);
+    });
 });
 /*-----------------------------------------------	
        Google Map 
