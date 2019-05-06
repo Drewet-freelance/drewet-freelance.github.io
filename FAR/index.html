@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Аутсорсинг</title>
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <!-- <link rel="stylesheet" href="css/easy-responsive-tabs.css"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -24,9 +23,9 @@
                 </div>
                 <div class="col-1 col-sm-9 col-md-7 col-xl-4 order-2 order-sm-1">
                     <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__link active">ГОЛОВАНА</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">ПРО НАС</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">КОНТАКТИ</a></li>
+                        <li class="menu__item"><a href="index.html" class="menu__link active">ГОЛОВАНА</a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link">ПРО НАС</a></li>
+                        <li class="menu__item"><a href="contact.html" class="menu__link">КОНТАКТИ</a></li>
                     </ul>
                     <div class="menu-hamburger">
                         <button class="btn menu-btn">
@@ -35,9 +34,9 @@
                             <span></span>
                         </button>
                         <div class="menu-dropdown">
-                            <a href="#" class="dropdown-item">Головна</a>
-                            <a href="#" class="dropdown-item">Про нас</a>
-                            <a href="#" class="dropdown-item">Контакти</a>
+                            <a href="index.html" class="dropdown-item">Головна</a>
+                            <a href="about.html" class="dropdown-item">Про нас</a>
+                            <a href="contact.html" class="dropdown-item">Контакти</a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +54,7 @@
                     <div class="info">
                         <h1>ЧИ БАЖАЄТЕ ВИ <span>ЕКОНОМИТИ</span> НА БІЗНЕС ПРОЦЕСАХ КОМПАНІЇ ?</h1>
                         <p class="info__text">Завдяки аутсорсингу Ви не відволікаєтесь на ті аспекти діяльності бізнесу, що є необхідними для підтримки усього процесу, проте не є найважливішими його складовими.</p>
-                        <a href="" class="info__btn">Звязатись з нами</a> 
+                        <a href="" class="info__btn open-modal" data-modal="#modal1">Звязатись з нами</a> 
                     </div>
                 </div>
             </div>
@@ -99,41 +98,47 @@
     <section class="strengths">
         <div class="wrapper">
             <div class="row">
-                <div class="col-md-12 col-xl-6 order-lg-1 order-2">
+                <div class="col-md-12 col-xl-6 order-xl-1 order-2">
                     <div class="strengths__left">
                         <p class="strengths__quote">Остерігайтеся незначних витрат - маленька теча потопить великий корабель</p>
                         <p class="strengths__author">- Б. Франклін</p>
                         <p class="strengths__text">Равным образом постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. Повседневная практика показывает, что консультация с широким активом способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности способствует подготовки и реализации существенных финансовых и административных условий.</p>
                     </div>
                 </div>
-                <div class="col-md-12 col-xl-6 order-lg-2 order-1">
+                <div class="col-md-12 col-xl-6 order-xl-2 order-1">
                     <div class="strengths__right">
                         <table class="table">
-                            <tr>
-                                <td class="table__text">
-                                    <img src="img/icon4.png" alt="icon">
-                                    <p>Наша успіх це результат нашого досвіду</p>
-                                </td>
-                                <th class="th"></th>
-                                <td>
-                                    <div class="table__image">
-                                        <img src="img/img_2.jpg" alt="team">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="tr"></tr>
-                            <tr>
-                                <td>
-                                    <div class="table__image">
-                                        <img src="img/img_3.jpg" alt="team">
-                                    </div>
-                                </td>
-                                <th class="th"></th>
-                                <td class="table__text">
-                                    <img src="img/icon5.png" alt="icon">
-                                    <p>Наша досвідчена команда готова до виконань завдань будь-якої складності</p>
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td class="table__text">
+                                        <img src="img/icon4.png" alt="icon">
+                                        <p>Наша успіх це результат нашого досвіду</p>
+                                    </td>
+                                    <th class="th"></th>
+                                    <td>
+                                        <div class="table__image">
+                                            <img src="img/img_2.jpg" alt="team">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td"></td> 
+                                    <td class="td"></td>
+                                    <td class="td"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table__image">
+                                            <img src="img/img_3.jpg" alt="team">
+                                        </div>
+                                    </td>
+                                    <th class="th"></th>
+                                    <td class="table__text">
+                                        <img src="img/icon5.png" alt="icon">
+                                        <p>Наша досвідчена команда готова до виконань завдань будь-якої складності</p>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -215,9 +220,9 @@
                 </div>                  
                 <div class=" col-auto">
                     <ul class="footer-menu menu">
-                        <li class="menu__item"><a href="#" class="menu__link active">ГОЛОВАНА</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">ПРО НАС</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">КОНТАКТИ</a></li>
+                        <li class="menu__item"><a href="index.html" class="menu__link active">ГОЛОВАНА</a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link">ПРО НАС</a></li>
+                        <li class="menu__item"><a href="contact.html" class="menu__link">КОНТАКТИ</a></li>
                     </ul>
                 </div>
             </div>
@@ -225,8 +230,8 @@
                 <div class="col-auto">
                     <div class="copy">
                         <a href="http://www.drewet.top/" class="copy__link">
-                            Copyright © 2019 ТОВ ФАР,  made with
-                            <img src="img/drewet.top.png" alt="drewet.top">
+                            Copyright © 2019 ТОВ ФАР,  made 
+                            <!-- <img src="img/drewet.top.png" alt="drewet.top"> -->
                             <span>by Drewet</span>
                         </a>
                     </div>
@@ -234,7 +239,44 @@
             </div>
         </div>
     </footer>
+    
+<!--  === Servises order ====  -->
+<div class="modal" id="modal1">
+	<div class="content">
+		<h2><span>Зворотній зв'язок</span></h2>
+		<p>Напишіть ваше повідомлення і ми з Вами зв'яжимося у найкоротший термін.</p>
+		<form action="telegram_and_mail.php" method="POST" class="phone-contact" id="ajax_form">
+			<div>
+				<input type="text" name="user_name" required="required" placeholder="Ваше ім'я" value="" class="phone-contact-name">
+			</div>
+			<div>
+				<input type="tel" name="user_phone" placeholder="Контактний телефон" required="required" class="phone-contact-input">
+			</div>
+			<div>
+				<textarea name="user_text" placeholder="Ваше повідомлення"></textarea>
+			</div>			
+			<div>
+				<input type="submit" name="submit" value="Зв'язатись" class="phone-contact-submit"></div>
+		</form>
+    </div>
+	<a class="btn close-modal" data-modal="#modal1" href="#">&#10005;</a>
+</div>
+<!--  === /servises order ====  -->
 
+<!--  === Servises order message (successfully/unsuccessfully) ====  -->
+<div class="modal open" id="modal2">
+	<div class="content">
+	  	<p>Повідомлення відправлено. Скоро ми з Вами зв'яжемося!</p>
+	<a class="btn close-modal" data-modal="#modal2" href="#">&#10005;</a>
+	</div>
+</div>
+<div class="modal" id="modal3">
+	<div class="content">
+	  	<p>Сталася помилка під час надсилання повідомлення. Вибачте за незручності!</p>
+	<a class="btn close-modal" data-modal="#modal3" href="#">&#10005;</a>
+	</div>
+</div>
+<!--  === /Servises order message (successfully/unsuccessfully) ====  -->
 
 
 

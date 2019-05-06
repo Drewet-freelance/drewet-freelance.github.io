@@ -27,4 +27,66 @@
             div.slideUp(); // скрываем его
         }
     });
+    /*-----------------------------------------------	
+        Language-toggle
+    -------------------------------------------------*/	
+    $('.language__toggle').click(function(){
+        $(this).toggleClass('open');
+    })        
+    $('.language__toggle li').click(function(){
+    var setLang = $('.language__toggle').data('location'),
+        dataLangSelect = $(this).data('lang')
+            $('.language__toggle').data('location', dataLangSelect);
+            $('.language__toggle li').removeClass('active');
+            $(this).toggleClass('active');
+    }) 
+    /*-----------------------------------------------	
+        POP-UP (make an order)
+    -------------------------------------------------*/	
+    $(".modal").each(function() {
+        $(this).wrap('<div class="overlay"></div>')
+    });
+
+    $(".open-modal").on('click', function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation;
+        var $this = $(this),
+            modal = $($this).data("modal");
+        $(modal).parents(".overlay").addClass("open");
+        setTimeout(function() {
+            $(modal).addClass("open");
+        }, 350);
+        $(document).on('click', function(e) {
+            var target = $(e.target);
+            if ($(target).hasClass("overlay")) {
+                $(target).find(".modal").each(function() {
+                    $(this).removeClass("open");
+                });
+                setTimeout(function() {
+                    $(target).removeClass("open");
+                }, 350);
+            }
+        });
+    });
+
+    $(".close-modal").on('click', function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation;
+        var $this = $(this),
+            modal = $($this).data("modal");
+        $(modal).removeClass("open");
+        setTimeout(function() {
+            $(modal).parents(".overlay").removeClass("open");
+        }, 350);
+    });    
+    /*-----------------------------------------------	
+        Hide placeholder
+    -------------------------------------------------*/
+    $('input,textarea').focus(function(){
+        $(this).data('placeholder',$(this).attr('placeholder'))
+        $(this).attr('placeholder','');
+    });
+    $('input,textarea').blur(function(){
+        $(this).attr('placeholder',$(this).data('placeholder'));
+    });
 })(jQuery);

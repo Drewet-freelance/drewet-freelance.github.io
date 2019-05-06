@@ -63,10 +63,9 @@ a {
 }
 
 h1 {
-  font-family: "Partner regular", Helvetica, Arial, sans-serif;
+  font-family: "Gill Sans Nova Book", Helvetica, Arial, sans-serif;
   font-size: 32px;
-  line-height: 1.5;
-  height: 73px;
+  line-height: 1.4;
   text-transform: uppercase;
   color: #fff;
   margin: 0;
@@ -223,11 +222,10 @@ p {
 }
 
 .navbar-brand .company {
-  font-family: "Partner regular", Helvetica, Arial, sans-serif;
+  font-family: "Bosch Sans CondBold", Helvetica, Arial, sans-serif;
   font-size: 30px;
-  height: 30px;
   color: #fff;
-  line-height: 2;
+  line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
   margin-top: 10px;
@@ -251,11 +249,9 @@ p {
 
 .menu__link {
   display: inline-block;
-  font-family: "Partner regular", Helvetica, Arial, sans-serif;
+  font-family: "Bosch Sans CondBold", Helvetica, Arial, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  height: 20px;
-  line-height: 2;
   color: #fff;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
@@ -284,6 +280,10 @@ p {
   margin: 5px 0;
 }
 
+.menu-btn:focus {
+  outline: 0;
+}
+
 .menu-mobile {
   left: 0;
   right: 0;
@@ -305,7 +305,7 @@ p {
   display: block;
   width: 100%;
   text-align: center;
-  background-color: rgba(68, 105, 125, 0.2);
+  background-color: rgba(68, 105, 125, 0.4);
 }
 
 .menu-dropdown .dropdown-item:active {
@@ -313,13 +313,12 @@ p {
 }
 
 .dropdown-item {
-  font-family: "Partner regular", Helvetica, Arial, sans-serif;
+  font-family: "Bosch Sans CondBold", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  height: 30px;
-  line-height: 2.3;
+  line-height: 1.5;
   color: #fff;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-transform: uppercase;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -327,6 +326,10 @@ p {
 .dropdown-item:nth-child(1) {
   margin-top: 8px;
   border-top: 0;
+}
+
+.dropdown-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .dropdown-item:focus,
@@ -347,17 +350,15 @@ p {
 
 .language__item {
   display: inline-block;
-  font-family: "PartnerLight", Helvetica, Arial, sans-serif;
+  font-family: "Gill Sans Nova Book", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  height: 20px;
-  line-height: 2;
   text-transform: uppercase;
-  color: #c9bfb9;
+  color: #6998b0;
   margin-left: 20px;
 }
 
 .language__item.active {
-  color: #426475;
+  color: #fff;
 }
 
 .info {
@@ -535,6 +536,7 @@ p {
   height: 150px;
   padding: 0;
   border: 0;
+  empty-cells: hide;
   overflow: hidden;
   vertical-align: top;
 }
@@ -574,7 +576,7 @@ p {
 .table__image img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 294px;
+  width: 295px;
   height: 296px;
   display: inline-block;
   vertical-align: bottom;
@@ -584,7 +586,7 @@ p {
   width: 10px;
 }
 
-.tr {
+table td.td {
   height: 10px;
 }
 
@@ -619,7 +621,6 @@ p {
   border-left: 5px solid transparent;
   -webkit-box-shadow: -5px 0px 0px 0px transparent;
           box-shadow: -5px 0px 0px 0px transparent;
-  outline-left: 3px solid #4e3b29;
   margin-bottom: 10px;
   padding: 0 10px 6px 15px;
   cursor: pointer;
@@ -716,8 +717,6 @@ p {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../img/broken-noise.png);
-  background-repeat: repeat;
 }
 
 .footer:after {
@@ -743,18 +742,19 @@ p {
 
 .copy {
   margin-top: 43px;
-  /* xs - устройства (до 576px) */
 }
 
 .copy__link {
   display: inline-block;
   font-family: "Gill Sans Nova Book", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
+  cursor: pointer;
 }
 
 .copy__link img {
   display: inline-block;
+  width: 21px;
   vertical-align: middle;
   margin-right: 5px;
   margin-left: 7px;
@@ -762,8 +762,352 @@ p {
 
 .copy__link span {
   font-family: "Gill Sans Nova Book", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  color: #fe0000;
+  font-size: 14px;
+  color: #fff;
+}
+
+.header--background {
+  background: #000 url(../img/wrap-img.png);
+  background-repeat: no-repeat;
+  background-position: 0% 90%;
+  background-size: cover;
+  position: relative;
+}
+
+.header--cover {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: calc(100% - 123px);
+  background: rgba(0, 0, 0, 0.7);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(88, 88, 88, 0.7)));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(88, 88, 88, 0.7)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(88, 88, 88, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#585858', GradientType=1 );
+}
+
+.partition p {
+  font-family: "Bosch Sans Cond", Helvetica, Arial, sans-serif;
+  font-size: 72px;
+  text-transform: uppercase;
+  line-height: 4;
+  text-align: center;
+}
+
+.background--block {
+  background-color: #ececec;
+  z-index: 1;
+}
+
+.about {
+  position: relative;
+  background: #ececec url(../img/wrap-img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(230, 233, 238, 0.9);
+  background-size: 50% 100%;
+}
+
+.info--block {
+  height: 834px;
+}
+
+.about__info,
+.contact__info {
+  position: relative;
+  z-index: 1;
+  margin-left: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__info p,
+.contact__info p {
+  font-family: "Bosch Sans Cond", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.35;
+  color: #2f3436;
+  margin-top: 33px;
+}
+
+.h1--other {
+  color: #000;
+}
+
+.contact {
+  position: relative;
+  background: #ececec url(../img/wrap-img4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(230, 233, 238, 0.9);
+  background-size: 50% 100%;
+}
+
+.contact__info a:nth-of-type(1) {
+  display: inline-block;
+  font-family: "Gill Sans Nova Book", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  line-height: 1.35;
+  color: #2f3436;
+  margin-top: 33px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.contact__info a:nth-of-type(1):hover {
+  color: #5e696d;
+}
+
+.contact__btn {
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Gill Sans Nova Book", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #44697d;
+  padding: 26px 83px;
+  border-radius: 5px;
+}
+
+.contact__btn:hover {
+  background-color: #56859e;
+}
+
+/* === POP-UP (make an order) ==== */
+.overlay {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  position: fixed;
+  z-index: 99998;
+  top: 0;
+  left: 0;
+  background: rgba(68, 105, 125, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  overflow-y: auto;
+}
+
+.overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.overlay .modal {
+  position: relative;
+  background: #f6f6f6;
+  text-align: center;
+  padding: 20px 80px;
+  -webkit-box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+          box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.35s ease-in-out 50ms;
+  transition: 0.35s ease-in-out 50ms;
+  max-height: 100%;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+.overlay .modal.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.overlay .modal.open .content {
+  -webkit-transform: translate(0, 0px);
+          transform: translate(0, 0px);
+  opacity: 1;
+}
+
+.overlay .modal .content {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+  opacity: 0;
+  -webkit-transition: .35s ease-in-out 75ms;
+  transition: .35s ease-in-out 75ms;
+}
+
+.close-modal {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  color: rgba(68, 105, 125, 0.4);
+  -webkit-transition: color 200ms, -webkit-transform 500ms;
+  transition: color 200ms, -webkit-transform 500ms;
+  transition: color 200ms, transform 500ms;
+  transition: color 200ms, transform 500ms, -webkit-transform 500ms;
+}
+
+.close-modal:hover, .close-modal:focus {
+  color: #44697d;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#modal1 h2 {
+  margin-bottom: 20px;
+}
+
+#modal1 p {
+  font-family: "Gill Sans Nova Book", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #2f3436;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+}
+
+#modal1 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 40vw;
+}
+
+#modal1 form input[type="text"],
+#modal1 form input[type="tel"],
+#modal1 form textarea {
+  width: 100%;
+  border-color: #44697d;
+  background: transparent;
+  border: 2px solid #44697d;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: #2f3436;
+}
+
+#modal1 form input[type="text"],
+#modal1 form input[type="tel"],
+#modal1 form input[type="submit"],
+#modal1 form textarea {
+  font-family: "Gill Sans Nova Book", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  margin-top: 15px;
+  outline: 0;
+}
+
+#modal1 form input[type="submit"] {
+  margin-top: 20px;
+}
+
+#modal1 form input::-webkit-input-placeholder,
+#modal1 form textarea::-webkit-input-placeholder {
+  color: #2f3436;
+}
+
+#modal1 form input:-ms-input-placeholder,
+#modal1 form textarea:-ms-input-placeholder {
+  color: #2f3436;
+}
+
+#modal1 form input::-ms-input-placeholder,
+#modal1 form textarea::-ms-input-placeholder {
+  color: #2f3436;
+}
+
+#modal1 form input::placeholder,
+#modal1 form textarea::placeholder {
+  color: #2f3436;
+}
+
+#modal1 form textarea {
+  min-height: 70px;
+}
+
+#modal1 form input[type="submit"] {
+  padding: 10px 70px;
+  width: auto;
+  background: #fff;
+  border: 2px solid #44697d;
+  border-radius: 5px;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+}
+
+#modal1 form input[type="submit"]:hover {
+  color: #fff;
+  background: #44697d;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+}
+
+/* === POP-UP (done)) ==== */
+#modal2, #modal3 {
+  width: auto;
+  padding: 50px 15px;
+}
+
+#modal2 .content, #modal3 .content {
+  font-family: "Gill Sans Nova Book", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+#modal2 .close-modal,
+#modal3 .close-modal {
+  top: -35px;
+  /* xs - устройства (до 576px) */
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
@@ -773,7 +1117,6 @@ p {
   }
   h2 {
     font-size: 20px;
-    height: 20px;
   }
   h2:before, h2:after {
     width: 30px;
@@ -808,8 +1151,6 @@ p {
   }
   .navbar-brand .company {
     font-size: 18px;
-    height: 18px;
-    line-height: 1.5;
   }
   .language__item {
     font-size: 16px;
@@ -882,7 +1223,6 @@ p {
     padding-bottom: 65px;
   }
   .advantagess__btn {
-    position: pelative;
     margin-top: 20px;
     font-size: 16px;
   }
@@ -945,7 +1285,6 @@ p {
   }
   .outsourcing__item {
     font-size: 16px;
-    height: 35px;
     margin-bottom: 3px;
   }
   .outsourcing__content {
@@ -975,6 +1314,65 @@ p {
   .copy__link img {
     width: 18px;
   }
+  .header--cover {
+    height: calc(100% - 95px);
+  }
+  .h1--other {
+    font-size: 18px;
+  }
+  .about {
+    background-size: 100% 100%;
+  }
+  .about:before {
+    width: 100%;
+  }
+  .partition p {
+    font-size: 55px;
+    line-height: 3;
+  }
+  .info--block {
+    height: 515px;
+  }
+  .about__info p {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .contact__info a:nth-of-type(1) {
+    font-size: 31px;
+  }
+  .contact__btn {
+    font-size: 23px;
+    padding: 14px 17px;
+    margin: 0 auto;
+  }
+  .content h2 {
+    margin: 25px 0 37px;
+  }
+  .content h2:before, .content h2:after {
+    width: 20px;
+  }
+  #modal1 p {
+    font-size: 17px;
+  }
+  #modal1 form {
+    width: 100%;
+  }
+  #modal1 form input[type="text"],
+  #modal1 form input[type="tel"],
+  #modal1 form input[type="submit"],
+  #modal1 form textarea {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .overlay .modal {
+    padding: 20px 20px;
+  }
+  .close-modal {
+    font-size: 16px;
+  }
+  #modal2 .content, #modal3 .content {
+    font-size: 16px;
+  }
   /* sm-устройства (больше или равно 576px) */
 }
 
@@ -985,7 +1383,6 @@ p {
   }
   h2 {
     font-size: 24px;
-    height: 24px;
   }
   h3 {
     font-size: 22px;
@@ -1004,8 +1401,6 @@ p {
   }
   .navbar-brand .company {
     font-size: 18px;
-    height: 18px;
-    line-height: 1.5;
   }
   .language__item {
     font-size: 16px;
@@ -1071,7 +1466,6 @@ p {
     padding-bottom: 65px;
   }
   .advantagess__btn {
-    position: pelative;
     margin-top: 20px;
     font-size: 17px;
   }
@@ -1132,7 +1526,6 @@ p {
   }
   .outsourcing__item {
     font-size: 20px;
-    height: 35px;
     margin-bottom: 3px;
   }
   .outsourcing__content {
@@ -1162,6 +1555,44 @@ p {
   .copy__link img {
     width: 18px;
   }
+  .header--cover {
+    height: calc(100% - 95px);
+  }
+  .h1--other {
+    font-size: 22px;
+  }
+  .about {
+    background-size: 100% 100%;
+  }
+  .about:before {
+    width: 100%;
+  }
+  .partition p {
+    font-size: 55px;
+    line-height: 3;
+  }
+  .info--block {
+    height: 560px;
+  }
+  .about__info p {
+    font-size: 21px;
+  }
+  .contact__info a:nth-of-type(1) {
+    font-size: 37px;
+  }
+  .contact__btn {
+    font-size: 26px;
+    padding: 14px 17px;
+  }
+  .content h2:before, .content h2:after {
+    width: 40px;
+  }
+  #modal1 form {
+    width: 100%;
+  }
+  .overlay .modal {
+    padding: 20px 40px;
+  }
   /* md-устройства (больше или равно 768px) */
 }
 
@@ -1172,7 +1603,6 @@ p {
   }
   h2 {
     font-size: 26px;
-    height: 26px;
   }
   h3 {
     font-size: 24px;
@@ -1188,8 +1618,6 @@ p {
   }
   .navbar-brand .company {
     font-size: 23px;
-    height: 23px;
-    line-height: 1.5;
   }
   .language__item {
     font-size: 18px;
@@ -1281,7 +1709,6 @@ p {
   }
   .outsourcing__item {
     font-size: 22px;
-    height: 46px;
   }
   .outsourcing__text {
     width: 60%;
@@ -1306,6 +1733,35 @@ p {
   .copy__link img {
     width: 20px;
   }
+  .header--cover {
+    height: calc(100% - 105px);
+  }
+  .partition p {
+    font-size: 55px;
+    line-height: 3;
+  }
+  .h1--other {
+    font-size: 22px;
+  }
+  .about__info {
+    margin-left: 0;
+  }
+  .about__info p {
+    font-size: 21px;
+  }
+  .contact__info a:nth-of-type(1) {
+    font-size: 37px;
+  }
+  .contact__btn {
+    font-size: 29px;
+    padding: 15px 21px;
+  }
+  #modal1 form {
+    width: 70%;
+  }
+  .overlay .modal {
+    padding: 20px 40px;
+  }
   /* lg-устройства (больше или равно 992px) */
 }
 
@@ -1322,8 +1778,6 @@ p {
   }
   .navbar-brand .company {
     font-size: 24px;
-    height: 24px;
-    line-height: 1.5;
   }
   .header--top:before {
     width: 75%;
@@ -1379,7 +1833,6 @@ p {
   }
   .outsourcing__item {
     font-size: 22px;
-    height: 46px;
   }
   .outsourcing__text {
     width: 60%;
@@ -1403,6 +1856,29 @@ p {
   }
   .copy__link img {
     width: 20px;
+  }
+  .header--cover {
+    height: calc(100% - 112px);
+  }
+  .partition p {
+    font-size: 55px;
+    line-height: 3;
+  }
+  .h1--other {
+    font-size: 22px;
+  }
+  .about__info p {
+    font-size: 21px;
+  }
+  .contact__info a:nth-of-type(1) {
+    font-size: 45px;
+  }
+  .contact__btn {
+    font-size: 32px;
+    padding: 17px 31px;
+  }
+  #modal1 form {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=main.css.map */
